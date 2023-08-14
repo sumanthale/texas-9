@@ -154,7 +154,7 @@ const LeaveAMessage = ({ header }) => {
                 type="submit"
                 className="uppercase px-8 py-2 ml-auto text-xl tracking-wide outline outline-1  outline-[#a3c332] font-primary   bg-[#a3c332] text-white"
               >
-                Submit
+                Submitted
               </button>
             </div>
 
