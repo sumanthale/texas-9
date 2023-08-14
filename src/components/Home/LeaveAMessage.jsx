@@ -149,13 +149,15 @@ const LeaveAMessage = ({ header }) => {
                 placeholder="Tell us about your golf facility requirements."
               ></textarea>
             </div>
+            <div className="w-full flex">
+              <button
+                type="submit"
+                className="uppercase px-8 py-2 ml-auto text-xl tracking-wide outline outline-1  outline-[#a3c332] font-primary   bg-[#a3c332] text-white"
+              >
+                Submit
+              </button>
+            </div>
 
-            <button
-              type="submit"
-              className="uppercase px-8 py-2 rounded-lg text-xl tracking-wide outline outline-1  outline-[#a3c332] font-primary   bg-[#a3c332] text-white"
-            >
-              Submit
-            </button>
             <button type="reset" className="hidden" ref={resetRef}>
               Rest
             </button>

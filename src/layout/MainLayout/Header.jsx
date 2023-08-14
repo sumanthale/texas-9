@@ -23,8 +23,8 @@ const Header = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 800,
-    autoplaySpeed: 5000,
+    speed: 1000,
+    autoplaySpeed: 10000,
     cssEase: "linear",
   };
   return (

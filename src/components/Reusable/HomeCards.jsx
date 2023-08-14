@@ -41,11 +41,10 @@ const HomeCards = () => {
     const newFlipState = [...isFlipped];
     newFlipState[index] = state;
     setIsFlipped(newFlipState);
-    console.log("CODEEEEEEEEE");
   };
 
   return (
-    <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-4 gap-y-6 md:gap-y-16  font-primary gap-8 mt-10 px-4">
+    <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-4 gap-x-4 max-w-[90vw] mx-auto  font-primary  mt-10 px-4">
       {isFlipped.map((flipped, index) => (
         <div
           key={index}
@@ -53,7 +52,7 @@ const HomeCards = () => {
           style={{
             backgroundImage:
               !flipped &&
-              `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(${
+              `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)),url(${
                 index === 0
                   ? flip1
                   : index === 1

@@ -39,8 +39,8 @@ const HomeDiv2 = () => {
 
   return (
     <div>
-      <div className=" bg-[#fff]  p-4 font-primary first-letter: ">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-6">
+      <div className=" bg-[#fff]  py-4  font-primary first-letter: ">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           <div className="bg-[#7DA33F] p-10 flex flex-col items-center text-white col-span-1 lg:col-span-1">
             <h1 className="uppercase tracking-wide text-4xl font-primary font-bold text-center mt-6">
               GET YOUR TEE TIME!
@@ -57,7 +57,7 @@ const HomeDiv2 = () => {
             </Link>
           </div>
 
-          <div className="col-span-1 lg:col-span-2 grid grid-cols-1 lg:grid-cols-3 border-2 gap-4 p-4 border-red-500">
+          <div className="col-span-1 lg:col-span-2 grid grid-cols-1 lg:grid-cols-3 border-2 gap-4 p-4 border-red-500 border-r-0 -pr">
             <div className="h-full w-full col-span-1">
               <Carousel
                 autoPlay
@@ -99,7 +99,7 @@ const HomeDiv2 = () => {
               </Carousel>
             </div>
 
-            <div className="bg-white flex flex-col items-center   relative col-span-2">
+            <div className="bg-white flex flex-col justify-between   relative col-span-2">
               <p className="tracking-wide text-xl font-primary  font-semibold  my-3 text-justify">
                 Hailed as one of the best executive golf courses in DFW, our
                 course was designed by Steven D. Plumber, ASGCA, and opened in
@@ -110,7 +110,7 @@ const HomeDiv2 = () => {
                 interest in adding new amenities and reinforcing the best
                 aspects of the course.
               </p>
-              <p className="tracking-wide text-2xl font-primary text-center font-bold  my-3 text-red-500">
+              <p className="tracking-wide text-4xl font-primary text-justify font-bold   text-red-800">
                 NO CLUB FEES! OPEN TO THE PUBLIC!
               </p>
             </div>
@@ -125,7 +125,7 @@ const HomeDiv2 = () => {
             backgroundImage: `url(${Review})`,
           }}
         >
-          <div className="hero-content w-full">
+          <div className="block md:hidden hero-content w-full">
             <Carousel
               autoPlay
               infiniteLoop
@@ -133,7 +133,7 @@ const HomeDiv2 = () => {
               showThumbs={false}
               showArrows={false}
               showIndicators={false}
-              interval={5000}
+              interval={10000}
               onChange={setCurrentReview}
             >
               {reviews.map((review) => (
@@ -143,6 +143,14 @@ const HomeDiv2 = () => {
                 </div>
               ))}
             </Carousel>
+          </div>
+          <div className="hidden hero-content md:flex w-[70vw] mr-auto">
+            {reviews.map((review) => (
+              <div key={review.id} className="review-slide">
+                <p>{review.text}</p>
+                <p>- {review.author}</p>
+              </div>
+            ))}
           </div>
         </section>
       </div>

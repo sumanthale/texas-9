@@ -111,8 +111,11 @@
   position: relative;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4),
     0 4px 6px -4px rgba(0, 0, 0, 0.4);
-  border-radius: 10px;
-  background: linear-gradient(45deg, #04051dea 0%, rgba(0, 0, 0, 0.4) 100%);
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
 }
 
 .content {

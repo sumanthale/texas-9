@@ -12,12 +12,8 @@ import {
 const Footer = () => {
   return (
     <div className="bg-[#162649] text-white ">
-      <div className="max-w-screen-xl p-6 mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-4 mx-auto py-10 gap-y-4">
-          {/* <div className="col-span-1 md:col-span-2 md:px-4 w-100 md:w-4/5">
-            <img src={LogoImg} alt="Logo" style={{}} className="mx-auto" />
-          </div> */}
-
+      <div className="max-w-screen-xl p-4 mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-4 mx-auto  gap-y-4">
           <div className="">
             <h1 className="font-primary text-white text-2xl tracking-wide">
               Quick Links
@@ -38,13 +34,11 @@ const Footer = () => {
                   BOOK A TEE TIME
                 </span>
               </Link>
-              {/*<Link to="/">Owner Login</Link>
-      <Link to="/">Tenant Login</Link>*/}
             </div>
           </div>
 
-          <div className="col-span-1 md:col-span-2 md:px-4 w-100 md:w-4/5">
-            <img src={LogoImg} alt="Logo" style={{}} className="mx-auto" />
+          <div className="col-span-1 md:col-span-2 md:px-4 w-100 md:w-4/5 mx-auto">
+            <img src={LogoImg} alt="Logo" style={{}} className="mx-auto h-40" />
           </div>
           <div className="">
             <h1 className="font-primary text-white text-2xl tracking-wide">
