@@ -29,8 +29,8 @@ const Promises = () => {
             <div>
               <h2 className="font-primary text-xl mb-1">Eviction Guarantee</h2>
               <p className="text-secondary">
-                Our tenant screening is so tight we will personally
-                reimburse you up to $1,000 in the event of eviction legal expenses.
+                Our tenant screening is so tight we will personally reimburse
+                you up to $1,000 in the event of eviction legal expenses.
               </p>
             </div>
           </div>
@@ -41,9 +41,10 @@ const Promises = () => {
             <div>
               <h2 className="font-primary text-xl mb-1">Contract Guarantee</h2>
               <p className="text-secondary">
-                Long term contracts are scary, so we’ve created the only month-to-month
-                management agreement in Texas with no termination fees or penalties.
-                We believe we should earn your business every day.
+                Long term contracts are scary, so we’ve created the only
+                month-to-month management agreement in Texas with no termination
+                fees or penalties. We believe we should earn your business every
+                day.
               </p>
             </div>
           </div>
@@ -56,8 +57,8 @@ const Promises = () => {
                 Tenant Placement Guarantee
               </h2>
               <p className="text-secondary">
-                If we place a tenant, and they break their lease during
-                the first 12 months, we will release it for free.
+                If we place a tenant, and they break their lease during the
+                first 12 months, we will release it for free.
               </p>
             </div>
           </div>
@@ -70,7 +71,7 @@ const Promises = () => {
                 Rent Deposit Guarantee
               </h2>
               <p className="text-secondary">
-                We know you want your money fast! So we ACH your tenant rent 
+                We know you want your money fast! So we ACH your tenant rent
                 into your bank account by the 10th day of each month.
               </p>
             </div>
@@ -84,8 +85,9 @@ const Promises = () => {
                 Management Fee Guarantee
               </h2>
               <p className="text-secondary">
-                We believe that if we can't collect the rent, then we should not get paid.
-                You only pay us a management fee if we successfully collect the rent due.
+                We believe that if we can't collect the rent, then we should not
+                get paid. You only pay us a management fee if we successfully
+                collect the rent due.
               </p>
             </div>
           </div>
@@ -98,8 +100,8 @@ const Promises = () => {
                 Leasing Fee Guarantee
               </h2>
               <p className="text-secondary">
-                You don't pay us a leasing fee until we have a signed lease
-                and money paid from the tenant.
+                You don't pay us a leasing fee until we have a signed lease and
+                money paid from the tenant.
               </p>
             </div>
           </div>
@@ -140,10 +142,10 @@ const Promises = () => {
                 Legal Compliance Guarantee
               </h2>
               <p className="text-secondary">
-                Our lease agreement is reviewed and approved by THS,
-                a top Texas landlord law firm. We operate in compliance
-                with fair housing, Texas habitability, application screening,
-                and right-to-cure laws.
+                Our lease agreement is reviewed and approved by THS, a top Texas
+                landlord law firm. We operate in compliance with fair housing,
+                Texas habitability, application screening, and right-to-cure
+                laws.
               </p>
             </div>
           </div>
@@ -157,8 +159,8 @@ const Promises = () => {
               </h2>
               <p className="text-secondary">
                 Advanced background search technology plus custom in-house
-                applicant screening ensures only highly qualified applicants
-                are approved to rent our properties.
+                applicant screening ensures only highly qualified applicants are
+                approved to rent our properties.
               </p>
             </div>
           </div>
@@ -170,8 +172,8 @@ const Promises = () => {
               <h2 className="font-primary text-xl mb-1">24/7 Online Reports</h2>
               <p className="text-secondary">
                 We provide you with secure online access to monthly statements,
-                inspection reports, invoice copies, tax reports, and
-                rental history with a click of a mouse.
+                inspection reports, invoice copies, tax reports, and rental
+                history with a click of a mouse.
               </p>
             </div>
           </div>
@@ -182,9 +184,9 @@ const Promises = () => {
             <div>
               <h2 className="font-primary text-xl mb-1">Preferred Rates</h2>
               <p className="text-secondary">
-                As an owner-client you enjoy reduced fees whenever you buy
-                and sell properties with us. We have closed over $40,000,000
-                in real estate sales exclusively for our owner-clients.
+                As an owner-client you enjoy reduced fees whenever you buy and
+                sell properties with us. We have closed over $40,000,000 in real
+                estate sales exclusively for our owner-clients.
               </p>
             </div>
           </div>

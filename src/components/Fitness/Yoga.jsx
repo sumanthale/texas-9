@@ -19,7 +19,10 @@ const Yoga = () => {
               Yoga
             </h1>
             <h1 className="tracking-wide text-md font-primary  my-3 ">
-            Discover inner peace and enhance your physical and mental well-being through our transformative Yoga classes, fostering balance, flexibility, and mindfulness for a harmonious and rejuvenating experience.
+              Discover inner peace and enhance your physical and mental
+              well-being through our transformative Yoga classes, fostering
+              balance, flexibility, and mindfulness for a harmonious and
+              rejuvenating experience.
             </h1>
             <h1 className="uppercase tracking-wide my-3 text-2xl font-primary font-bold text-green-600">
               BENEFIT
@@ -34,7 +37,11 @@ const Yoga = () => {
                   A typical Yoga session
                 </h4>
                 <p className="text-gray-100 text-sm">
-                Embark on a rejuvenating journey of self-discovery and holistic well-being with our transformative Yoga session, combining soothing movements, mindful breathing, and relaxation techniques for a harmonious and revitalizing experience.
+                  Embark on a rejuvenating journey of self-discovery and
+                  holistic well-being with our transformative Yoga session,
+                  combining soothing movements, mindful breathing, and
+                  relaxation techniques for a harmonious and revitalizing
+                  experience.
                 </p>
                 {/* <p className="text-gray-100 text-sm">
                   Probabo, inquit, sic agam, ut labore et voluptatem sequi
@@ -61,7 +68,7 @@ const Yoga = () => {
                   </div>
                 </div>
               </div> */}
-            </div> 
+            </div>
           </div>
         </div>
       </div>

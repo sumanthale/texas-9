@@ -10,7 +10,7 @@ import AboutHeader from "../assets/golf/about-header.jpg";
 const Contact = () => {
   return (
     <div>
-      <MiniHeader heading={"Contact Us"} subHeading={""} image={AboutHeader}/>
+      <MiniHeader heading={"Contact Us"} subHeading={""} image={AboutHeader} />
 
       <LeaveAMessage header={"HAVE QUESTIONS?"} />
       <div className="bg-white  px-4 ">

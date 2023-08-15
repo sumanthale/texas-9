@@ -48,7 +48,7 @@ const HomeCards = () => {
       {isFlipped.map((flipped, index) => (
         <div
           key={index}
-          className={`h-60 ${flipped ? "flipped" : ""} card`}
+          className={`h-52 ${flipped ? "flipped" : ""} card`}
           style={{
             backgroundImage:
               !flipped &&

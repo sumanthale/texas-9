@@ -10,10 +10,7 @@ import Footer from "../../reusable/Footer";
 const ResidentBenfits = () => {
   return (
     <>
-      <MiniHeader
-        heading={"Resident Benefits"}
-        subHeading={""}
-      />
+      <MiniHeader heading={"Resident Benefits"} subHeading={""} />
 
       <div className="min-h-screen px-4 py-8  md:p-10  mx-auto">
         <h1 className="font-primary tracking-wide text-3xl text-center mt-8">
@@ -75,8 +72,9 @@ const ResidentBenfits = () => {
                 Fair Lease Agreements
               </h2>
               <p className="text-secondary">
-                Our lease is designed to be fair and transparent and is prepared and approved by Tschetter-Sulzer, PC - one
-                of Texas most respected law firms.
+                Our lease is designed to be fair and transparent and is prepared
+                and approved by Tschetter-Sulzer, PC - one of Texas most
+                respected law firms.
               </p>
             </div>
           </div>
@@ -158,9 +156,9 @@ const ResidentBenfits = () => {
             <div>
               <h2 className="font-primary text-xl mb-1">Trust</h2>
               <p className="text-secondary">
-                Our family owned business; has been serving residents since 1978,
-                so you know we will be here tomorrow (and the next day and the
-                next day) with honest, relationship-based service.
+                Our family owned business; has been serving residents since
+                1978, so you know we will be here tomorrow (and the next day and
+                the next day) with honest, relationship-based service.
               </p>
             </div>
           </div>

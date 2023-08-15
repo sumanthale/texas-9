@@ -16,13 +16,13 @@ const HomeDiv2 = () => {
   const reviews = [
     {
       id: 1,
-      text: "NINE HOLE LITTLE PARADISE.\nExcellent course to work on your short game. Staff was friendlier than any big course I have gone to!",
+      text: `<b style="font-size:22px">NINE HOLE LITTLE PARADISE</b>.\nExcellent course to work on your short game. Staff was friendlier than any big course I have gone to!`,
       author: "HECTOR GARZA",
     },
     // Add more reviews here
     {
       id: 2,
-      text: "Hospitality is everything and we immediately felt welcomed! The course was awesome and they even have brand NEW EPIC GOLF CARTS that are a must.",
+      text: `Hospitality is everything and we immediately felt welcomed! The course was awesome and they even have brand <b style="font-size:22px">NEW EPIC GOLF CARTS</b> that are a must.`,
       author: "ARMANDO AGUILAR",
     },
   ];
@@ -40,10 +40,11 @@ const HomeDiv2 = () => {
   return (
     <div>
       <div className=" bg-[#fff]  py-4  font-primary first-letter: ">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
           <div className="bg-[#7DA33F] p-10 flex flex-col items-center text-white col-span-1 lg:col-span-1">
             <h1 className="uppercase tracking-wide text-4xl font-primary font-bold text-center mt-6">
-              GET YOUR TEE TIME!
+              GET YOUR <br />
+              TEE TIME!
             </h1>
             <p className="tracking-wide text-xl font-primary text-center font-semibold my-3">
               Minimize the wait and schedule your next visit on our nine hole
@@ -57,7 +58,7 @@ const HomeDiv2 = () => {
             </Link>
           </div>
 
-          <div className="col-span-1 lg:col-span-2 grid grid-cols-1 lg:grid-cols-3 border-2 gap-4 p-4 border-red-500 border-r-0 -pr">
+          <div className="col-span-1 lg:col-span-3 grid grid-cols-1 lg:grid-cols-3 border-2 gap-4 p-4 border-red-500 border-r-0 -pr">
             <div className="h-full w-full col-span-1">
               <Carousel
                 autoPlay
@@ -69,29 +70,29 @@ const HomeDiv2 = () => {
                 showIndicators={false}
                 interval={4000}
                 stopOnHover={false}
-                className="carousel max-h-72 "
+                className="carousel"
                 style={{ maxHeight: "100%", maxWidth: "60%", margin: "0 auto" }}
               >
                 <div
-                  className="w-full carousel-image-item h-72 bg-cover bg-center"
+                  className="w-full carousel-image-item h-80 bg-cover bg-center"
                   style={{
                     backgroundImage: `url(${Smallgallery1})`,
                   }}
                 ></div>
                 <div
-                  className="w-full carousel-image-item h-72 bg-cover bg-center"
+                  className="w-full carousel-image-item h-80 bg-cover bg-center"
                   style={{
                     backgroundImage: `url(${Smallgallery2})`,
                   }}
                 ></div>
                 <div
-                  className="w-full carousel-image-item h-72 bg-cover bg-center"
+                  className="w-full carousel-image-item h-80 bg-cover bg-center"
                   style={{
                     backgroundImage: `url(${Smallgallery3})`,
                   }}
                 ></div>
                 <div
-                  className="w-full carousel-image-item h-72 bg-cover bg-center"
+                  className="w-full carousel-image-item h-80 bg-cover bg-center"
                   style={{
                     backgroundImage: `url(${Smallgallery4})`,
                   }}
@@ -99,7 +100,7 @@ const HomeDiv2 = () => {
               </Carousel>
             </div>
 
-            <div className="bg-white flex flex-col justify-between   relative col-span-2">
+            <div className="bg-white flex flex-col justify-between md:pr-14   relative col-span-2">
               <p className="tracking-wide text-xl font-primary  font-semibold  my-3 text-justify">
                 Hailed as one of the best executive golf courses in DFW, our
                 course was designed by Steven D. Plumber, ASGCA, and opened in
@@ -118,7 +119,7 @@ const HomeDiv2 = () => {
         </div>
       </div>
 
-      <div className="home-page p-4">
+      <div className="home-page py-4">
         <section
           className="hero-section"
           style={{
@@ -137,18 +138,18 @@ const HomeDiv2 = () => {
               onChange={setCurrentReview}
             >
               {reviews.map((review) => (
-                <div key={review.id} className="review-slide">
-                  <p>{review.text}</p>
-                  <p>- {review.author}</p>
+                <div key={review.id} className="review-slide text-justify">
+                  <p dangerouslySetInnerHTML={{ __html: review.text }}></p>
+                  <p className="text-right font-bold">- {review.author}</p>
                 </div>
               ))}
             </Carousel>
           </div>
           <div className="hidden hero-content md:flex w-[70vw] mr-auto">
             {reviews.map((review) => (
-              <div key={review.id} className="review-slide">
-                <p>{review.text}</p>
-                <p>- {review.author}</p>
+              <div key={review.id} className="review-slide text-justify">
+                <p dangerouslySetInnerHTML={{ __html: review.text }}></p>
+                <p className="text-right font-bold">- {review.author}</p>
               </div>
             ))}
           </div>

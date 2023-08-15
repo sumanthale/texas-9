@@ -51,9 +51,8 @@
   display: block;
 }
 
-.dropdown:hover .dropbtn {
-  opacity: 0.5;
-}
+/* .dropdown:hover .dropbtn {
+} */
 .text-truncate-5 {
   line-height: 1.5;
   margin: 0;
@@ -96,7 +95,7 @@
 }
 
 .links a:hover {
-  color: #a3c332;
+  color: #7da33f;
 }
 
 .card {

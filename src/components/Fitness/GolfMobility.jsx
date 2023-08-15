@@ -22,13 +22,17 @@ const GolfMobility = () => {
               Golf Mobility & Strength Training
             </h1>
             <h1 className="tracking-wide text-md font-primary  my-3 ">
-            Elevate your golf performance with our dynamic Golf Mobility & Strength Training program, designed to enhance flexibility, build strength, and optimize your body's potential for a powerful and precise swing.
+              Elevate your golf performance with our dynamic Golf Mobility &
+              Strength Training program, designed to enhance flexibility, build
+              strength, and optimize your body's potential for a powerful and
+              precise swing.
             </h1>
             <h1 className="uppercase tracking-wide my-3 text-2xl font-primary font-bold text-green-600">
               BENEFIT
             </h1>
             <h1 className=" my-4 tracking-wide text-xl font-primary font-bold ">
-            Improved Golf Swing Mechanics | Increased Power and Distance | Enhanced Stability and Balance
+              Improved Golf Swing Mechanics | Increased Power and Distance |
+              Enhanced Stability and Balance
             </h1>
 
             <div className="flex flex-col justify-between bg-lime-800 rounded-lg border-2 border-gray-400 mb-6 py-5 px-4">
@@ -37,7 +41,9 @@ const GolfMobility = () => {
                   A typical Golf Mobility session
                 </h4>
                 <p className="text-gray-100 text-sm">
-                Experience a revitalizing Golf Mobility session designed to improve your flexibility, range of motion, and overall physical performance on the golf course.
+                  Experience a revitalizing Golf Mobility session designed to
+                  improve your flexibility, range of motion, and overall
+                  physical performance on the golf course.
                 </p>
                 {/* <p className="text-gray-100 text-sm">
                   Probabo, inquit, sic agam, ut labore et voluptatem sequi

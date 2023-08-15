@@ -11,10 +11,7 @@ import { Link } from "react-router-dom";
 const ResidentResources = () => {
   return (
     <>
-      <MiniHeader
-        heading={"Resident Resources"}
-        subHeading={""}
-      />
+      <MiniHeader heading={"Resident Resources"} subHeading={""} />
       <div className="px-4 py-8  md:p-10  mx-auto">
         <h1 className="font-primary tracking-wide text-3xl text-center mt-8">
           Resident Resources
@@ -35,9 +32,7 @@ const ResidentResources = () => {
               <h2 className="font-primary text-xl mb-1 uppercase">
                 View properties for rent
               </h2>
-              <p className="text-secondary text-md">
-                 
-              </p>
+              <p className="text-secondary text-md"></p>
             </div>
           </Link>
 
@@ -52,9 +47,7 @@ const ResidentResources = () => {
               <h2 className="font-primary text-xl mb-1 uppercase">
                 Apply Online
               </h2>
-              <p className="text-secondary text-md">
-                 
-              </p>
+              <p className="text-secondary text-md"></p>
             </div>
           </Link>
 
@@ -70,9 +63,7 @@ const ResidentResources = () => {
               <h2 className="font-primary text-xl mb-1 uppercase">
                 Download residental rental application
               </h2>
-              <p className="text-secondary text-md">
-                 
-              </p>
+              <p className="text-secondary text-md"></p>
             </div>
           </a>
           <Link
@@ -86,9 +77,7 @@ const ResidentResources = () => {
               <h2 className="font-primary text-xl mb-1 uppercase">
                 Pet Policy
               </h2>
-              <p className="text-secondary text-md">
-                
-              </p>
+              <p className="text-secondary text-md"></p>
             </div>
           </Link>
           <a
@@ -103,9 +92,7 @@ const ResidentResources = () => {
               <h2 className="font-primary text-xl mb-1 uppercase">
                 avoiding rental scams{" "}
               </h2>
-              <p className="text-secondary text-md">
-                
-              </p>
+              <p className="text-secondary text-md"></p>
             </div>
           </a>
         </div>

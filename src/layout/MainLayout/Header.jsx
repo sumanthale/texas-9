@@ -34,10 +34,10 @@ const Header = () => {
       <div className="pt-20 font-primary overflow-hidden">
         <Slider {...settings} className="h-[55vh]">
           {images.map((image, idx) => (
-            <div key={idx}>
+            <div key={idx} className="w-full">
               <img
                 src={image}
-                className="h-[55vh] object-center object-fill lg:object-contain "
+                className="w-full h-[55vh] object-center object-fill lg:object-cover "
                 alt=""
               />
             </div>

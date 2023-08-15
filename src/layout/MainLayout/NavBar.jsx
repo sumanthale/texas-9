@@ -32,8 +32,13 @@ const NavBar = () => {
   return (
     <>
       {/* <div className="fixed  z-50 w-full bg-[#162649] text-white"> */}
-      <div className="fixed z-50 w-full h-[80px] bg-[#162649] text-white">
-        <div className="hidden lg:flex items-center font-Gbook font-semibold  links justify-center pr-10 h-[80px] relative ">
+      <div className="fixed z-50 w-full h-[80px] bg-[#162649] text-white font-Gbook">
+        <div className=" px-6 py-2 bg-[#7da33f] flex items-center justify-center absolute right-10 top-16  ">
+          <Link to={"/tee-times"} className="hover:text-white">
+            BOOK A TEE TIME
+          </Link>
+        </div>
+        <div className="hidden lg:flex items-center font-semibold  links justify-center pr-10 h-[80px] relative ">
           <div className="mr-auto p-4">
             <Link to={"/"}>
               <img
@@ -42,10 +47,6 @@ const NavBar = () => {
                 alt="Logo"
               />
             </Link>
-          </div>
-
-          <div className=" px-6 py-2 bg-[#7da33f] flex items-center justify-center absolute right-10 top-16">
-            <Link to={"/tee-times"}>BOOK A TEE TIME</Link>
           </div>
 
           <div className="dropdown p-4 items-center justify-center">
@@ -57,7 +58,7 @@ const NavBar = () => {
               <Link to="/golf/rates">RATES</Link>
               <Link to="/golf/memberships">MEMBERSHIPS</Link>
               <Link to="/golf/lessons">LESSONS</Link>
-              <Link to="/tee-times">TEE-TIMES</Link>
+              <Link to="/tee-times">TEE TIMES</Link>
             </div>
           </div>
 
@@ -94,7 +95,6 @@ const NavBar = () => {
             </div>
           </div>
 
-
           <div
             className="dot-separator"
             style={{
@@ -105,7 +105,6 @@ const NavBar = () => {
               margin: "0 10px", // adjust the margin to control the spacing
             }}
           />
-
 
           <div className="p-4">
             <Link to={""}>COMMUNITY </Link>
@@ -121,7 +120,6 @@ const NavBar = () => {
               margin: "0 10px", // adjust the margin to control the spacing
             }}
           />
-
 
           <div className="p-4">
             <Link to={"/event"}>EVENTS</Link>
@@ -179,7 +177,7 @@ const NavBar = () => {
             </div>
           </a>
         </div>
-        <div className="h-14 flex lg:hidden items-center  pr-10">
+        <div className="h-full flex lg:hidden items-center  pr-10">
           <div className="mr-auto p-3">
             <img className="absolute h-16 top-2" src={LogoImg} alt="Logo" />
           </div>

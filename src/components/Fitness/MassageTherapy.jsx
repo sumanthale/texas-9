@@ -19,13 +19,18 @@ const MassageTherapy = () => {
               Massage Therapy
             </h1>
             <h1 className="tracking-wide text-md font-primary  my-3 ">
-            Indulge in the ultimate relaxation and rejuvenation with our exquisite Massage Therapy sessions, tailored to release tension, alleviate muscle soreness, and promote overall physical and mental well-being.
+              Indulge in the ultimate relaxation and rejuvenation with our
+              exquisite Massage Therapy sessions, tailored to release tension,
+              alleviate muscle soreness, and promote overall physical and mental
+              well-being.
             </h1>
             <h1 className="uppercase tracking-wide my-3 text-2xl font-primary font-bold text-green-600">
               BENEFIT
             </h1>
             <h1 className=" my-4 tracking-wide text-xl font-primary font-bold ">
-              Muscle Tension Relief | Improved Posture and Alignment | Enhanced Immune Function           </h1>
+              Muscle Tension Relief | Improved Posture and Alignment | Enhanced
+              Immune Function{" "}
+            </h1>
 
             <div className="flex flex-col justify-between bg-lime-800 rounded-lg border-2 border-gray-400 mb-6 py-5 px-4">
               <div>
@@ -33,7 +38,10 @@ const MassageTherapy = () => {
                   A typical MassageTherapy session
                 </h4>
                 <p className="text-gray-100 text-sm">
-                Embark on a blissful journey of relaxation and healing with our signature Massage Therapy session, combining skilled hands-on techniques, soothing aromatherapy, and tranquil ambiance for a truly rejuvenating experience.
+                  Embark on a blissful journey of relaxation and healing with
+                  our signature Massage Therapy session, combining skilled
+                  hands-on techniques, soothing aromatherapy, and tranquil
+                  ambiance for a truly rejuvenating experience.
                 </p>
                 {/* <p className="text-gray-100 text-sm">
                   Probabo, inquit, sic agam, ut labore et voluptatem sequi

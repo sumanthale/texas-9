@@ -9,7 +9,7 @@ const FitnessMembership = () => {
   const [isMonthly, setIsMonthly] = useState(false);
   return (
     <div>
-      <MiniHeader heading={"Fitness"} subHeading={""} image={FtinessImg}/>
+      <MiniHeader heading={"Fitness"} subHeading={""} image={FtinessImg} />
       <div className="p-5 md:p-16 bg-[#162649]">
         <div
           className="text-slate-100 bg-cover pt-10 font-primary mb-10"
