@@ -48,7 +48,8 @@ const LeaveAMessage = ({ header }) => {
       <div className="grid grid-cols-1  md:grid-cols-3">
         <div className="w-full flex flex-col sm:flex-row justify-center items-center gap-5 col-span-2">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838.7694217713995!2d-97.1563432303865!3d32.763673098354346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e7c150bddb88d%3A0xfde02fba666ba711!2sTexas%209%20Golf!5e0!3m2!1sen!2sin!4v1690220601837!5m2!1sen!2sin"
+             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838.7694217713995!2d-97.1563432303865!3d32.763673098354346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e7c150bddb88d%3A0xfde02fba666ba711!2sTexas%209%20Golf!5e0!3m2!1sen!2sin!4v1690220601837!5m2!1sen!2sin"
+            
             height="100%"
             allowFullScreen=""
             loading="lazy"
@@ -63,13 +64,21 @@ const LeaveAMessage = ({ header }) => {
             className="col-span-1 md:col-span-5"
           ></iframe>
 
+
+
           <div className="text-white space-y-2">
             <h1 className="text-3xl uppercases font-bold"> FIND TEXAS 9</h1>
-            <p className="text-xl">817-303-4370</p>
-            <p className="text-xl">contact@texas9.com </p>
+            <p className="text-xl"><a href="tel:+1-817-303-4370"> 817-303-4370</a></p>
+            <p className="text-xl"><a href="mailto:contact@texas9.com"> contact@texas9.com</a></p>
             <p className="text-xl pb-5">
               {" "}
-              8940 Creek Run Rd Fort Worth, TX 76120
+              <a
+                href="https://goo.gl/maps/iPceoCQZ3R8JjvR58"
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                    <span>8940 Creek Run Rd Fort Worth, TX 76120</span>
+              </a>
             </p>
             <a
               style={{ backgroundColor: "#7DA33F", color: "#FFF" }}
@@ -100,7 +109,7 @@ const LeaveAMessage = ({ header }) => {
                 className="bg-transparent outline outline-1 outline-white mb-4 h-14 w-full max-w-screen-md rounded-sm p-4  caret-black
                   bg-white placeholder:text-black"
                 type="text"
-                placeholder="First & Last Name"
+                placeholder="NAME"
                 required
                 ref={nameRef}
                 name="from_name"
@@ -109,7 +118,7 @@ const LeaveAMessage = ({ header }) => {
                 className="bg-transparent outline outline-1 outline-white mb-4 h-14 w-full max-w-screen-md rounded-sm p-4  caret-black
                   bg-white placeholder:text-black"
                 type="email"
-                placeholder="Email"
+                placeholder="EMAIL"
                 required
                 name="from_email"
                 ref={emailRef}
@@ -118,7 +127,7 @@ const LeaveAMessage = ({ header }) => {
                 className="bg-transparent outline outline-1 outline-white mb-4 h-14 w-full max-w-screen-md rounded-sm p-4  caret-black
                   bg-white placeholder:text-black"
                 type="tel"
-                placeholder="Phone"
+                placeholder="PHONE"
                 required
                 ref={phoneRef}
                 name="from_phone"
@@ -128,9 +137,10 @@ const LeaveAMessage = ({ header }) => {
                   bg-white placeholder:text-black"
                 required
                 name="subject"
+                placeholder="TOPIC"
                 ref={subjectRef}
               >
-                <option value="">Topic</option>
+                {/* <option value="">Topic</option> */}
                 <option value="General Inquiry">Tee Time</option>
                 <option value="Technical Support">Rates</option>
                 <option value="Feedback">Memberships</option>
@@ -146,17 +156,19 @@ const LeaveAMessage = ({ header }) => {
                 cols="30"
                 rows="6"
                 ref={descriptionRef}
-                placeholder="Tell us about your golf facility requirements."
+                placeholder="WHAT'S ON YOUR MIND?"
               ></textarea>
             </div>
             <div className="w-full flex">
               <button
                 type="submit"
-                className="uppercase px-8 py-2 ml-auto text-xl tracking-wide outline outline-1  outline-[#a3c332] font-primary   bg-[#a3c332] text-white"
+                className="uppercase px-4 py-2 ml-auto text-xl tracking-wide outline outline-1  outline-[#a3c332] font-primary   bg-[#a3c332] text-white"
+                style={{ backgroundColor: "#7DA33F", color: "#FFF" }}
               >
-                Submitted
+                Submit
               </button>
             </div>
+
 
             <button type="reset" className="hidden" ref={resetRef}>
               Rest

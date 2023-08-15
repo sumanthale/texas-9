@@ -93,6 +93,36 @@ const NavBar = () => {
               </div>
             </div>
           </div>
+
+
+          <div
+            className="dot-separator"
+            style={{
+              width: "6px",
+              height: "6px",
+              backgroundColor: "#888", // or any other grey color you prefer
+              borderRadius: "50%",
+              margin: "0 10px", // adjust the margin to control the spacing
+            }}
+          />
+
+
+          <div className="p-4">
+            <Link to={""}>COMMUNITY </Link>
+          </div>
+
+          <div
+            className="dot-separator"
+            style={{
+              width: "6px",
+              height: "6px",
+              backgroundColor: "#888", // or any other grey color you prefer
+              borderRadius: "50%",
+              margin: "0 10px", // adjust the margin to control the spacing
+            }}
+          />
+
+
           <div className="p-4">
             <Link to={"/event"}>EVENTS</Link>
           </div>
@@ -109,7 +139,7 @@ const NavBar = () => {
           />
 
           <div className="p-4 flex items-center justify-center">
-            <Link to={"/about"}>ABOUT</Link>
+            <Link to={"/about"}>ABOUT US</Link>
           </div>
 
           {/* <div

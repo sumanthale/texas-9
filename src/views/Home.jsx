@@ -12,7 +12,7 @@ const Home = () => {
       <HomeCards />
       {/* <About /> */}
       <HomeDiv2 />
-      <LeaveAMessage header={"LEAVE A MESSAGE"} />
+      <LeaveAMessage header={"HAVE QUESTIONS?"} />
       <Footer />
     </>
   );
