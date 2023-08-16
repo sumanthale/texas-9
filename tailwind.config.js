@@ -12,6 +12,7 @@ module.exports = {
         secondary: "#8f8f8f",
       },
       fontFamily: {
+        condensedWeb: ["DIN Condensed Web"],
         sans: ['"Open Sans"', "sans-serif"],
         Gbold: ["G bold", "sans-serif"],
         Gboldoblique: ["G boldoblique", "sans-serif"],

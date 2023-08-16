@@ -18,47 +18,148 @@ import GolfBallPattern from "../assets/golf/golfballpattern.png";
 
 const Golf = () => {
   return (
-    <div>
+    <>
       <MiniHeader heading={"Golf"} subHeading={""} />
-      <div className="bg-white">
-        <div className="font-primary p-5 md:p-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-            <div className="md:col-span-1 md:order-last">
-              <div className="border-2 border-green-500 gap-4 p-4 border-green-500" style={{ paddingBottom: "1200px", borderWidth: "2px", maxWidth: "90%" }}>
-                {/* Content */}
-                9-HOLE EXECUTIVE COURSE
-                {/* ... rest of the text */}
-              </div>
-            </div>
-            <div className="md:col-span-1 p-4">
-              Nestled amidst rolling hills and picturesque landscapes, the quaint 9-hole golf course offers a delightful escape for both novice and experienced golfers alike. 
-              Its compact layout weaves through lush green fairways, bordered by gently swaying trees and strategically placed bunkers that provide just the right amount of challenge. 
-              With each hole presenting a unique set of obstacles, golfers can enjoy a leisurely yet engaging round of golf, perfect for a quick game or a relaxing afternoon outing. 
-              The course's intimate setting fosters a sense of community, where players can socialize and share their passion for the game in a serene environment. 
-              Whether seeking a casual round or an opportunity to refine their skills, visitors to Texas 9 are sure to relish in its tranquil charm and natural beauty.
-              <img src={MapCourse} alt="Golf Course" style={{ maxWidth: "100%", height: "auto" }} />
-            </div>
-          </div>
-          {/* <div className="bg-pattern" style={{ backgroundImage: `url(${GolfBallPattern})`, backgroundSize: "cover", backgroundPosition: "center", marginTop: "20px"  }}></div> */}
-          <div className="bg-pattern" style={{ 
-            backgroundImage: `url(${GolfBallPattern})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            marginTop: "20px",
-            width: "100%", // Add this to ensure the background covers the entire width
-            height: "300px", // Adjust the height as needed
-            zIndex: -1
-          }}>
+      <div className="grid grid-cols-1  md:grid-cols-12 gap-6  pt-6 px-8">
+        <div className="md:col-span-4 md:order-last mb-2">
+          <p className="block md:hidden text-justify mb-6">
+            Nestled amidst rolling hills and picturesque landscapes, the quaint
+            9-hole golf course offers a delightful escape for both novice and
+            experienced golfers alike. Its compact layout weaves through lush
+            green fairways, bordered by gently swaying trees and strategically
+            placed bunkers that provide just the right amount of challenge. With
+            each hole presenting a unique set of obstacles, golfers can enjoy a
+            leisurely yet engaging round of golf, perfect for a quick game or a
+            relaxing afternoon outing. The course's intimate setting fosters a
+            sense of community, where players can socialize and share their
+            passion for the game in a serene environment. Whether seeking a
+            casual round or an opportunity to refine their skills, visitors to
+            Texas 9 are sure to relish in its tranquil charm and natural beauty.
+          </p>
+          <div className="border-2 gap-4 p-4 border-[#7da33f]" style={{}}>
+            <h1 className="text-[#7da33f] font-bold text-2xl text-center">
+              9 HOLE EXECUTIVE COURSE
+            </h1>
+            <div className="px-2">
+              <p className="text-left  my-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                cumque earum doloribus blanditiis exercitationem sunt voluptatem
+              </p>
 
-<div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", color: "black", textAlign: "center" }}>
-Nestled amidst rolling hills and picturesque landscapes, the quaint 9-hole golf course offers a delightful escape for both novice and experienced golfers alike. 
-              Its compact layout weaves through lush green fairways, bordered by gently swaying trees and strategically placed bunkers that provide just the right amount of challenge. 
-              With each hole presenting a unique set of obstacles, golfers can enjoy a leisurely yet engaging round of golf, 
+              <ul className="list-disc list-inside ">
+                <li className="text-xl uppercase font-semibold">
+                  Monday - Thursday
+                  <br />
+                  <span className="ml-7">7 Am - Sunset</span>
+                  <ul className="list-disc list-inside pl-4">
+                    <li className="lowercase font-thin text-lg">
+                      course - $10/<span className="text-sm">person</span>
+                    </li>
+                    <li className="lowercase font-thin text-lg">
+                      golf cart - $18/<span className="text-sm">person</span>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <ul className="list-disc list-inside mt-4">
+                <li className="text-xl uppercase font-semibold">
+                  Friday - Sunday
+                  <br />
+                  <span className="ml-7">7 Am - Sunset</span>
+                  <ul className="list-disc list-inside pl-4">
+                    <li className="lowercase font-thin text-lg">
+                      course - $10/<span className="text-sm">person</span>
+                    </li>
+                    <li className="lowercase font-thin text-lg">
+                      golf cart - $18/<span className="text-sm">person</span>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <button className="uppercase outline  outline-1 px-2 text-[#7da33f] w-full text-xl my-3 tracking-wider outline-[#7da33f] ">
+                Book Your Tee time
+              </button>
             </div>
 
+            <h1 className="text-[#7da33f] font-bold text-2xl  uppercase my-3 text-left">
+              Driving range
+            </h1>
+            <div className="px-2">
+              <p className="text-left my-3 ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                cumque earum doloribus blanditiis exercitationem sunt voluptatem
+              </p>
+
+              <ul className="list-disc list-inside ">
+                <li className="text-xl uppercase font-semibold">
+                  Monday - Thursday
+                  <br />
+                  <span className="ml-7">7 Am - Sunset</span>
+                  <ul className="list-disc list-inside pl-4">
+                    <li className="lowercase font-thin text-lg">
+                      course - $10/<span className="text-sm">person</span>
+                    </li>
+                    <li className="lowercase font-thin text-lg">
+                      golf cart - $18/<span className="text-sm">person</span>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <button className="uppercase outline  outline-1 px-2 text-[#7da33f] w-full text-xl my-3 tracking-wider outline-[#7da33f] ">
+                play more save more with a membership!
+              </button>
+            </div>
           </div>
         </div>
-        <div className="h-full w-full col-span-1">
+
+        <div className="md:col-span-8">
+          <p className="hidden md:block text-justify mb-6">
+            Nestled amidst rolling hills and picturesque landscapes, the quaint
+            9-hole golf course offers a delightful escape for both novice and
+            experienced golfers alike. Its compact layout weaves through lush
+            green fairways, bordered by gently swaying trees and strategically
+            placed bunkers that provide just the right amount of challenge. With
+            each hole presenting a unique set of obstacles, golfers can enjoy a
+            leisurely yet engaging round of golf, perfect for a quick game or a
+            relaxing afternoon outing. The course's intimate setting fosters a
+            sense of community, where players can socialize and share their
+            passion for the game in a serene environment. Whether seeking a
+            casual round or an opportunity to refine their skills, visitors to
+            Texas 9 are sure to relish in its tranquil charm and natural beauty.
+          </p>
+          <img
+            src={MapCourse}
+            alt="Golf Course"
+            className="object-fill"
+            style={{ width: "100%", height: "auto", maxHeight: "350px" }}
+          />
+          <div
+            className="bg-pattern grid grid-col-1  md:grid-cols-10 relative bg-contain md:bg-cover"
+            style={{
+              backgroundImage: `url(${GolfBallPattern})`,
+              marginTop: "10px",
+              backgroundRepeat: "no-repeat",
+            }}
+          >
+            <h1 className="absolute text-xl md:text-3xl font-bold left-10">
+              KNOW THE ETIQUTTE
+            </h1>
+            <div className="md:col-start-4 md:col-span-4 pl-1 pt-10 text-sm">
+              <li>Lorem ipsum dolor sit amet sit amet </li>
+              <li>Lorem ipsum dolor sit amet sit amet </li>
+              <li>Lorem ipsum dolor sit amet sit amet </li>
+              <li>Lorem ipsum dolor sit amet sit amet </li>
+              <li>Lorem ipsum dolor sit amet sit amet </li>
+              <li>Lorem ipsum dolor sit amet sit amet </li>
+              <li>Lorem ipsum dolor sit amet sit amet </li>
+              <li>Lorem ipsum dolor sit amet sit amet </li>
+              <li>Lorem ipsum dolor sit amet sit amet </li>
+              <li>Lorem ipsum dolor sit amet sit amet </li>
+            </div>
+
+            <div className="md:col-span-3 py-4">
               <Carousel
                 autoPlay
                 infiniteLoop
@@ -73,47 +174,50 @@ Nestled amidst rolling hills and picturesque landscapes, the quaint 9-hole golf 
                 style={{ maxHeight: "100%", maxWidth: "60%", margin: "0 auto" }}
               >
                 <div
-                  className="w-full carousel-image-item h-80 bg-cover bg-center"
+                  className="w-full carousel-image-item h-56 bg-cover bg-center"
                   style={{
                     backgroundImage: `url(${Golf1})`,
                   }}
                 ></div>
                 <div
-                  className="w-full carousel-image-item h-80 bg-cover bg-center"
+                  className="w-full carousel-image-item h-56 bg-cover bg-center"
                   style={{
                     backgroundImage: `url(${Golf2})`,
                   }}
                 ></div>
                 <div
-                  className="w-full carousel-image-item h-80 bg-cover bg-center"
+                  className="w-full carousel-image-item h-56 bg-cover bg-center"
                   style={{
                     backgroundImage: `url(${Golf3})`,
                   }}
                 ></div>
                 <div
-                  className="w-full carousel-image-item h-80 bg-cover bg-center"
+                  className="w-full carousel-image-item h-56 bg-cover bg-center"
                   style={{
                     backgroundImage: `url(${Golf4})`,
                   }}
                 ></div>
-                 <div
-                  className="w-full carousel-image-item h-80 bg-cover bg-center"
+                <div
+                  className="w-full carousel-image-item h-56 bg-cover bg-center"
                   style={{
                     backgroundImage: `url(${Golf5})`,
                   }}
                 ></div>
-                 <div
-                  className="w-full carousel-image-item h-80 bg-cover bg-center"
+                <div
+                  className="w-full carousel-image-item h-56 bg-cover bg-center"
                   style={{
                     backgroundImage: `url(${Golf6})`,
                   }}
                 ></div>
               </Carousel>
             </div>
+          </div>
+        </div>
       </div>
+
       <LeaveAMessage />
       <Footer />
-    </div>
+    </>
   );
 };
 

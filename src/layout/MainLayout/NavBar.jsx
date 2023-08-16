@@ -42,7 +42,7 @@ const NavBar = () => {
           <div className="mr-auto p-4">
             <Link to={"/"}>
               <img
-                className="absolute top-2 h-[60px]"
+                className="absolute top-2 h-[50px]"
                 src={LogoImg}
                 alt="Logo"
               />
