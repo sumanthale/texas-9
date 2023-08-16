@@ -58,7 +58,7 @@ const HomeDiv2 = () => {
             </Link>
           </div>
 
-          <div className="col-span-1 lg:col-span-3 grid grid-cols-1 lg:grid-cols-3 border-2 gap-4 p-4 border-red-500 border-r-0 -pr">
+          <div className="col-span-1 lg:col-span-3 grid grid-cols-1 lg:grid-cols-3 border-2 gap-4 p-4 border-red-800 border-r-0 -pr">
             <div className="h-full w-full col-span-1">
               <Carousel
                 autoPlay

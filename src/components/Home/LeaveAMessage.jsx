@@ -145,7 +145,7 @@ const LeaveAMessage = ({ header }) => {
                 ref={subjectRef}
               >
                 <option value="Topic" selected disabled hidden>
-                  Topic
+                  TOPIC
                 </option>
                 <option value="General Inquiry">Tee Time</option>
                 <option value="Technical Support">Rates</option>

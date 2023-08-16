@@ -1,6 +1,6 @@
 import React from "react";
 import NavBar from "./NavBar";
-import BG1 from "../../assets/golf/teetimes.jpg";
+import BG1 from "../../assets/golf/teetimes.png";
 
 const MiniHeader = ({ heading, image }) => {
   return (
