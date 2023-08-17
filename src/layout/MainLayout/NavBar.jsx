@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 // import LogoImg from "../../assets/logos/Texas 9 - Social Logo.png";
 import LogoImg from "../../assets/golf/white-logo.png";
 import IndexPage from "./IndexPage";
@@ -9,6 +9,7 @@ import "../../index.css";
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const hiddenRef = useRef(null);
+  const location = useLocation();
   // const navRef = useRef(null);
   // const observer = useRef(null);
   // useEffect(() => {
@@ -51,7 +52,10 @@ const NavBar = () => {
 
           <div className="dropdown p-4 items-center justify-center">
             <Link to="/golf">
-              <button className="dropbtn">GOLF</button>
+            <button className={`dropbtn ${location.pathname.startsWith("/golf") ? "active" : ""}`}>
+            GOLF
+          </button>
+              {/* <button className="dropbtn">GOLF</button> */}
             </Link>
 
             <div className="dropdown-content">
@@ -75,7 +79,10 @@ const NavBar = () => {
 
           <div className="dropdown p-4">
             <Link to="/fitness">
-              <button className="dropbtn">FITNESS</button>
+            <button className={`dropbtn ${location.pathname.startsWith("/fitness") ? "active" : ""}`}>
+            FITNESS
+          </button>
+              {/* <button className="dropbtn">FITNESS</button> */}
             </Link>
             <div className="dropdown-content">
               <Link to="/fitness/fitness-membership">MEMBERSHIPS</Link>
@@ -122,7 +129,9 @@ const NavBar = () => {
           />
 
           <div className="p-4">
-            <Link to={"/event"}>EVENTS</Link>
+            <Link to={"/event"} className={location.pathname === "/event" ? "active" : ""}>
+              EVENTS
+              </Link>
           </div>
 
           <div
@@ -137,7 +146,9 @@ const NavBar = () => {
           />
 
           <div className="p-4 flex items-center justify-center">
-            <Link to={"/about"}>ABOUT US</Link>
+          <Link to={"/about"} className={location.pathname === "/about" ? "active" : ""}>
+          ABOUT US
+        </Link>
           </div>
 
           {/* <div

@@ -489,3 +489,8 @@ a {
   font-family: "G xligoblique";
   src: url("./assets/fonts/Fontspring-DEMO-allroundgothic-xligoblique.ot") f;
 }
+
+
+.active {
+  border-bottom: 2px solid white; /* Adjust the color as needed */
+}
