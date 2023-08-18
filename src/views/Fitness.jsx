@@ -155,12 +155,9 @@ const Fitness = () => {
             <img src={Yoga} alt="Etiquette" className="max-w-xs " />
             <div className=" pt-4 md:pl-4">
               <h1 className="text-3xl font-bold mb-3">GET YOUR ZEN ON</h1>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, consequatur amet quam ad tenetur ipsam earum. Quae
-              officiis maiores quis alias numquam molestiae. Facilis sapiente,
-              dolorum natus voluptatem dolores a? Lorem, ipsum dolor sit amet
-              consectetur adipisicing elit. Temporibus, consequatur amet quam ad
-              tenetur ipsam earum. Quae officiis maiores quis alias numquam
+              Here at Texas 9 our yoga philosophy centers around inclusivity and accessibility, believing that yoga is for everyone, regardless of age or skill level.
+              Classes cater to a diverse range ot individuals, from seniors seeking gentle movement to advanced yogis looking to deepen their practice.
+              Join us every Tuesday at 6pm!
             </div>
           </div>
         </div>

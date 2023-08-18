@@ -1,39 +1,165 @@
 import MiniHeader from "../../layout/MainLayout/MiniHeader";
 import Footer from "../../reusable/Footer";
-import RangeImg from "../../assets/golf/Range.jpg";
-import InstructorImg from "../../assets/golf/golf-instructor.jpg";
-import GolfGripImg from "../../assets/golf/golf-grip.jpg";
-import HeaderImg from "../../assets/golf/GOLF-LESSONS-HEADER.jpg";
-import AllCards from "../Reusable/AllCards";
-import MainCard from "../Reusable/MainCard";
+import { Link } from "react-router-dom";
+import { Carousel } from "react-responsive-carousel";
+import Lessons1 from "../../assets/golf/lessons1.png";
+import Lessons2 from "../../assets/golf/lessons2.png";
+import Lessons3 from "../../assets/golf/lessons3.png";
+import Yoga from "../../assets/golf/yoga.png";
+import Instructor from "../../assets/golf/instructor.png";
+import React, { useState, useEffect } from "react";
 const Lessons = () => {
   return (
-    <div>
-      <MiniHeader heading={"Lessons"} subHeading={""} image={HeaderImg}/>
+    <>
+      <MiniHeader heading={"Lessons"} subHeading={""} />
+      <div className="grid grid-cols-1  md:grid-cols-12 gap-6 gap-x-10  pt-6  lg:pr-10 pb-6">
+        <div className="md:col-span-4 md:order-last mb-2 pr-4  pl-4 ">
+          <div className="block md:hidden pl-4 lg:pl-14">
+            <p className="text-justify ">
+            Tee up for success with golf lesson Whether you're new to the game or looking to refine your skills, our experienced instructors are here to elevate your swing.
+             Join us for engaging lessons that cover everything from putting to driving, all set against the backdrop of our scenic course. 
+             With our limited-time offer, now is the perfect time to take your golf game to the next level. 
+             Don't miss out on this opportunity to improve your game and enjoy the greens like never before!
+            </p>
+            <div className="py-4 pr-4 lg:pr-0 ">
+              <Carousel
+                autoPlay
+                infiniteLoop
+                swipeable={false}
+                showArrows={false}
+                showStatus={false}
+                showThumbs={false}
+                showIndicators={false}
+                interval={10000}
+                stopOnHover={false}
+                className="carousel"
+                style={{ maxHeight: "100%", maxWidth: "60%", margin: "0 auto" }}
+              >
+                <div
+                  className="w-full carousel-image-item h-96 bg-cover bg-center"
+                  style={{
+                    backgroundImage: `url(${Lessons1})`,
+                  }}
+                ></div>
+                <div
+                  className="w-full carousel-image-item h-96 bg-cover bg-center"
+                  style={{
+                    backgroundImage: `url(${Lessons2})`,
+                  }}
+                ></div>
+                <div
+                  className="w-full carousel-image-item h-96 bg-cover bg-center"
+                  style={{
+                    backgroundImage: `url(${Lessons3})`,
+                  }}
+                ></div>
+              </Carousel>
+            </div>
+          </div>
+          <div className="border-4  gap-4 p-5 border-[#7da33f]">
+            <h1 className="text-[#7da33f] font-bold text-2xl text-center">
+               LEARN FROM A PRO
+            </h1>
+            <div className="px-2">
+              <p className="text-left  my-4">
+              Shannon Kneisler is a LPGA Instructor with over fifteen ears of experience.
+              Shannon has trained players around the world, and has been featured on the LPGA Tour, Golf Channel, and Fox Sports.
+              Shannon's focus is helping golfers find their swing, centering on fundamentals that work with player's bodies, not against their natural form.
+              Shannon brought her talents to Texas 9 two years ago, providing instruction to members, guests, and top amateur players in the Texas and Oklahoma regions.
 
-      <div className="bg-contain bg-no-repeat bg-center bg-[#162649]  pt-6">
-        <div className="p-8 grid grid-cols-1 gap-6 w-full mx-auto">
-          <MainCard
-            Img={GolfGripImg}
-            header={"LEARN OR ELEVATE"}
-            body={
-              "Designed for different skill sets and abilities, swing your way to success with one-on-one or group lessons from a golf professional."
-            }
-          />
-          <MainCard
-            Img={InstructorImg}
-            header={"Private Instruction"}
-            body={
-              "Shannon Kneisler is a LPGA Instructor with over fifteen years of experience. Shannon has trained players around the world, and has been featured on the LPGA Tour, Golf Channel, and Fox Sports. Shannon’s focus is helping golfers find their swing, centering on fundamentals that work with player’s bodies, not against their natural form. Shannon brought her talents to Texas 9 two years ago, providing instruction to members, guests, and top amateur players in the Texas and Oklahoma regions."
-            }
-          />
+              </p>
+
+              <img
+                src={Instructor}
+                alt="Instructor"
+                className="object-fill my-4"
+                style={{ width: "100%", height: "auto", maxHeight: "350px" }}
+              />
+
+              <button className="uppercase outline outline-2 px-2 text-[#7da33f] w-full text-xl my-3 mb-0 tracking-wider  outline-[#7da33f] font-semibold">
+                <Link to="/tee-times" className="block w-full h-full">
+                  CONTACT US
+                </Link>
+              </button>
+            </div>
+
+            <div className="px-2"></div>
+          </div>
         </div>
-        <AllCards />
+
+        <div className="md:col-span-8">
+          <div className="hidden md:block pl-4 lg:pl-14">
+            <p className="text-justify ">
+              Discover the ultimate full-service fitness center that's all about
+              you! Get ready to achieve your fitness dreams with top-notch gym
+              equipment, fun exercise classes, and personalized training plans.
+              And guess what? We're more than just a gym! Treat yourself to
+              relaxing spa services, learn about healthy eating with expert
+              advice, and find your zen in our calming relaxation areas. Join a
+              friendly community of fitness pros and friends who will cheer you
+              on every step of the way. Your wellness adventure starts here -
+              come on over and let's make healthy happen, together!
+            </p>
+            <div className="py-4 pr-4 lg:pr-0 ">
+              <Carousel
+                autoPlay
+                infiniteLoop
+                swipeable={false}
+                showArrows={false}
+                showStatus={false}
+                showThumbs={false}
+                showIndicators={false}
+                interval={10000}
+                stopOnHover={false}
+                className="carousel"
+                style={{ maxHeight: "100%", maxWidth: "60%", margin: "0 auto" }}
+              >
+                <div
+                  className="w-full carousel-image-item h-96 bg-cover bg-center"
+                  style={{
+                    backgroundImage: `url(${Lessons1})`,
+                  }}
+                ></div>
+                <div
+                  className="w-full carousel-image-item h-96 bg-cover bg-center"
+                  style={{
+                    backgroundImage: `url(${Lessons2})`,
+                  }}
+                ></div>
+                <div
+                  className="w-full carousel-image-item h-96 bg-cover bg-center"
+                  style={{
+                    backgroundImage: `url(${Lessons3})`,
+                  }}
+                ></div>
+              </Carousel>
+            </div>
+          </div>
+
+          <div
+            className="bg-red-800 p-6 text-white relative grid-cols-1 grid lg:grid-cols-2 justify-items-center"
+            style={{ marginTop: "20px", minHeight: "200px" }}
+          >
+            {/* <img src={Yoga} alt="Etiquette" className="max-w-xs " /> */}
+            <div className=" pt-4 md:pl-4">
+              <h1 className="text-3xl font-bold mb-3">KEEP AN EYE OUT FOR MORE LESSION AND COLLABROATIONS COMING TO TEXAS 9 SOON!</h1>
+              
+            </div>
+          </div>
+        </div>
       </div>
 
+      {/* <LeaveAMessage /> */}
       <Footer />
-    </div>
+    </>
   );
 };
 
 export default Lessons;
+
+
+
+
+
+
+
