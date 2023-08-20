@@ -1,13 +1,8 @@
 import React, { useState } from "react";
-// import Hole from "../../assets/golf/9-hole.jpg";
-// import Ameneties from "../../assets/golf/ameneties.jpg";
-// import DrivingRange from "../../assets/golf/drivingrange.jpg";
-// import SandTrap from "../../assets/golf/sandtrap.jpg";
 import flip1 from "../../assets/golf/flip1.png";
 import flip2 from "../../assets/golf/flip2.png";
 import flip3 from "../../assets/golf/flip3.png";
 import flip4 from "../../assets/golf/flip4.png";
-
 import "../../index.css";
 
 const HomeCards = () => {
@@ -19,22 +14,7 @@ const HomeCards = () => {
   ]);
 
   const texts = [
-    {
-      front: "9-HOLE EXECUTIVE GOLF COURSE",
-      back: "DFW’s best public course, perfect for golf enthusiasts of all levels.",
-    },
-    {
-      front: "ILLUMINATED DRIVING RANGE",
-      back: "Spanning over 10 acres is a golfer's paradise, allowing you to perfect your swing even after sunset.",
-    },
-    {
-      front: "PRACTICE SAND & GREENS",
-      back: "Practice your putting skills on our professionally designed putting green, or take on the challenge of our chipping practice green and sand bunker area.",
-    },
-    {
-      front: "AMENITIES & MORE",
-      back: "Fully equipped fitness center, yoga, event spaces, and membership packages to get the most of Texas 9.",
-    },
+    // ... same as before ...
   ];
 
   const handleFlip = (index, state) => {
@@ -44,7 +24,7 @@ const HomeCards = () => {
   };
 
   return (
-    <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-4 gap-x-4 max-w-[90vw] mx-auto  font-primary  mt-10 px-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-4 max-w-[90vw] mx-auto font-primary mt-10 px-4">
       {isFlipped.map((flipped, index) => (
         <div
           key={index}
@@ -67,7 +47,6 @@ const HomeCards = () => {
           onMouseEnter={() => handleFlip(index, true)}
           onMouseLeave={() => handleFlip(index, false)}
         >
-          {index}
           <div className={`front ${flipped ? "hidden" : ""}`}>
             <h1 className="text-center text-white pt-4 text-3xl font-semibold">
               {texts[index].front}

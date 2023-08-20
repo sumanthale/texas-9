@@ -13,6 +13,9 @@ import { Carousel } from "react-responsive-carousel";
 // import LogoImg from "../assets/logos/Texas 9 Golf.png";
 // import AboutHeader from "../assets/golf/about-header.jpg";
 const HomeDiv2 = () => {
+
+ 
+
   const reviews = [
     {
       id: 1,
@@ -27,7 +30,7 @@ const HomeDiv2 = () => {
     },
   ];
 
-  const [currentReview, setCurrentReview] = useState(0);
+  const [ currentReview, setCurrentReview] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {

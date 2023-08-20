@@ -1,5 +1,5 @@
 import React from "react";
-import BGImg from "../../assets/golf/GrassWithLake.jpeg";
+// import BGImg from "../../assets/golf/GrassWithLake.jpeg";
 import GolfTeeTimes from "../../assets/golf/golf-tee-times.jpeg";
 import GolfMemberships from "../../assets/golf/golf-memberships.jpeg";
 import GolfRates from "../../assets/golf/golf-rates.jpeg";
