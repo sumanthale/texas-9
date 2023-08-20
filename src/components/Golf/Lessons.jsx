@@ -16,10 +16,14 @@ const Lessons = () => {
         <div className="md:col-span-4 md:order-last mb-2 pr-4  pl-4 ">
           <div className="block md:hidden pl-4 lg:pl-14">
             <p className="text-justify ">
-            Tee up for success with golf lesson Whether you're new to the game or looking to refine your skills, our experienced instructors are here to elevate your swing.
-             Join us for engaging lessons that cover everything from putting to driving, all set against the backdrop of our scenic course. 
-             With our limited-time offer, now is the perfect time to take your golf game to the next level. 
-             Don't miss out on this opportunity to improve your game and enjoy the greens like never before!
+              Tee up for success with golf lesson Whether you're new to the game
+              or looking to refine your skills, our experienced instructors are
+              here to elevate your swing. Join us for engaging lessons that
+              cover everything from putting to driving, all set against the
+              backdrop of our scenic course. With our limited-time offer, now is
+              the perfect time to take your golf game to the next level. Don't
+              miss out on this opportunity to improve your game and enjoy the
+              greens like never before!
             </p>
             <div className="py-4 pr-4 lg:pr-0 ">
               <Carousel
@@ -58,15 +62,18 @@ const Lessons = () => {
           </div>
           <div className="border-4  gap-4 p-5 border-[#7da33f]">
             <h1 className="text-[#7da33f] font-bold text-2xl text-center">
-               LEARN FROM A PRO
+              LEARN FROM A PRO
             </h1>
             <div className="px-2">
               <p className="text-left  my-4">
-              Shannon Kneisler is a LPGA Instructor with over fifteen ears of experience.
-              Shannon has trained players around the world, and has been featured on the LPGA Tour, Golf Channel, and Fox Sports.
-              Shannon's focus is helping golfers find their swing, centering on fundamentals that work with player's bodies, not against their natural form.
-              Shannon brought her talents to Texas 9 two years ago, providing instruction to members, guests, and top amateur players in the Texas and Oklahoma regions.
-
+                Shannon Kneisler is a LPGA Instructor with over fifteen ears of
+                experience. Shannon has trained players around the world, and
+                has been featured on the LPGA Tour, Golf Channel, and Fox
+                Sports. Shannon's focus is helping golfers find their swing,
+                centering on fundamentals that work with player's bodies, not
+                against their natural form. Shannon brought her talents to Texas
+                9 two years ago, providing instruction to members, guests, and
+                top amateur players in the Texas and Oklahoma regions.
               </p>
 
               <img
@@ -137,14 +144,14 @@ const Lessons = () => {
           </div>
 
           <div
-            className="bg-red-800 p-6 text-white relative grid-cols-1 grid lg:grid-cols-2 justify-items-center"
-            style={{ marginTop: "20px", minHeight: "200px" }}
+            className="bg-red-800 p-6 text-white relative justify-items-center"
+            style={{ marginTop: "20px" }}
           >
             {/* <img src={Yoga} alt="Etiquette" className="max-w-xs " /> */}
-            <div className=" pt-4 md:pl-4">
-              <h1 className="text-3xl font-bold mb-3">KEEP AN EYE OUT FOR MORE LESSION AND COLLABROATIONS COMING TO TEXAS 9 SOON!</h1>
-              
-            </div>
+            <h1 className="text-xl md:text-4xl font-bold">
+              KEEP AN EYE OUT FOR MORE LESSONS AND <br />
+              COLLABROATIONS COMING TO TEXAS 9 SOON!
+            </h1>
           </div>
         </div>
       </div>
@@ -156,10 +163,3 @@ const Lessons = () => {
 };
 
 export default Lessons;
-
-
-
-
-
-
-
