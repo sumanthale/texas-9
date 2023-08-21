@@ -34,13 +34,13 @@ const NavBar = () => {
     <>
       {/* <div className="fixed  z-50 w-full bg-[#162649] text-white"> */}
       <div className="fixed z-50 w-full h-[80px] bg-[#162649] text-white font-Gbook">
-        <div className=" px-6 py-2 bg-[#7da33f] flex items-center justify-center absolute right-10 top-16  ">
+        <div className=" px-6 py-2 bg-[#7da33f] flex items-center justify-center absolute right-8 lg:right-20  top-16  ">
           <Link to={"/tee-times"} className="hover:text-white">
             BOOK A TEE TIME
           </Link>
         </div>
         <div className="hidden lg:flex items-center font-semibold  links justify-center pr-10 h-[80px] relative ">
-          <div className="mr-auto p-4">
+          <div className="mr-auto p-4 lg:ml-16">
             <Link to={"/"}>
               <img
                 className="absolute top-2 h-[50px]"
@@ -52,9 +52,13 @@ const NavBar = () => {
 
           <div className="dropdown p-4 items-center justify-center">
             <Link to="/golf">
-            <button className={`dropbtn ${location.pathname.startsWith("/golf") ? "active" : ""}`}>
-            GOLF
-          </button>
+              <button
+                className={`dropbtn ${
+                  location.pathname.startsWith("/golf") ? "active" : ""
+                }`}
+              >
+                GOLF
+              </button>
               {/* <button className="dropbtn">GOLF</button> */}
             </Link>
 
@@ -79,9 +83,13 @@ const NavBar = () => {
 
           <div className="dropdown p-4">
             <Link to="/fitness">
-            <button className={`dropbtn ${location.pathname.startsWith("/fitness") ? "active" : ""}`}>
-            FITNESS
-          </button>
+              <button
+                className={`dropbtn ${
+                  location.pathname.startsWith("/fitness") ? "active" : ""
+                }`}
+              >
+                FITNESS
+              </button>
               {/* <button className="dropbtn">FITNESS</button> */}
             </Link>
             <div className="dropdown-content">
@@ -129,9 +137,12 @@ const NavBar = () => {
           />
 
           <div className="p-4">
-            <Link to={"/event"} className={location.pathname === "/event" ? "active" : ""}>
+            <Link
+              to={"/event"}
+              className={location.pathname === "/event" ? "active" : ""}
+            >
               EVENTS
-              </Link>
+            </Link>
           </div>
 
           <div
@@ -146,9 +157,12 @@ const NavBar = () => {
           />
 
           <div className="p-4 flex items-center justify-center">
-          <Link to={"/about"} className={location.pathname === "/about" ? "active" : ""}>
-          ABOUT US
-        </Link>
+            <Link
+              to={"/about"}
+              className={location.pathname === "/about" ? "active" : ""}
+            >
+              ABOUT US
+            </Link>
           </div>
 
           {/* <div
@@ -183,7 +197,7 @@ const NavBar = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="p-4 flex items-center justify-center">
+            <div className="p-4 flex items-center justify-center lg:mr-14">
               GET DIRECTIONS
             </div>
           </a>

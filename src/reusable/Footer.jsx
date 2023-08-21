@@ -13,7 +13,7 @@ import {
 const Footer = () => {
   return (
     <div className="bg-[#162649] text-white ">
-      <div className="max-w-screen-xl p-4 mx-auto">
+      <div className="max-w-[92vw] p-4 lg:ml-16 lg:mr-20">
         <div className="grid grid-cols-1 md:grid-cols-4 mx-auto  gap-y-4">
           <div className="">
             {/* <h1 className="font-primary text-white text-2xl tracking-wide">
@@ -40,10 +40,7 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2 md:px-4 w-100 md:w-4/5 mx-auto">
             <img src={LogoImg} alt="Logo" style={{}} className="mx-auto h-40" />
           </div>
-          <div className="">
-            {/* <h1 className="font-primary text-white text-2xl tracking-wide">
-              Contact Info
-            </h1> */}
+          <div className="place-content-start lg:place-self-end">
             <div className="flex flex-col space-y-2  mt-4 text-white">
               <a href="tel:+1-817-303-4370"> 817-303-4370</a>
               <a href="mailto:contact@texas9.com">contact@texas9.com</a>
@@ -80,7 +77,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <p className="text-sm text-center space-x-4 relative hidden sm:block">
+        <p className="text-sm text-center  space-x-4 relative hidden sm:block">
           <span className="dots">
             Copyright {new Date().getFullYear()} Texas 9
           </span>
@@ -88,7 +85,7 @@ const Footer = () => {
           <span className="dots">Privacy</span>
           <span className="">Terms of Use</span>
         </p>
-        <p className="text-sm text-center space-x-2 relative block sm:hidden ">
+        <p className="text-sm text-center  space-x-2 relative block sm:hidden ">
           <span className="">Copyright {new Date().getFullYear()} Texas 9</span>
           .<span className="">All Rights Reserved</span> .
           <span className="">Privacy</span> .

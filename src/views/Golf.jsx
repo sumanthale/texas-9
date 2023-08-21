@@ -144,32 +144,32 @@ const Golf = () => {
             src={MapCourse}
             alt="Golf Course"
             className="object-fill"
-            style={{ width: "100%", height: "auto", maxHeight: "350px" }}
+            style={{ width: "100%", height: "auto", maxHeight: "420px" }}
           />
           <div
             className="bg-pattern grid grid-col-1  md:grid-cols-10 relative bg-contain md:bg-cover opacity-80"
             style={{
-              backgroundImage: `url(${GolfBallPattern})`,
+              // backgroundImage: `url(${GolfBallPattern})`,
               marginTop: "10px",
-              backgroundRepeat: "no-repeat",
+              // backgroundRepeat: "no-repeat",
             }}
           >
+            <img
+              src={GolfBallPattern}
+              alt="balls"
+              className="absolute -z-10 -left-20"
+            />
             <h1 className="absolute text-xl md:text-3xl font-bold left-10">
               KNOW THE ETIQUTTE
             </h1>
-            <ul className="list-disc md:col-start-4 md:col-span-4 pt-10 mx-auto px-6">
-              <li>
-                show up early to take advantage of <br />
-                your tee time{" "}
-              </li>
+            <ul className="list-disc md:col-start-2 md:col-span-6 pt-10 mx-auto px-6 place-self-center">
+              <li>show up early to take advantage of your tee time </li>
               <li>obey the cart rules & stay on the path </li>
               <li>warm up with three balls</li>
               <li>don't talk & stand away </li>
               <li>only look tor a lost ball for three min </li>
               <li>be respectful of time and play at an appropriate pace </li>
-              <li>
-                be prepared to play when its your <br /> time to go{" "}
-              </li>
+              <li>be prepared to play when its yourtime to go </li>
               <li>stay off your phone as much as you can</li>
               <li>yell FORE when a ball is going toward another person </li>
               <li>fix your ball mark after you hit when on the green </li>
@@ -231,7 +231,7 @@ const Golf = () => {
         </div>
       </div>
 
-      <LeaveAMessage />
+      <LeaveAMessage header={"HAVE QUESTIONS?"} />
       <Footer />
     </>
   );

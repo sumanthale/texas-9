@@ -13,9 +13,6 @@ import { Carousel } from "react-responsive-carousel";
 // import LogoImg from "../assets/logos/Texas 9 Golf.png";
 // import AboutHeader from "../assets/golf/about-header.jpg";
 const HomeDiv2 = () => {
-
- 
-
   const reviews = [
     {
       id: 1,
@@ -30,7 +27,7 @@ const HomeDiv2 = () => {
     },
   ];
 
-  const [ currentReview, setCurrentReview] = useState(0);
+  const [currentReview, setCurrentReview] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -49,7 +46,7 @@ const HomeDiv2 = () => {
               GET YOUR <br />
               TEE TIME!
             </h1>
-            <p className="tracking-wide text-xl font-primary text-center font-semibold my-3">
+            <p className="tracking-wide text-xl font-primary text-center font-semibold my-3 lg:mx-16">
               Minimize the wait and schedule your next visit on our nine hole
               course.
             </p>
@@ -103,7 +100,7 @@ const HomeDiv2 = () => {
               </Carousel>
             </div>
 
-            <div className="bg-white flex flex-col justify-between md:pr-14   relative col-span-2">
+            <div className="bg-white flex flex-col justify-between md:pr-24 relative col-span-2">
               <p className="tracking-wide text-xl font-primary  font-semibold  my-3 text-justify">
                 Hailed as one of the best executive golf courses in DFW, our
                 course was designed by Steven D. Plumber, ASGCA, and opened in
@@ -124,7 +121,7 @@ const HomeDiv2 = () => {
 
       <div className="home-page py-4">
         <section
-          className="hero-section"
+          className="hero-section lg:pl-16"
           style={{
             backgroundImage: `url(${Review})`,
           }}

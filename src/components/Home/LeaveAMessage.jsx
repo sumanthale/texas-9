@@ -45,8 +45,8 @@ const LeaveAMessage = ({ header }) => {
         </h1>
       )}
 
-      <div className="grid grid-cols-1  md:grid-cols-3">
-        <div className="w-full flex flex-col sm:flex-row justify-center gap-5 col-span-2 p-4">
+      <div className="grid grid-cols-1  md:grid-cols-4 lg:mx-16 ">
+        <div className="w-full  col-span-2 p-4 grid grid-cols-1 lg:grid-cols-4 lg:gap-x-10 ">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838.7694217713995!2d-97.1563432303865!3d32.763673098354346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e7c150bddb88d%3A0xfde02fba666ba711!2sTexas%209%20Golf!5e0!3m2!1sen!2sin!4v1690220601837!5m2!1sen!2sin"
             height="100%"
@@ -60,10 +60,10 @@ const LeaveAMessage = ({ header }) => {
               minHeight: 300,
               border: 0,
             }}
-            className="col-span-1 md:col-span-5"
+            className="col-span-3"
           ></iframe>
 
-          <div className="text-white space-y-2">
+          <div className="text-white space-y-2 col-span-1 justify-self-center ml-4">
             <h1 className="text-3xl uppercases font-bold w-48">FIND TEXAS 9</h1>
             <p className="text-xl">
               <a href="tel:+1-817-303-4370"> 817-303-4370</a>
@@ -99,11 +99,11 @@ const LeaveAMessage = ({ header }) => {
             </a>
           </div>
         </div>
-        <div className="w-full mx-auto p-4">
+        <div className="ml-auto p-4 col-span-2 w-[90%]">
           <form
             onSubmit={handleSubmit}
             ref={form}
-            className="horizontal-line max-w-xl mx-auto"
+            className="horizontal-line  ml-auto"
           >
             <h1 className="uppercase tracking-wide text-3xl text-white font-primary pb-4 font-bold">
               {header}

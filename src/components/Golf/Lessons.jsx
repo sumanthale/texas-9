@@ -12,9 +12,9 @@ const Lessons = () => {
   return (
     <>
       <MiniHeader heading={"Lessons"} subHeading={""} />
-      <div className="grid grid-cols-1  md:grid-cols-12 gap-6 gap-x-10  pt-6  lg:pr-10 pb-6">
+      <div className="grid grid-cols-1  md:grid-cols-12 gap-6 gap-x-10  pt-6  lg:pr-20 pb-6">
         <div className="md:col-span-4 md:order-last mb-2 pr-4  pl-4 ">
-          <div className="block md:hidden pl-4 lg:pl-14">
+          <div className="block md:hidden pl-4 lg:pl-20">
             <p className="text-justify ">
               Tee up for success with golf lesson Whether you're new to the game
               or looking to refine your skills, our experienced instructors are
@@ -83,19 +83,17 @@ const Lessons = () => {
                 style={{ width: "100%", height: "auto", maxHeight: "350px" }}
               />
 
-              <button className="uppercase outline outline-2 px-2 text-[#7da33f] w-full text-xl my-3 mb-0 tracking-wider  outline-[#7da33f] font-semibold">
+              <button className="uppercase outline outline-2 px-2 text-[#7da33f] w-full text-xl my-6 mb-0 tracking-wider  outline-[#7da33f] font-semibold">
                 <Link to="/tee-times" className="block w-full h-full">
                   CONTACT US
                 </Link>
               </button>
             </div>
-
-            <div className="px-2"></div>
           </div>
         </div>
 
         <div className="md:col-span-8">
-          <div className="hidden md:block pl-4 lg:pl-14">
+          <div className="hidden md:block pl-4 lg:pl-20">
             <p className="text-justify ">
               Discover the ultimate full-service fitness center that's all about
               you! Get ready to achieve your fitness dreams with top-notch gym

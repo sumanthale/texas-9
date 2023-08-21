@@ -12,9 +12,9 @@ const Fitness = () => {
   return (
     <>
       <MiniHeader heading={"Fitness"} subHeading={""} />
-      <div className="grid grid-cols-1  md:grid-cols-12 gap-6 gap-x-10  pt-6  lg:pr-10 pb-6">
+      <div className="grid grid-cols-1  md:grid-cols-12 gap-6 gap-x-10  pt-6  lg:pr-20 pb-6">
         <div className="md:col-span-4 md:order-last mb-2 pr-4  pl-4 ">
-          <div className="block md:hidden pl-4 lg:pl-14">
+          <div className="block md:hidden pl-4 lg:pl-20">
             <p className="text-justify ">
               Discover the ultimate full-service fitness center that's all about
               you! Get ready to achieve your fitness dreams with top-notch gym
@@ -100,7 +100,7 @@ const Fitness = () => {
         </div>
 
         <div className="md:col-span-8">
-          <div className="hidden md:block pl-4 lg:pl-14">
+          <div className="hidden md:block pl-4 lg:pl-20">
             <p className="text-justify ">
               Discover the ultimate full-service fitness center that's all about
               you! Get ready to achieve your fitness dreams with top-notch gym
@@ -155,9 +155,12 @@ const Fitness = () => {
             <img src={Yoga} alt="Etiquette" className="max-w-xs " />
             <div className=" pt-4 md:pl-4">
               <h1 className="text-3xl font-bold mb-3">GET YOUR ZEN ON</h1>
-              Here at Texas 9 our yoga philosophy centers around inclusivity and accessibility, believing that yoga is for everyone, regardless of age or skill level.
-              Classes cater to a diverse range ot individuals, from seniors seeking gentle movement to advanced yogis looking to deepen their practice.
-              Join us every Tuesday at 6pm!
+              Here at Texas 9 our yoga philosophy centers around inclusivity and
+              accessibility, believing that yoga is for everyone, regardless of
+              age or skill level. Classes cater to a diverse range ot
+              individuals, from seniors seeking gentle movement to advanced
+              yogis looking to deepen their practice. Join us every Tuesday at
+              6pm!
             </div>
           </div>
         </div>
