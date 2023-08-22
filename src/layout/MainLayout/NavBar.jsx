@@ -122,7 +122,7 @@ const NavBar = () => {
           />
 
           <div className="p-4">
-            <Link to={""}>COMMUNITY </Link>
+            <Link to={"/community"}>COMMUNITY </Link>
           </div>
 
           <div

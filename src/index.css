@@ -494,3 +494,11 @@ a {
 .active {
   border-bottom: 2px solid white; /* Adjust the color as needed */
 }
+
+.text-brown {
+  color: brown;
+}
+
+.border-brown {
+  border-color: brown;
+}

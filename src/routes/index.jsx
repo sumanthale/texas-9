@@ -21,6 +21,7 @@ import EventView from "../views/EventView";
 import Golf from "../views/Golf";
 import Tsheet from "../views/Tsheet";
 import Services from "../components/Fitness/Services";
+import Community from "../views/Community";
 const Home = Loadable(lazy(() => import("../views/Home")));
 
 export default function TheRoutes() {
@@ -61,7 +62,7 @@ export default function TheRoutes() {
           path="/fitness/fitness-membership"
           element={<FitnessMembership />}
         />
-
+        <Route exact path="/community" element={<Community />} />
         <Route exact path="/about" element={<AboutView />} />
         <Route exact path="/event" element={<EventView />} />
         <Route exact path="/contact" element={<Contact />} />
