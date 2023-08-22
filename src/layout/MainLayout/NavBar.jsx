@@ -122,7 +122,13 @@ const NavBar = () => {
           />
 
           <div className="p-4">
-            <Link to={"/community"}>COMMUNITY </Link>
+            {/* <Link to={"/community"}> </Link> */}
+            <Link
+              to={"/community"}
+              className={location.pathname === "/community" ? "active" : ""}
+            >
+              COMMUNITY
+            </Link>
           </div>
 
           <div

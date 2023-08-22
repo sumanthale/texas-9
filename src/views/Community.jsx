@@ -20,8 +20,11 @@ import Campus from "../assets/golf/campus.png";
 import KJCF from "../assets/golf/kjcf.png";
 import YOC from "../assets/golf/YOC.png";
 import FirstTee from "../assets/golf/first-tee.png";
+import FIRSTTEELOGO from "../assets/golf/FIRSTTEE-logo.png";
+import KJCFLOGO from "../assets/golf/KJCF-logo.png";
+import YOCLOGO from "../assets/golf/YOC-logo.png";
 
-const Golf = () => {
+const Community = () => {
   return (
     <>
       <MiniHeader heading={"Community"} subHeading={""} image={CommunityHeader}/>
@@ -58,7 +61,7 @@ const Golf = () => {
             src={Campus}
             alt="Golf Course"
             className="object-fill"
-            style={{ width: "100%", height: "auto", maxHeight: "350px" }}
+            style={{ width: "100%", height: "auto", maxHeight: "450px" }}
           />
 {/* 
 <img
@@ -108,13 +111,13 @@ Electrical, Flumming and Roofing needs!
 </div>
 
 <div className="md:col-span-12 text-center mb-4 p-1">
-    <h2 className="text-xl font-semibold mb-2 text-black uppercase">Who We Work With</h2>
+    <h2 className="text-brown text-xl font-semibold mb-2 uppercase">Who We Work With</h2>
   </div>
 
 
 
-<div className="col-span-1 lg:col-span-3 grid grid-cols-1 lg:grid-cols-3 border-2 gap-4 mb-8 border-red-800">
-            <div className="h-full w-full col-span-1 flex justify-end">
+<div className="col-span-1 lg:col-span-3 grid grid-cols-1 lg:grid-cols-4 border-2 gap-4 mb-8 border-red-800">
+            <div className="h-full w-full col-span-1 flex justify-end border-brown border">
             
                 <div
                   className="w-full carousel-image-item h-80 bg-cover bg-center"
@@ -126,6 +129,13 @@ Electrical, Flumming and Roofing needs!
               
             </div>
 
+            <img
+            src={KJCFLOGO}
+            alt="Golf Course"
+            className="object-fill lg:col-span-1"
+            style={{ width: "100%", height: "auto", maxHeight: "450px" }}
+          />
+
             <div className="bg-white flex flex-col justify-between md:pr-24 relative col-span-2">
               <p className="tracking-wide text-xl font-primary  font-semibold  my-3 text-justify">
                 kJ Choi foundation was established to invest in the dreams of talented children with a
@@ -133,13 +143,8 @@ Electrical, Flumming and Roofing needs!
                 in return, as adults they will give back to the
                 community, the support they received
               </p>
-              {/* <p className="tracking-wide text-4xl font-primary text-justify font-bold   text-red-800">
-                NO CLUB FEES! OPEN TO THE PUBLIC!
-              </p> */}
-               {/* <button className=" text-black py-2 px-4 rounded">
-                CHECK THEM OUT!
-              </button> */}
-              <button className="text-brown py-2 px-2 rounded border-brown border inline-block" style={{ border: "1px solid #8B4513" }}>
+            
+              <button className="text-brown py-2 px-2 rounded border-brown border inline-flex items-center" style={{ border: "1px solid #8B4513" }}>
                 CHECK THEM OUT!
               </button>
             </div>
@@ -151,6 +156,12 @@ Electrical, Flumming and Roofing needs!
            
 
             <div className="bg-white flex flex-col justify-between md:pr-24 relative col-span-2">
+            <img
+            src={FIRSTTEELOGO}
+            alt="Golf Course"
+            className="object-fill lg:col-span-1"
+            style={{ width: "60%", height: "auto", maxHeight: "350px" }}
+          />
               <p className="tracking-wide text-xl font-primary  font-semibold  my-3 text-justify md:px-6">
               First Tee is a youth development organization that enables kids to bulld the strength of character that empowers them through a lifetime of new challenges.
               By seamlessly integrating the game of golf with a life skills curriculum, we create active learning experiences that build inner strength, self-confidence, and resilience
@@ -191,7 +202,20 @@ Electrical, Flumming and Roofing needs!
               
             </div>
 
+            {/* <img
+            src={YOCLOGO}
+            alt="Golf Course"
+            className="object-fill lg:col-span-1"
+            style={{ width: "100%", height: "auto", maxHeight: "450px" }}
+          /> */}
+
             <div className="bg-white flex flex-col justify-between md:pr-24 relative col-span-2">
+            <img
+            src={YOCLOGO}
+            alt="Golf Course"
+            className="object-fill lg:col-span-1"
+            style={{ width: "60%", height: "auto", maxHeight: "450px" }}
+          />
               <p className="tracking-wide text-xl font-primary  font-semibold  my-3 text-justify">
                 The core purpose of Youth on Course is to provide youth with access to life-changing oppurtunities through golf.
                 YOC members gain oppurtunities through paid high school internships, college scholarships and more, all while forging lifelong connections.
@@ -219,4 +243,4 @@ Electrical, Flumming and Roofing needs!
   );
 };
 
-export default Golf;
+export default Community;
