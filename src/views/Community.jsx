@@ -110,12 +110,15 @@ const Community = () => {
             </h2>
           </div>
 
-          <div className="col-span-1 lg:col-span-3 grid grid-cols-1 lg:grid-cols-4 border-2 gap-4 mb-8 border-red-800   lg:max-w-[90vw] mx-4 lg:mx-auto ">
+          <div className="col-span-1 lg:col-span-3 grid grid-cols-1 lg:grid-cols-4 border-4 gap-4 mb-8 border-red-800   lg:max-w-[90vw] mx-4 lg:mx-auto ">
             <div className="h-full w-full col-span-1 flex justify-end border-brown border">
               <div
                 className="w-full carousel-image-item  bg-cover bg-center h-60 lg:h-auto"
                 style={{
                   backgroundImage: `url(${KJCF})`,
+                  border: "0px solid #8B4513",
+
+                  borderRightWidth: "4px",
                 }}
               ></div>
             </div>
@@ -150,7 +153,7 @@ const Community = () => {
             </div>
           </div>
 
-          <div className="col-span-1 lg:col-span-3 grid grid-cols-1 lg:grid-cols-3 border-2 gap-4 mb-8 border-red-800   lg:max-w-[90vw] mx-4 lg:mx-auto ">
+          <div className="col-span-1 lg:col-span-3 grid grid-cols-1 lg:grid-cols-3 border-4 gap-4 mb-8 border-red-800   lg:max-w-[90vw] mx-4 lg:mx-auto ">
             <div className="bg-white flex flex-col justify-between md:pr-24 relative col-span-2 p-4">
               <img
                 src={FIRSTTEELOGO}
@@ -180,20 +183,26 @@ const Community = () => {
 
             <div className="h-full w-full col-span-1">
               <div
-                className="w-full carousel-image-item h-80 bg-cover bg-center"
+                className="w-full carousel-image-item h-[360px] bg-cover bg-center"
                 style={{
                   backgroundImage: `url(${FirstTee})`,
+                  border: "0px solid #8B4513",
+
+                  borderLeftWidth: "4px",
                 }}
               ></div>
             </div>
           </div>
 
-          <div className="col-span-1 lg:col-span-3 grid grid-cols-1 lg:grid-cols-3 border-2 gap-4 mb-8 border-red-800   lg:max-w-[90vw] mx-4 lg:mx-auto ">
+          <div className="col-span-1 lg:col-span-3 grid grid-cols-1 lg:grid-cols-3 border-4 gap-4 mb-8 border-red-800   lg:max-w-[90vw] mx-4 lg:mx-auto ">
             <div className="h-full w-full col-span-1">
               <div
                 className="w-full carousel-image-item h-80 bg-cover bg-center"
                 style={{
                   backgroundImage: `url(${YOC})`,
+                  border: "0px solid #8B4513",
+
+                  borderRightWidth: "4px",
                 }}
               ></div>
             </div>
