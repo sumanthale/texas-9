@@ -1,4 +1,3 @@
-// import React from "react";
 import MiniHeader from "../layout/MainLayout/MiniHeader";
 import Footer from "../reusable/Footer";
 import { LiaGolfBallSolid } from "react-icons/lia";
@@ -63,17 +62,9 @@ const Community = () => {
             className="object-fill"
             style={{ width: "100%", height: "auto", maxHeight: "450px" }}
           />
-{/* 
-<img
-  src={Campus}
-  alt="Golf Course"
-  className="object-cover w-full h-[350px]"
-  style={{ width: "100%", height: "auto", maxHeight: "350px" }}
-/> */}
 
-           {/* <div className="bg-[#172649] font-primary p-4">
 
-            </div> */}
+        
 
 <div className="bg-[#172649] font-primary p-4">
   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -199,12 +190,7 @@ Electrical, Flumming and Roofing needs!
               
             </div>
 
-            {/* <img
-            src={YOCLOGO}
-            alt="Golf Course"
-            className="object-fill lg:col-span-1"
-            style={{ width: "100%", height: "auto", maxHeight: "450px" }}
-          /> */}
+           
 
             <div className="bg-white flex flex-col justify-between md:pr-24 relative col-span-2">
             <img
