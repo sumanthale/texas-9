@@ -116,40 +116,37 @@ Electrical, Flumming and Roofing needs!
 
 
 
-<div className="col-span-1 lg:col-span-3 grid grid-cols-1 lg:grid-cols-4 border-2 gap-4 mb-8 border-red-800">
-            <div className="h-full w-full col-span-1 flex justify-end border-brown border">
-            
-                <div
-                  className="w-full carousel-image-item h-80 bg-cover bg-center"
-                  style={{
-                    backgroundImage: `url(${KJCF})`,
-                  }}
-                >
-                </div>
-              
-            </div>
+  <div className="col-span-1 lg:col-span-3 grid grid-cols-1 lg:grid-cols-4 border-2 gap-4 mb-8 border-red-800">
+  <div className="h-full w-full col-span-1 flex justify-end border-brown border">
+    <div
+      className="w-full carousel-image-item h-80 bg-cover bg-center"
+      style={{
+        backgroundImage: `url(${KJCF})`,
+      }}
+    ></div>
+  </div>
 
-            <img
-            src={KJCFLOGO}
-            alt="Golf Course"
-            className="object-fill lg:col-span-1"
-            style={{ width: "100%", height: "auto", maxHeight: "450px" }}
-          />
+  <img
+    src={KJCFLOGO}
+    alt="Golf Course"
+    className="object-fill lg:col-span-1"
+    style={{ width: "100%", height: "auto", maxHeight: "450px" }}
+  />
 
-            <div className="bg-white flex flex-col justify-between md:pr-24 relative col-span-2">
-              <p className="tracking-wide text-xl font-primary  font-semibold  my-3 text-justify">
-                kJ Choi foundation was established to invest in the dreams of talented children with a
-                vision to build a brighter future for everyone.
-                in return, as adults they will give back to the
-                community, the support they received
-              </p>
-            
-              <button className="text-brown py-2 px-2 rounded border-brown border inline-flex items-center" style={{ border: "1px solid #8B4513" }}>
-                CHECK THEM OUT!
-              </button>
-            </div>
-          
-        </div>
+  <div className="bg-white flex flex-col justify-between md:pr-24 relative col-span-2">
+    <p className="tracking-wide text-xl font-primary font-semibold my-3 text-justify">
+      kJ Choi foundation was established to invest in the dreams of talented children with a
+      vision to build a brighter future for everyone.
+      in return, as adults they will give back to the
+      community, the support they received
+    </p>
+
+    <button className="text-brown py-2 px-2 rounded border-brown border inline-flex items-center" style={{ border: "1px solid #8B4513" }}>
+      CHECK THEM OUT!
+    </button>
+  </div>
+</div>
+
 
 
         <div className="col-span-1 lg:col-span-3 grid grid-cols-1 lg:grid-cols-3 border-2 gap-4 mb-8 border-red-800">

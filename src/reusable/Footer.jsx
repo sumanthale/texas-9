@@ -19,6 +19,7 @@ const Footer = () => {
             {/* <h1 className="font-primary text-white text-2xl tracking-wide">
               Quick Links
             </h1> */}
+            <div className="flex flex-col items-center justify-center h-full">
             <div className="flex flex-col space-y-2 mt-4 text-white">
               <Link to="/golf/memberships">Memberships</Link>
               <Link to="/golf/rates">Rates</Link>
@@ -35,12 +36,14 @@ const Footer = () => {
                 </span>
               </Link>
             </div>
+            </div>
           </div>
 
           <div className="col-span-1 md:col-span-2 md:px-4 w-100 md:w-4/5 mx-auto">
             <img src={LogoImg} alt="Logo" style={{}} className="mx-auto h-40" />
           </div>
           <div className="place-content-start lg:place-self-end">
+           <div className="flex flex-col items-center justify-center h-full">
             <div className="flex flex-col space-y-2  mt-4 text-white">
               <a href="tel:+1-817-303-4370"> 817-303-4370</a>
               <a href="mailto:contact@texas9.com">contact@texas9.com</a>
@@ -74,6 +77,7 @@ const Footer = () => {
               </a>
               <p>@texas_9_golf</p>
             </div>
+          </div>
           </div>
         </div>
 

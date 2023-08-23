@@ -122,7 +122,7 @@ const AboutView = () => {
          
         </div>
 
-        <div className="md:col-span-8">
+        <div className="md:col-span-12">
           <div className="hidden md:block pl-4 lg:pl-20">
             <p className="text-justify ">
             Hailed as one of the best executive golf courses in DFW, our course was designed by Steven D. 
@@ -138,57 +138,36 @@ const AboutView = () => {
         </div>
       </div>
 
-      {/* <img
-            src={Event1}
-            alt="Golf Course"
-            className="object-fill lg:col-span-1"
-            style={{ width: "100%", height: "auto", maxHeight: "450px" }}
-          />
-
-      <img
-            src={Event2}
-            alt="Golf Course"
-            className="object-fill lg:col-span-1"
-            style={{ width: "100%", height: "auto", maxHeight: "450px" }}
-          /> */}
-
-{/* <div className="col-span-1 lg:col-span-3 grid grid-cols-1 lg:grid-cols-3 border-2 gap-4 p-4 border-green-800 border-r-0 -pr">
-            <div className="h-full w-full col-span-1">
-            <div className="md:col-span-12 text-center mb-4 p-1">
-    <h2 className="text-brown text-xl font-semibold mb-2 uppercase">Who We Work With</h2>
-  </div>
-              </div>
-              </div> */}
 
 <div className="col-span-1 lg:col-span-3 grid grid-cols-1 lg:grid-cols-3 border-2 gap-4 p-4 border-green-800 border-r-0">
-  <div className="h-full w-full col-span-1">
+  <div className="h-full w-full col-span-3">
     <div className="md:col-span-12 text-center mb-4 p-1">
       <h2 className="text-green text-xl font-semibold mb-2 uppercase">Meet The Team</h2>
     </div>
-    <div className="flex justify-between w-full">
-      <div className="flex flex-col items-center space-y-2">
+    <div className="flex justify-between flex-col md:flex-row w-full">
+      <div className="flex flex-col items-center space-x-4 px-4"> {/* Added space-y-4 */}
         <img
           src={Josh}
           alt="Person 1"
-          className="w-100 h-auto object-contain"
+          className="w-80 h-auto object-contain"
         />
         <p className="text-center text-green font-semibold">JOSH STUCKY</p>
         <p className="text-center text-gray-600">GENERAL MANAGER</p>
       </div>
-      <div className="flex flex-col items-center space-y-2 space-x-2">
+      <div className="flex flex-col items-center space-x-4 md:space-y-0 md:space-x-2">
         <img
           src={Ingrid}
           alt="Person 2"
-          className="w-100 h-auto object-contain"
+          className="w-80 h-auto object-contain"
         />
         <p className="text-center text-green font-semibold">INGRID BORJAS</p>
         <p className="text-center text-gray-600">OPERATIONS MANAGER</p>
       </div>
-      <div className="flex flex-col items-center space-y-2">
+      <div className="flex flex-col items-center space-x-4 px-4"> {/* Added space-y-4 */}
         <img
           src={Chris}
           alt="Person 3"
-          className="w-100 h-auto object-contain"
+          className="w-80 h-auto object-contain"
         />
         <p className="text-center text-green font-semibold">CHRIS HUTCHINSON</p>
         <p className="text-center text-gray-600">COURSE SUPERINTENDENT</p>
@@ -201,12 +180,17 @@ const AboutView = () => {
 
 
 
+
+
               <div className="px-4 py-8">
-  <LeaveAMessage />
+ 
 </div>
 
+<LeaveAMessage />
+  <Footer />
+
        {/* <LeaveAMessage />  */}
-      <Footer />
+      
     </>
   );
 };

@@ -31,50 +31,46 @@ const EventView = () => {
          
         </div>
 
-       <div className="md:col-span-8">
-  <div className="hidden md:block pl-4 lg:pl-20 flex justify-center items-center h-full">
-    <p className="text-center">
-      Our versatile event spaces are ready to host your memorable moments, whether it's a birthday party, corporate event, or any other celebration.
-      Our dedicated team will ensure every detail is taken care of, leaving you free to enjoy the festivities.
-      Our banquet room is 1800 sq ft & can fit 125 guests.
-    </p>
+        <div className="md:col-span-12">
+  <div className="hidden md:flex justify-center items-center h-full">
+    <div className="max-w-2xl mx-auto px-18">
+      <p className="text-center">
+        Our versatile event spaces are ready to host your memorable moments, whether it's a birthday party, corporate event, or any other celebration.
+        Our dedicated team will ensure every detail is taken care of, leaving you free to enjoy the festivities.
+      </p>
+      <p className="text-center">
+        Our banquet room is 1800 sq ft & can fit 125 guests.
+      </p>
+    </div>
   </div>
 </div>
 
+
       </div>
 
-      {/* <img
-            src={Event1}
-            alt="Golf Course"
-            className="object-fill lg:col-span-1"
-            style={{ width: "100%", height: "auto", maxHeight: "450px" }}
-          />
-
-      <img
-            src={Event2}
-            alt="Golf Course"
-            className="object-fill lg:col-span-1"
-            style={{ width: "100%", height: "auto", maxHeight: "450px" }}
-          /> */}
 
 
 <div className="col-span-1 md:col-span-2 flex justify-center items-center">
-    <div className="grid grid-cols-2 gap-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-14 lg:mx-16">
       <img
         src={Event1}
         alt="Event 1"
-        className="object-fill"
-        style={{ width: "100%", height: "auto", maxHeight: "450px" }}
+        className="object-fill h-full"
+        style={{ width: "100%",  maxHeight: "450px" }}
       />
       <img
         src={Event2}
         alt="Event 2"
-        className="object-fill"
-        style={{ width: "100%", height: "auto", maxHeight: "450px" }}
+        className="object-fill h-full"
+        style={{ width: "100%", maxHeight: "450px" }}
       />
     </div>
   </div>
 
+  <div className="px-4 py-8">
+
+       
+       </div>
        <LeaveAMessage /> 
       <Footer />
     </>
