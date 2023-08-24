@@ -144,12 +144,15 @@ const Community = () => {
                 everyone. in return, as adults they will give back to the
                 community, the support they received
               </p>
-              <button
+              <a
+                href="https://www.google.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hidden lg:block  text-brown py-2 px-8 rounded border-brown border text-xl tracking-wide w-fit ml-0 lg:ml-16 col-span-3"
                 style={{ border: "1px solid #8B4513" }}
               >
                 CHECK THEM OUT!
-              </button>
+              </a>
             </div>
           </div>
 

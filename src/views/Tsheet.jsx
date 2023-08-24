@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import MiniHeader from "../layout/MainLayout/MiniHeader";
 import Footer from "../reusable/Footer";
 import TeeTimesHeader from "../assets/golf/teetime-header.png";
@@ -6,9 +6,22 @@ import ArrowDesktop from "../assets/golf/arrow-desktop.png";
 import ArrowMobile from "../assets/golf/arrow-mobile.png";
 
 const Tsheet = () => {
+  //REMOVE TSHEET
+  useEffect(() => {
+    document.getElementById("t-sheet-widget").style.display = "block";
+
+    return () => {
+      document.getElementById("t-sheet-widget").style.display = "none";
+    };
+  }, []);
+  //REMOVE TSHEET
   return (
     <div>
-      <MiniHeader heading={"BOOK A TEE TIME"} subHeading={""} image={TeeTimesHeader} />
+      <MiniHeader
+        heading={"BOOK A TEE TIME"}
+        subHeading={""}
+        image={TeeTimesHeader}
+      />
 
       <div className="grid grid-cols-1 md:grid-cols-12 gap-6 gap-x-10 pt-6 lg:pr-20 pb-6">
         <div className="md:col-span-12 md:flex justify-center items-center h-full">
@@ -18,7 +31,8 @@ const Tsheet = () => {
                 RESERVE YOUR RELAXATION
               </h2>
               <p className="text-center mt-4">
-                Minimize the wait and schedule your next visit! Just click the green button below!
+                Minimize the wait and schedule your next visit! Just click the
+                green button below!
               </p>
             </div>
 
@@ -33,10 +47,10 @@ const Tsheet = () => {
             </div>
             <div className="md:hidden">
               <img
-              src={ArrowMobile}
-              alt="Arrow Mobile"
-              className="object-fill h-full"
-              style={{ width: "100%", maxHeight: "450px" }}
+                src={ArrowMobile}
+                alt="Arrow Mobile"
+                className="object-contain h-full"
+                style={{ width: "100%", maxHeight: "150px" }}
               />
             </div>
           </div>
