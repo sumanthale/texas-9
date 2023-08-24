@@ -1,35 +1,48 @@
+import React from "react";
 import MiniHeader from "../layout/MainLayout/MiniHeader";
 import Footer from "../reusable/Footer";
-import RangeImg from "../assets/golf/range2.jpg";
-import TeeTimesImg from "../assets/golf/TEE-TIMES-MINI-HEADER.jpg";
-import { useEffect } from "react";
-import AllCards from "../components/Reusable/AllCards";
-import MainCard from "../components/Reusable/MainCard";
+import TeeTimesHeader from "../assets/golf/teetime-header.png";
+import ArrowDesktop from "../assets/golf/arrow-desktop.png";
+import ArrowMobile from "../assets/golf/arrow-mobile.png";
 
 const Tsheet = () => {
-  //REMOVE TSHEET
-  useEffect(() => {
-    document.getElementById("t-sheet-widget").style.display = "block";
-
-    return () => {
-       document.getElementById("t-sheet-widget").style.display = "none";
-    };
-  }, []);
-  //REMOVE TSHEET
   return (
     <div>
-      <MiniHeader heading={"Tee Times"} subHeading={""} image={TeeTimesImg} />
-      <div className="p-5 md:p-16 bg-[#162649]">
-        <MainCard
-          Img={RangeImg}
-          header={"RESERVE YOUR RELAXATION"}
-          body={
-            "Minimize the wait and schedule your next visit on our executive course. Anticipated play is 90 minutes on a lush course with serene views. Afterwards enjoy our comfortable clubhouse with modern amenities."
-          }
-          footer="*Tee Times are recommended, but not required"
-        />
-        <AllCards />
+      <MiniHeader heading={"BOOK A TEE TIME"} subHeading={""} image={TeeTimesHeader} />
+
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-6 gap-x-10 pt-6 lg:pr-20 pb-6">
+        <div className="md:col-span-12 md:flex justify-center items-center h-full">
+          <div className="max-w-2xl mx-auto px-18">
+            <div className="md:col-span-12 text-center my-4 p-1">
+              <h2 className="text-green text-3xl lg:text-5xl font-semibold mb-2 uppercase">
+                RESERVE YOUR RELAXATION
+              </h2>
+              <p className="text-center mt-4">
+                Minimize the wait and schedule your next visit! Just click the green button below!
+              </p>
+            </div>
+
+            {/* Align ArrowDesktop to center below the heading and paragraph */}
+            <div className="hidden md:block text-center my-4">
+              <img
+                src={ArrowDesktop}
+                alt="Arrow Desktop"
+                className="mx-auto object-fill h-full"
+                style={{ maxWidth: "100%", maxHeight: "450px" }}
+              />
+            </div>
+            <div className="md:hidden">
+              <img
+              src={ArrowMobile}
+              alt="Arrow Mobile"
+              className="object-fill h-full"
+              style={{ width: "100%", maxHeight: "450px" }}
+              />
+            </div>
+          </div>
+        </div>
       </div>
+
       <Footer />
     </div>
   );

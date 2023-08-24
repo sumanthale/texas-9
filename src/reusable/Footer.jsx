@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import LogoImg from "../assets/golf/white-logo.png";
+// import Lightbox from "react-image-lightbox";
 import FaceBookIcon from "../assets/logos/facebook.png";
 import InstagramIcon from "../assets/logos/instagram.png";
+// import PrivacyPolicyDoc from "../assets/documents/privacy-policy.docx"; 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -11,6 +13,15 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+
+  const openLightbox = () => {
+    setLightboxOpen(true);
+  };
+
+  const closeLightbox = () => {
+    setLightboxOpen(false);
+  };
   return (
     <div className="bg-[#162649] text-white ">
       <div className="max-w-[92vw] p-4 lg:ml-16 lg:mr-20">
@@ -92,10 +103,38 @@ const Footer = () => {
         <p className="text-sm text-center  space-x-2 relative block sm:hidden ">
           <span className="">Copyright {new Date().getFullYear()} Texas 9</span>
           .<span className="">All Rights Reserved</span> .
-          <span className="">Privacy</span> .
+          <button onClick={openLightbox} className="cursor-pointer">
+          Privacy
+        </button>
           <span className="">Terms of Use</span>
         </p>
       </div>
+      {lightboxOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+          <div className="bg-white p-4 max-w-3xl rounded-lg">
+           
+            {/* <iframe
+              src={`https://docs.google.com/viewer?url=${PrivacyPolicyDoc}&embedded=true`}
+              title="Privacy Policy"
+              className="w-full h-screen-70"
+            ></iframe> */}
+             {/* <a
+          href={PrivacyPolicyDoc}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="cursor-pointer"
+        >
+          Privacy
+        </a> */}
+            <button
+              onClick={closeLightbox}
+              className="mt-4 px-4 py-2 bg-gray-300 rounded-lg"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

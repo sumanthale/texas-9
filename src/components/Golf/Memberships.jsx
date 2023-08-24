@@ -1,242 +1,198 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import MiniHeader from "../../layout/MainLayout/MiniHeader";
 import Footer from "../../reusable/Footer";
-import GolfImg from "../../assets/golf/GrassWithLake.jpeg";
-import AllCards from "../Reusable/AllCards";
-import HomeImg from ".././../assets/golf/home.jpg";
+import MembershipHeader from ".././../assets/golf/membership-header.png";
+import MembershipFitness from ".././../assets/golf/membership-fitness.png";
+import MembershipRange from ".././../assets/golf/membership-range.png";
+// ... (other import statements)
 
 const Membership = () => {
   const [isMonthly, setIsMonthly] = useState(false);
+  
   return (
     <div>
-      <MiniHeader heading={"Memberships"} image={HomeImg} />
-      <div className="p-5 md:p-16 bg-[#162649]">
-        <div
-          className="text-slate-100 pt-10 font-primary bg-cover bg-center"
-          style={{
-            backgroundImage: `url(${GolfImg})`,
-          }}
-        >
-          {/* <h1 className=" tracking-wide text-2xl sm:text-4xl md:text-5xl lg:text-7xl text-black font-bold  font-primary text-center py-8 px-4  w-fit m-auto rounded-xl">
-            Become a Texas 9 member today!
-          </h1> */}
-          <div className="m-auto w-full py-8 flex items-center justify-center gap-4 text-xl font-bold text-black">
-            <h1>Monthly</h1>
-            <label className="switch">
-              <input
-                type="checkbox"
-                checked={isMonthly}
-                onChange={() => setIsMonthly(!isMonthly)}
-              />
-              <span className="slider"></span>
-            </label>
-            <h1>Yearly</h1>
+      <MiniHeader heading={"Memberships"} image={MembershipHeader} />
+      <div className="md:col-span-12 text-center my-4 p-1">
+        <h2 className="text-brown text-3xl lg:text-5xl font-semibold mb-2 uppercase">
+          YEARLY MEMBERSHIPS
+        </h2>
+      </div>
+
+      <div className="col-span-1 lg:col-span-3 grid grid-cols-1 lg:grid-cols-2 border-4 gap-4 mb-8 border-red-800   lg:max-w-[90vw] mx-4 lg:mx-auto ">
+        {/* Part A: Texas 9 Member */}
+        <div className="col-span-1 lg:col-span-1 p-4">
+          <div className="flex flex-col items-center">
+            {/* Display your logo or other content */}
           </div>
-          {!isMonthly ? (
-            <div className="mx-4 grid grid-cols-1 lg:grid-cols-2   pb-6 justify-items-center gap-y-8">
-              <div className="card-member font-primary">
-                <div className="content-membership">
-                  <div className="text-5xl font-bold font-primary text-white">
-                    Hole-in-One
-                  </div>
-                  <div className="title font-primary text-4xl">
-                    Monthly Membership
-                  </div>
-                  <div className="description text-justify ">
-                    Experience our golf course during member rounds, unlimited
-                    driving rage balls, full access to the gym & 15% off yoga.
-                  </div>
-                  <div className="flex items-center gap-x-4 justify-center my-4 ">
-                    <div className="text-xl font-semibold">
-                      Monthly Individual{" "}
-                    </div>
-                    <div className="text-4xl font-bold ">$99</div>
-                  </div>
-                  <div className="flex items-center gap-x-4 justify-center my-4 ">
-                    <div className="text-xl font-semibold">
-                      Monthly Additional Family
-                      <span className="text-xs block text-left">
-                        * Up to 4 additional family members{" "}
-                      </span>
-                    </div>
-                    <div className="text-4xl font-bold tracking-wide">
-                      + $50
-                      <span className="text-xs block text-center">p/p</span>
-                    </div>
-                  </div>
-                </div>
-                {/* <button className="btn-custom-rate">Buy now</button> */}
-              </div>
-              <div className="card-member font-primary">
-                <div className="content-membership">
-                  <div className="text-5xl font-bold font-primary text-white">
-                    Range
-                  </div>
-                  <div className="title font-primary text-4xl">
-                    Monthly Membership
-                  </div>
-                  <div className="description text-justify ">
-                    Perfect your game with unlimited range balls on the driving
-                    range.
-                  </div>
-                  <div className="flex items-center gap-x-4 justify-center my-4 ">
-                    <div className="text-xl font-semibold">
-                      Monthly Individual{" "}
-                    </div>
-                    <div className="text-4xl font-bold ">$70</div>
-                  </div>
-                  <div className="flex items-center gap-x-4 justify-center my-4 ">
-                    <div className="text-xl font-semibold">
-                      Monthly Additional Family
-                      <span className="text-xs block text-left">
-                        * Up to 4 additional family members{" "}
-                      </span>
-                    </div>
-                    <div className="text-4xl font-bold tracking-wide">
-                      + $35
-                      <span className="text-xs block text-center">p/p</span>
-                    </div>
-                  </div>
-                </div>
-                {/* <button className="btn-custom-rate">Buy now</button> */}
-              </div>
-              {/* <div className="card-member font-primary">
-                <div className="content-membership">
-                  <div className="text-5xl font-bold font-primary text-white">
-                    GYM
-                  </div>
-                  <div className="title font-primary text-4xl">
-                    Monthly Membership
-                  </div>
-                  <div className="description text-justify ">
-                    Perfect your game with unlimited range balls on the driving
-                    range.
-                  </div>
-                  <div className="flex items-center gap-x-4 justify-center my-4 ">
-                    <div className="text-xl font-semibold">
-                      Monthly Individual{" "}
-                    </div>
-                    <div className="text-4xl font-bold ">$40</div>
-                  </div>
-                  <div className="flex items-center gap-x-4 justify-center my-4 ">
-                    <div className="text-xl font-semibold">
-                      Monthly Additional Family
-                      <span className="text-xs block text-left">
-                        * Up to 4 additional family members{" "}
-                      </span>
-                    </div>
-                    <div className="text-4xl font-bold tracking-wide">
-                      + $20
-                      <span className="text-xs block text-center">p/p</span>
-                    </div>
-                  </div>
-                </div>
-              </div> */}
+          <p className="tracking-wide text-xl font-primary font-semibold my-3 text-justify">
+          <h1 className="text-[#7da33f] font-bold text-2xl text-center my-4">
+          TEXAS 9 MEMBER
+            </h1>
+            <div className="px-2 text">
+              <p className="text-left  my-4">
+              Texas 9 Members receive priority access to the course and unlimited access the driving range, full access to the gym & 15% off yoga.
+              </p>
+
+              <ul className="list-disc list-inside pl-4 lg:pl-10">
+                <li className="text-xl uppercase font-semibold">
+                INDIVIDUAL - $1,069
+                  <br />
+                  
+                
+                </li>
+              </ul>
+              <ul className="list-disc list-inside mt-4 pl-4 lg:pl-10">
+                <li className="text-xl uppercase font-semibold">
+                ADDITONAL FAMILY - $540/PERSOn
+                *up to 4 additional familv members    
+                  <br />
+                 
+                 
+                </li>
+              </ul>
+
+             
             </div>
-          ) : (
-            <div className="mx-4 grid grid-cols-1 lg:grid-cols-2   pb-6 justify-items-center gap-y-8">
-              <div className="card-member font-primary">
-                <div className="content-membership">
-                  <div className="text-5xl font-bold font-primary text-white">
-                    Hole-in-One
-                  </div>
-                  <div className="title font-primary text-4xl">
-                    Yearly Membership
-                  </div>
-                  <div className="description text-justify ">
-                    Experience our golf course during member rounds, unlimited
-                    driving rage balls, full access to the gym & 15% off yoga.
-                  </div>
-                  <div className="flex items-center gap-x-4 justify-center my-4 ">
-                    <div className="text-xl font-semibold">
-                      Yearly Individual{" "}
-                    </div>
-                    <div className="text-4xl font-bold ">$1,069</div>
-                  </div>
-                  <div className="flex items-center gap-x-4 justify-center my-4 ">
-                    <div className="text-xl font-semibold">
-                      Yearly Additional Family
-                      <span className="text-xs block text-left">
-                        * Up to 4 additional family members{" "}
-                      </span>
-                    </div>
-                    <div className="text-4xl font-bold tracking-wide">
-                      + $540
-                      <span className="text-xs block text-center">p/p</span>
-                    </div>
-                  </div>
-                </div>
-                {/* <button className="btn-custom-rate">Buy now</button> */}
-              </div>
-              <div className="card-member font-primary">
-                <div className="content-membership">
-                  <div className="text-5xl font-bold font-primary text-white">
-                    Range
-                  </div>
-                  <div className="title font-primary text-4xl">
-                    Yearly Membership
-                  </div>
-                  <div className="description text-justify ">
-                    Perfect your game with unlimited range balls on the driving
-                    range.
-                  </div>
-                  <div className="flex items-center gap-x-4 justify-center my-4 ">
-                    <div className="text-xl font-semibold">
-                      Yearly Individual{" "}
-                    </div>
-                    <div className="text-4xl font-bold ">$756</div>
-                  </div>
-                  <div className="flex items-center gap-x-4 justify-center my-4 ">
-                    <div className="text-xl font-semibold">
-                      Yearly Additional Family
-                      <span className="text-xs block text-left">
-                        * Up to 4 additional family members{" "}
-                      </span>
-                    </div>
-                    <div className="text-4xl font-bold tracking-wide">
-                      + $324
-                      <span className="text-xs block text-center">p/p</span>
-                    </div>
-                  </div>
-                </div>
-                {/* <button className="btn-custom-rate bg-green-500">Buy now</button> */}
-              </div>
-              {/* <div className="card-member font-primary">
-                <div className="content-membership">
-                  <div className="text-5xl font-bold font-primary text-white">
-                    GYM
-                  </div>
-                  <div className="title font-primary text-4xl">
-                    Yearly Membership
-                  </div>
-                  <div className="description text-justify ">
-                    Perfect your game with unlimited range balls on the driving
-                    range.
-                  </div>
-                  <div className="flex items-center gap-x-4 justify-center my-4 ">
-                    <div className="text-xl font-semibold">
-                      Yearly Individual{" "}
-                    </div>
-                    <div className="text-4xl font-bold ">$432</div>
-                  </div>
-                  <div className="flex items-center gap-x-4 justify-center my-4 ">
-                    <div className="text-xl font-semibold">
-                      Yearly Additional Family
-                      <span className="text-xs block text-left">
-                        * Up to 4 additional family members{" "}
-                      </span>
-                    </div>
-                    <div className="text-4xl font-bold tracking-wide">
-                      + $216
-                      <span className="text-xs block text-center">p/p</span>
-                    </div>
-                  </div>
-                </div>
-              </div> */}
-            </div>
-          )}
+          </p>
         </div>
-        <AllCards />
+
+        {/* Part B: Range Member */}
+        <div className="col-span-1 lg:col-span-1 p-4">
+          <div className="flex flex-col items-center">
+            {/* Display your logo or other content */}
+          </div>
+          <p className="tracking-wide text-xl font-primary font-semibold my-3 text-justify">
+          <h1 className="text-[#7da33f] font-bold text-2xl text-center my-4">
+             RANGE MEMEBER
+            </h1>
+            <div className="px-2 text">
+              <p className="text-left  my-4">
+              Texas 9 Range Members receive unlimited access to the driving range anytime day or night to perfect their swing.
+              </p>
+
+              <ul className="list-disc list-inside pl-4 lg:pl-10">
+                <li className="text-xl uppercase font-semibold">
+                INDIVIDUAL - $756
+                  <br />
+                  
+                
+                </li>
+              </ul>
+              <ul className="list-disc list-inside mt-4 pl-4 lg:pl-10">
+                <li className="text-xl uppercase font-semibold">
+                ADDITIONAL FAMILY - $324/PERSOn
+                *up to 4 additional family members
+                  <br />
+                 
+                 
+                </li>
+              </ul>
+
+             
+            </div>
+
+          </p>
+        </div>
+      </div>
+
+      <div className="col-span-1 md:col-span-2 flex justify-center items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-14 lg:mx-16">
+          <img
+            src={MembershipFitness}
+            alt="Event 1"
+            className="object-fill h-full"
+            style={{ width: "100%", maxHeight: "450px" }}
+          />
+          <img
+            src={MembershipRange}
+            alt="Event 2"
+            className="object-fill h-full"
+            style={{ width: "100%", maxHeight: "450px" }}
+          />
+        </div>
+      </div>
+
+      <div className="md:col-span-12 text-center my-4 p-1">
+        <h2 className="text-brown text-3xl lg:text-5xl font-semibold mb-2 uppercase">
+          MONTHLY MEMBERSHIPS
+        </h2>
+      </div>
+
+      <div className="col-span-1 lg:col-span-3 grid grid-cols-1 lg:grid-cols-2 border-4 gap-4 mb-8 border-red-800   lg:max-w-[90vw] mx-4 lg:mx-auto ">
+        {/* Part A: Texas 9 Member */}
+        <div className="col-span-1 lg:col-span-1 p-4">
+          <div className="flex flex-col items-center">
+            {/* Display your logo or other content */}
+          </div>
+          <p className="tracking-wide text-xl font-primary font-semibold my-3 text-justify">
+          <h1 className="text-[#7da33f] font-bold text-2xl text-center my-4">
+          TEXAS 9 MEMBER
+            </h1>
+            <div className="px-2 text">
+              <p className="text-left  my-4">
+              Texas 9 Members receive priority access to the course and unlimited access the driving range, full access to the gym & 15% off yoga.
+              </p>
+
+              <ul className="list-disc list-inside pl-4 lg:pl-10">
+                <li className="text-xl uppercase font-semibold">
+                INDIVIDUAL - $99
+                  <br />
+                  
+                
+                </li>
+              </ul>
+              <ul className="list-disc list-inside mt-4 pl-4 lg:pl-10">
+                <li className="text-xl uppercase font-semibold">
+                ADDITONAL FAMILY - $50/PERSOn
+                *up to 4 additional family members
+                  <br />
+                 
+                 
+                </li>
+              </ul>
+
+             
+            </div>
+          </p>
+        </div>
+
+        {/* Part B: Range Member */}
+        <div className="col-span-1 lg:col-span-1 p-4">
+          <div className="flex flex-col items-center">
+            {/* Display your logo or other content */}
+          </div>
+          <p className="tracking-wide text-xl font-primary font-semibold my-3 text-justify">
+          <h1 className="text-[#7da33f] font-bold text-2xl text-center my-4">
+             RANGE MEMEBER
+            </h1>
+            <div className="px-2 text">
+              <p className="text-left  my-4">
+              Texas 9 Range Members receive unlimited access to the driving range anytime day or night to perfect their swing.
+              </p>
+
+              <ul className="list-disc list-inside pl-4 lg:pl-10">
+                <li className="text-xl uppercase font-semibold">
+                INDIVIDUAL - $70
+                  <br />
+                  
+                
+                </li>
+              </ul>
+              <ul className="list-disc list-inside mt-4 pl-4 lg:pl-10">
+                <li className="text-xl uppercase font-semibold">
+                ADDITIONAL FAMILY - $35/PERSOn
+                *up to 4 additional family members
+                  <br />
+                 
+                 
+                </li>
+              </ul>
+
+             
+            </div>
+
+          </p>
+        </div>
       </div>
 
       <Footer />

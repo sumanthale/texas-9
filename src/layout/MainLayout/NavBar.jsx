@@ -81,35 +81,15 @@ const NavBar = () => {
             }}
           />
 
-          <div className="dropdown p-4">
-            <Link to="/fitness">
-              <button
-                className={`dropbtn ${
-                  location.pathname.startsWith("/fitness") ? "active" : ""
-                }`}
-              >
-                FITNESS
-              </button>
-              {/* <button className="dropbtn">FITNESS</button> */}
+<div className="p-4">
+            {/* <Link to={"/community"}> </Link> */}
+            <Link
+              to={"/fitness"}
+              className={location.pathname === "/fitness" ? "active" : ""}
+            >
+              FITNESS
             </Link>
-            <div className="dropdown-content">
-              <Link to="/fitness/fitness-membership">MEMBERSHIPS</Link>
-
-              <div className="relative group2">
-                <Link to="/fitness/services">SERVICES</Link>
-                {/* 
-                <div className="dropdown-content submenu absolute w-fit top-0 left-36 invisible group2-hover:visible">
-                  <Link to="/fitness/personal-training">PERSONAL TRAINING</Link>
-                  <Link to="/fitness/golf-mobility">
-                    GOLF MOBILITY & STRENGTH TRAINING
-                  </Link>
-                  <Link to="/fitness/massage-therapy">MASSAGE THERAPY</Link>
-                  <Link to="/fitness/yoga">YOGA</Link>
-                </div> */}
-              </div>
-            </div>
           </div>
-
           <div
             className="dot-separator"
             style={{
