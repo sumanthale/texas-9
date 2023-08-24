@@ -8,7 +8,7 @@ import MembershipRange from ".././../assets/golf/membership-range.png";
 
 const Membership = () => {
   const [isMonthly, setIsMonthly] = useState(false);
-  
+
   return (
     <div>
       <MiniHeader heading={"Memberships"} image={MembershipHeader} />
@@ -25,33 +25,29 @@ const Membership = () => {
             {/* Display your logo or other content */}
           </div>
           <p className="tracking-wide text-xl font-primary font-semibold my-3 text-justify">
-          <h1 className="text-violet font-bold text-2xl text-center my-4">
-          TEXAS 9 MEMBER
+            <h1 className="text-violet font-bold text-2xl text-center my-4">
+              TEXAS 9 MEMBER
             </h1>
             <div className="px-2 text">
               <p className="text-left  my-4">
-              Texas 9 Members receive priority access to the course and unlimited access the driving range, full access to the gym & 15% off yoga.
+                Texas 9 Members receive priority access to the course and
+                unlimited access the driving range, full access to the gym & 15%
+                off yoga.
               </p>
 
               <ul className="list-disc list-inside pl-4 lg:pl-10">
                 <li className="text-xl uppercase font-semibold">
-                INDIVIDUAL - $1,069
+                  INDIVIDUAL - $1,069
                   <br />
-                  
-                
                 </li>
               </ul>
               <ul className="list-disc list-inside mt-4 pl-4 lg:pl-10">
                 <li className="text-xl uppercase font-semibold">
-                ADDITONAL FAMILY - $540/PERSOn
-                *up to 4 additional familv members    
+                  ADDITONAL FAMILY - $540/PERSOn *up to 4 additional familv
+                  members
                   <br />
-                 
-                 
                 </li>
               </ul>
-
-             
             </div>
           </p>
         </div>
@@ -62,40 +58,34 @@ const Membership = () => {
             {/* Display your logo or other content */}
           </div>
           <p className="tracking-wide text-xl font-primary font-semibold my-3 text-justify">
-          <h1 className="text-violet font-bold text-2xl text-center my-4">
-             RANGE MEMEBER
+            <h1 className="text-violet font-bold text-2xl text-center my-4">
+              RANGE MEMEBER
             </h1>
             <div className="px-2 text">
               <p className="text-left  my-4">
-              Texas 9 Range Members receive unlimited access to the driving range anytime day or night to perfect their swing.
+                Texas 9 Range Members receive unlimited access to the driving
+                range anytime day or night to perfect their swing.
               </p>
 
               <ul className="list-disc list-inside pl-4 lg:pl-10">
                 <li className="text-xl uppercase font-semibold">
-                INDIVIDUAL - $756
+                  INDIVIDUAL - $756
                   <br />
-                  
-                
                 </li>
               </ul>
               <ul className="list-disc list-inside mt-4 pl-4 lg:pl-10">
                 <li className="text-xl uppercase font-semibold">
-                ADDITIONAL FAMILY - $324/PERSOn
-                *up to 4 additional family members
+                  ADDITIONAL FAMILY - $324/PERSOn *up to 4 additional family
+                  members
                   <br />
-                 
-                 
                 </li>
               </ul>
-
-             
             </div>
-
           </p>
         </div>
-        <p className="text-violet tracking-wide text-xl font-primary font-semibold my-3 text-center">
-      VISIT THE CLUB HOUSE TO BECOME A MEMBER!
-    </p>
+        <p className="text-violet tracking-wide col-span-2 text-xl font-primary font-semibold my-3 text-center">
+          VISIT THE CLUB HOUSE TO BECOME A MEMBER!
+        </p>
       </div>
 
       <div className="col-span-1 md:col-span-2 flex justify-center items-center">
@@ -128,33 +118,29 @@ const Membership = () => {
             {/* Display your logo or other content */}
           </div>
           <p className="tracking-wide text-xl font-primary font-semibold my-3 text-justify">
-          <h1 className="text-maroon font-bold text-2xl text-center my-4">
-          TEXAS 9 MEMBER
+            <h1 className="text-maroon font-bold text-2xl text-center my-4">
+              TEXAS 9 MEMBER
             </h1>
             <div className="px-2 text">
               <p className="text-left  my-4">
-              Texas 9 Members receive priority access to the course and unlimited access the driving range, full access to the gym & 15% off yoga.
+                Texas 9 Members receive priority access to the course and
+                unlimited access the driving range, full access to the gym & 15%
+                off yoga.
               </p>
 
               <ul className="list-disc list-inside pl-4 lg:pl-10">
                 <li className="text-xl uppercase font-semibold">
-                INDIVIDUAL - $99
+                  INDIVIDUAL - $99
                   <br />
-                  
-                
                 </li>
               </ul>
               <ul className="list-disc list-inside mt-4 pl-4 lg:pl-10">
                 <li className="text-xl uppercase font-semibold">
-                ADDITONAL FAMILY - $50/PERSOn
-                *up to 4 additional family members
+                  ADDITONAL FAMILY - $50/PERSOn *up to 4 additional family
+                  members
                   <br />
-                 
-                 
                 </li>
               </ul>
-
-             
             </div>
           </p>
         </div>
@@ -165,40 +151,34 @@ const Membership = () => {
             {/* Display your logo or other content */}
           </div>
           <p className="tracking-wide text-xl font-primary font-semibold my-3 text-justify">
-          <h1 className="text-maroon font-bold text-2xl text-center my-4">
-             RANGE MEMEBER
+            <h1 className="text-maroon font-bold text-2xl text-center my-4">
+              RANGE MEMEBER
             </h1>
             <div className="px-2 text">
               <p className="text-left  my-4">
-              Texas 9 Range Members receive unlimited access to the driving range anytime day or night to perfect their swing.
+                Texas 9 Range Members receive unlimited access to the driving
+                range anytime day or night to perfect their swing.
               </p>
 
               <ul className="list-disc list-inside pl-4 lg:pl-10">
                 <li className="text-xl uppercase font-semibold">
-                INDIVIDUAL - $70
+                  INDIVIDUAL - $70
                   <br />
-                  
-                
                 </li>
               </ul>
               <ul className="list-disc list-inside mt-4 pl-4 lg:pl-10">
                 <li className="text-xl uppercase font-semibold">
-                ADDITIONAL FAMILY - $35/PERSOn
-                *up to 4 additional family members
+                  ADDITIONAL FAMILY - $35/PERSOn *up to 4 additional family
+                  members
                   <br />
-                 
-                 
                 </li>
               </ul>
-
-             
             </div>
-
           </p>
         </div>
         <p className="text-maroon tracking-wide text-xl font-primary font-semibold my-3 text-center">
-        SAVE MORE WITH A YEARLY MEMBERSHIP!
-    </p>
+          SAVE MORE WITH A YEARLY MEMBERSHIP!
+        </p>
       </div>
 
       <Footer />
