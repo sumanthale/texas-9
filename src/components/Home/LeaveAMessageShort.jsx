@@ -46,21 +46,18 @@ const LeaveAMessage = ({ header }) => {
       )}
 
       <div className=" lg:mx-16 ">
-        <h1 className="uppercase text-center text-white text-4xl font-semibold">
-          Intrested in joining our team
-        </h1>
         <div className="mx-auto p-4 w-full lg:w-[70%]">
           <form
             onSubmit={handleSubmit}
             ref={form}
             className="horizontal-line  ml-auto"
           >
-            <h1 className="uppercase tracking-wide text-3xl text-white font-primary pb-4 font-bold">
+            <h1 className="uppercase tracking-wide text-2xl md:text-4xl text-center text-white font-primary pb-6 font-bold">
               {header}
             </h1>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <input
-                className="bg-transparent outline outline-1 outline-white mb-4 h-14 w-full max-w-screen-md rounded-sm p-4  caret-black
+                className="col-span-1 bg-transparent outline outline-1 outline-white mb-4 h-14 w-full max-w-screen-md rounded-sm p-4  caret-black
                   bg-white placeholder:text-black"
                 type="text"
                 placeholder="NAME"
@@ -69,7 +66,7 @@ const LeaveAMessage = ({ header }) => {
                 name="from_name"
               />
               <input
-                className="bg-transparent outline outline-1 outline-white mb-4 h-14 w-full max-w-screen-md rounded-sm p-4  caret-black
+                className="col-span-1 bg-transparent outline outline-1 outline-white mb-4 h-14 w-full max-w-screen-md rounded-sm p-4  caret-black
                   bg-white placeholder:text-black"
                 type="email"
                 placeholder="EMAIL"
@@ -78,7 +75,7 @@ const LeaveAMessage = ({ header }) => {
                 ref={emailRef}
               />
               <input
-                className="bg-transparent outline outline-1 outline-white mb-4 h-14 w-full max-w-screen-md rounded-sm p-4  caret-black
+                className="col-span-1 bg-transparent outline outline-1 outline-white mb-4 h-14 w-full max-w-screen-md rounded-sm p-4  caret-black
                   bg-white placeholder:text-black"
                 type="tel"
                 placeholder="PHONE"
@@ -87,7 +84,7 @@ const LeaveAMessage = ({ header }) => {
                 name="from_phone"
               />
               <select
-                className="bg-transparent outline outline-1 outline-white mb-4 h-14 w-full max-w-screen-md rounded-sm p-4  caret-black
+                className="col-span-1 bg-transparent outline outline-1 outline-white mb-4 h-14 w-full max-w-screen-md rounded-sm p-4  caret-black
                   bg-white placeholder:text-black"
                 required
                 name="subject"
@@ -106,7 +103,7 @@ const LeaveAMessage = ({ header }) => {
                 <option value="Other">Other</option>
               </select>
               <textarea
-                className="bg-transparent outline outline-1 outline-white mb-4 w-full  rounded-sm p-4  caret-black col-span-2
+                className="col-span-1 bg-transparent outline outline-1 outline-white mb-4 w-full  rounded-sm p-4  caret-black md:col-span-2
                   bg-white placeholder:text-black"
                 name="message"
                 id="description"
