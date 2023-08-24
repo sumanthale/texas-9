@@ -13,19 +13,19 @@ const Membership = () => {
     <div>
       <MiniHeader heading={"Memberships"} image={MembershipHeader} />
       <div className="md:col-span-12 text-center my-4 p-1">
-        <h2 className="text-brown text-3xl lg:text-5xl font-semibold mb-2 uppercase">
+        <h2 className="text-violet text-3xl lg:text-5xl font-semibold mb-2 uppercase">
           YEARLY MEMBERSHIPS
         </h2>
       </div>
 
-      <div className="col-span-1 lg:col-span-3 grid grid-cols-1 lg:grid-cols-2 border-4 gap-4 mb-8 border-red-800   lg:max-w-[90vw] mx-4 lg:mx-auto ">
+      <div className="col-span-1 lg:col-span-3 grid grid-cols-1 lg:grid-cols-2 border-4 gap-4 mb-8 border-violet   lg:max-w-[90vw] mx-4 lg:mx-auto ">
         {/* Part A: Texas 9 Member */}
         <div className="col-span-1 lg:col-span-1 p-4">
           <div className="flex flex-col items-center">
             {/* Display your logo or other content */}
           </div>
           <p className="tracking-wide text-xl font-primary font-semibold my-3 text-justify">
-          <h1 className="text-[#7da33f] font-bold text-2xl text-center my-4">
+          <h1 className="text-violet font-bold text-2xl text-center my-4">
           TEXAS 9 MEMBER
             </h1>
             <div className="px-2 text">
@@ -62,7 +62,7 @@ const Membership = () => {
             {/* Display your logo or other content */}
           </div>
           <p className="tracking-wide text-xl font-primary font-semibold my-3 text-justify">
-          <h1 className="text-[#7da33f] font-bold text-2xl text-center my-4">
+          <h1 className="text-violet font-bold text-2xl text-center my-4">
              RANGE MEMEBER
             </h1>
             <div className="px-2 text">
@@ -93,6 +93,9 @@ const Membership = () => {
 
           </p>
         </div>
+        <p className="text-violet tracking-wide text-xl font-primary font-semibold my-3 text-center">
+      VISIT THE CLUB HOUSE TO BECOME A MEMBER!
+    </p>
       </div>
 
       <div className="col-span-1 md:col-span-2 flex justify-center items-center">
@@ -113,7 +116,7 @@ const Membership = () => {
       </div>
 
       <div className="md:col-span-12 text-center my-4 p-1">
-        <h2 className="text-brown text-3xl lg:text-5xl font-semibold mb-2 uppercase">
+        <h2 className="text-maroon text-3xl lg:text-5xl font-semibold mb-2 uppercase">
           MONTHLY MEMBERSHIPS
         </h2>
       </div>
@@ -125,7 +128,7 @@ const Membership = () => {
             {/* Display your logo or other content */}
           </div>
           <p className="tracking-wide text-xl font-primary font-semibold my-3 text-justify">
-          <h1 className="text-[#7da33f] font-bold text-2xl text-center my-4">
+          <h1 className="text-maroon font-bold text-2xl text-center my-4">
           TEXAS 9 MEMBER
             </h1>
             <div className="px-2 text">
@@ -162,7 +165,7 @@ const Membership = () => {
             {/* Display your logo or other content */}
           </div>
           <p className="tracking-wide text-xl font-primary font-semibold my-3 text-justify">
-          <h1 className="text-[#7da33f] font-bold text-2xl text-center my-4">
+          <h1 className="text-maroon font-bold text-2xl text-center my-4">
              RANGE MEMEBER
             </h1>
             <div className="px-2 text">
@@ -193,6 +196,9 @@ const Membership = () => {
 
           </p>
         </div>
+        <p className="text-maroon tracking-wide text-xl font-primary font-semibold my-3 text-center">
+        SAVE MORE WITH A YEARLY MEMBERSHIP!
+    </p>
       </div>
 
       <Footer />

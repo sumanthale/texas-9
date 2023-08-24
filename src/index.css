@@ -506,3 +506,19 @@ a {
 .text-green{
   color: #7ca23f;
 }
+
+.text-violet{
+  color: #172649;
+}
+
+.border-violet{
+  border-color: #172649;
+}
+
+.border-maroon{
+  color: #791214;
+}
+
+.text-maroon{
+  color: #791214;
+}
