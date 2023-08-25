@@ -97,7 +97,7 @@ const Footer = () => {
             Copyright {new Date().getFullYear()} Texas 9
           </span>
           <span className="dots">All Rights Reserved</span>
-          <button onClick={openLightbox} className="cursor-pointer">
+          <button onClick={openLightbox} className="cursor-pointer dots">
             Privacy
           </button>
           <span className="">Terms of Use</span>
@@ -105,7 +105,7 @@ const Footer = () => {
         <p className="text-sm text-center  space-x-2 relative block sm:hidden ">
           <span className="">Copyright {new Date().getFullYear()} Texas 9</span>
           .<span className="">All Rights Reserved</span> .
-          <button onClick={openLightbox} className="cursor-pointer">
+          <button onClick={openLightbox} className="cursor-pointer dots">
             Privacy
           </button>
           <span className="">Terms of Use</span>
