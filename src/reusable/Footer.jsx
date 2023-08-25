@@ -24,7 +24,7 @@ const Footer = () => {
   };
   return (
     <div className="bg-[#162649] text-white ">
-      <div className="max-w-[92vw] p-4 lg:ml-16 lg:mr-20">
+      <div className="max-w-[92vw] p-4  lg:mr-20">
         <div className="grid grid-cols-1 md:grid-cols-4 mx-auto  gap-y-4">
           <div className="">
             {/* <h1 className="font-primary text-white text-2xl tracking-wide">
@@ -140,11 +140,11 @@ const Footer = () => {
         </div>
       )} */}
       {lightboxOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
           <div className="bg-white p-4 max-w-3xl rounded-lg w-[100vw] h-full relative">
             <button
               onClick={closeLightbox}
-              className="absolute top-4 right-4 text-gray-700 cursor-pointer"
+              className="absolute bottom-10 right-10 text-white cursor-pointer bg-black px-6 py-2 rounded-lg "
             >
               Close
             </button>

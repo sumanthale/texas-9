@@ -13,7 +13,7 @@ const AboutView = () => {
     <>
       <MiniHeader heading={"About Us"} subHeading={""} image={ABOUTHEADER} />
       <div className="py-6">
-        <p className="text-justify mb-4 px-6">
+        <p className="text-justify mb-4 px-6 lg:px-16">
           Hailed as one of the best executive golf courses in DFW, our course
           was designed by Steven D. Plumber, ASGCA, and opened in 1999. The
           course was created to be a public course, filling a niche in DFW so
@@ -32,8 +32,8 @@ const AboutView = () => {
                 Meet The Team
               </h2>
             </div>
-            <div className="flex justify-between flex-col md:flex-row w-full gap-y-4">
-              <div className="flex flex-col items-center space-x-4  px-4">
+            <div className="flex justify-between flex-col md:flex-row w-full gap-y-4 px-6 lg:px-16">
+              <div className="flex flex-col items-center space-x-4">
                 <img
                   src={Josh}
                   alt="Person 1"

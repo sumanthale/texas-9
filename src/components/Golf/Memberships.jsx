@@ -29,7 +29,7 @@ const Membership = () => {
               TEXAS 9 MEMBER
             </h1>
             <div className="px-2 text">
-              <p className="text-left  my-4">
+              <p className="text-center  my-4">
                 Texas 9 Members receive priority access to the course and
                 unlimited access the driving range, full access to the gym & 15%
                 off yoga.
@@ -43,9 +43,10 @@ const Membership = () => {
               </ul>
               <ul className="list-disc list-inside mt-4 pl-4 lg:pl-10">
                 <li className="text-xl uppercase font-semibold">
-                  ADDITONAL FAMILY - $540/PERSOn *up to 4 additional familv
-                  members
-                  <br />
+                  ADDITONAL FAMILY - $540/PERSOn <br />{" "}
+                  <span className="text-lg font-normal ml-10">
+                    * up to 4 additional familv members
+                  </span>
                 </li>
               </ul>
             </div>
@@ -62,7 +63,7 @@ const Membership = () => {
               RANGE MEMEBER
             </h1>
             <div className="px-2 text">
-              <p className="text-left  my-4">
+              <p className="text-center  my-4">
                 Texas 9 Range Members receive unlimited access to the driving
                 range anytime day or night to perfect their swing.
               </p>
@@ -75,15 +76,17 @@ const Membership = () => {
               </ul>
               <ul className="list-disc list-inside mt-4 pl-4 lg:pl-10">
                 <li className="text-xl uppercase font-semibold">
-                  ADDITIONAL FAMILY - $324/PERSOn *up to 4 additional family
-                  members
+                  ADDITIONAL FAMILY - $324/PERSOn <br />{" "}
+                  <span className="text-lg font-normal ml-10">
+                    * up to 4 additional family members
+                  </span>
                   <br />
                 </li>
               </ul>
             </div>
           </p>
         </div>
-        <p className="text-violet tracking-wide col-span-2 text-xl font-primary font-semibold my-3 text-center">
+        <p className="text-violet tracking-wide col-span-2 text-2xl font-primary font-semibold my-3 text-center">
           VISIT THE CLUB HOUSE TO BECOME A MEMBER!
         </p>
       </div>
@@ -122,7 +125,7 @@ const Membership = () => {
               TEXAS 9 MEMBER
             </h1>
             <div className="px-2 text">
-              <p className="text-left  my-4">
+              <p className="text-center  my-4">
                 Texas 9 Members receive priority access to the course and
                 unlimited access the driving range, full access to the gym & 15%
                 off yoga.
@@ -136,8 +139,10 @@ const Membership = () => {
               </ul>
               <ul className="list-disc list-inside mt-4 pl-4 lg:pl-10">
                 <li className="text-xl uppercase font-semibold">
-                  ADDITONAL FAMILY - $50/PERSOn *up to 4 additional family
-                  members
+                  ADDITONAL FAMILY - $50/PERSOn <br />{" "}
+                  <span className="text-lg font-normal ml-10">
+                    * up to 4 additional family members
+                  </span>
                   <br />
                 </li>
               </ul>
@@ -147,15 +152,12 @@ const Membership = () => {
 
         {/* Part B: Range Member */}
         <div className="col-span-1 lg:col-span-1 p-4">
-          <div className="flex flex-col items-center">
-            {/* Display your logo or other content */}
-          </div>
           <p className="tracking-wide text-xl font-primary font-semibold my-3 text-justify">
             <h1 className="text-maroon font-bold text-2xl text-center my-4">
               RANGE MEMEBER
             </h1>
             <div className="px-2 text">
-              <p className="text-left  my-4">
+              <p className="text-center  my-4">
                 Texas 9 Range Members receive unlimited access to the driving
                 range anytime day or night to perfect their swing.
               </p>
@@ -168,15 +170,17 @@ const Membership = () => {
               </ul>
               <ul className="list-disc list-inside mt-4 pl-4 lg:pl-10">
                 <li className="text-xl uppercase font-semibold">
-                  ADDITIONAL FAMILY - $35/PERSOn *up to 4 additional family
-                  members
+                  ADDITIONAL FAMILY - $35/PERSOn <br />{" "}
+                  <span className="text-lg font-normal ml-10">
+                    * up to 4 additional family members
+                  </span>
                   <br />
                 </li>
               </ul>
             </div>
           </p>
         </div>
-        <p className="text-maroon tracking-wide text-xl font-primary font-semibold my-3 text-center">
+        <p className="text-maroon tracking-wide col-span-2 text-2xl font-primary font-semibold my-3 text-center">
           SAVE MORE WITH A YEARLY MEMBERSHIP!
         </p>
       </div>

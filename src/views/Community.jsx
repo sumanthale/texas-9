@@ -55,22 +55,20 @@ const Community = () => {
               style={{ width: "100%", height: "auto", maxHeight: "450px" }}
             />
 
-           
-
-
-<div className=" flex items-center justify-center">
-             <div className="absolute top-2 w-full grid grid-cols-2 place-items-center">
-              <p className="  text-right text-4xl font-bold justify-self-end">
-                Texas 9 Campus
-              </p>
-              <p className="  text-center  font-bold max-w-sm">
-                Texas 9 has the honor of sharing it's clubhouse and campus with a few local companies that make us who we are?
-              </p>
-            </div>   
+            <div className=" flex items-center justify-center">
+              <div className="absolute top-2 w-full grid grid-cols-2 place-items-center">
+                <p className="text-4xl font-bold justify-self-center absolute text-center">
+                  Texas 9 Campus
+                </p>
+                <p></p>
+                <p className="  text-center  font-bold max-w-sm hidden md:block">
+                  Texas 9 has the honor of sharing it's clubhouse and campus
+                  with a few local companies that make us who we are?
+                </p>
+              </div>
             </div>
 
-
-{/* <div className="relative flex items-center justify-center">
+            {/* <div className="relative flex items-center justify-center">
             <div className="absolute top-2 w-full flex justify-center">
               <div className="grid grid-cols-3 place-items-center">
                 <p className="text-center text-4xl font-bold">
@@ -84,11 +82,7 @@ const Community = () => {
               </div>
             </div>
           </div> */}
-
-
-          </div> 
-
-
+          </div>
 
           <div className="bg-[#172649] font-primary p-4 ">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-x-10  mx-auto  lg:max-w-[80vw] text-center md:text-start">
@@ -102,7 +96,10 @@ const Community = () => {
                   Roofing needs!
                 </p>
                 <button className="text-white py-2 px-4 rounded border-2 ">
-                  <Link to="https://www.teamenoch.com" target={"_blank"}> LEARN MORE!</Link>
+                  <Link to="https://www.teamenoch.com" target={"_blank"}>
+                    {" "}
+                    LEARN MORE!
+                  </Link>
                 </button>
               </div>
               <div className="p-4 lg:pl-10">
@@ -115,7 +112,10 @@ const Community = () => {
                   pnvsical therapv and more
                 </p>
                 <button className=" text-white py-2 px-4 rounded border-2">
-                <Link to="https://www.texashealth.org" target={"_blank"}> LEARN MORE!</Link>
+                  <Link to="https://www.texashealth.org" target={"_blank"}>
+                    {" "}
+                    LEARN MORE!
+                  </Link>
                 </button>
               </div>
             </div>
@@ -128,14 +128,12 @@ const Community = () => {
           </div>
 
           <div className="col-span-1 lg:col-span-3 grid grid-cols-1 lg:grid-cols-4 border-4 gap-4 mb-8 border-red-800   lg:max-w-[90vw] mx-4 lg:mx-auto ">
-            <div className="h-full w-full col-span-1 flex justify-end border-brown border">
+            <div className="h-full w-full col-span-1 flex justify-end ">
               <div
-                className="w-full carousel-image-item  bg-cover bg-center h-60 lg:h-auto"
+                className="w-full carousel-image-item  bg-cover bg-center h-60 lg:h-auto border-b-4 lg:border-r-4 lg:border-b-0 "
                 style={{
                   backgroundImage: `url(${KJCF})`,
-                  border: "0px solid #8B4513",
-
-                  borderRightWidth: "4px",
+                  borderColor: "#8B4513",
                 }}
               ></div>
             </div>
@@ -149,8 +147,8 @@ const Community = () => {
                   style={{ width: "100%", height: "auto", maxHeight: "450px" }}
                 />
                 <button
-                  className=" mt-4 mx-autoblock lg:hidden text-brown py-2 px-8 rounded border-brown border text-xl tracking-wide w-fit ml-0 lg:ml-16 col-span-3"
-                  style={{ border: "1px solid #8B4513" }}
+                  className=" mt-4 mx-autoblock lg:hidden text-brown py-2 px-8 rounded border-brown border text-xl tracking-wide w-fit  col-span-3"
+                  style={{ border: "2px solid #8B4513" }}
                 >
                   CHECK THEM OUT!
                 </button>
@@ -165,23 +163,23 @@ const Community = () => {
                 href="http://kjchoi.igearmall.biz/eng/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden lg:block  text-brown py-2 px-8 rounded border-brown border text-xl tracking-wide w-fit ml-0 lg:ml-16 col-span-3"
-                style={{ border: "1px solid #8B4513" }}
+                className="hidden lg:block  text-brown py-2 px-8 rounded border-brown border text-xl tracking-wide w-fit  col-span-3"
+                style={{ border: "2px solid #8B4513" }}
               >
                 CHECK THEM OUT!
               </a>
             </div>
           </div>
 
-          <div className="col-span-1 lg:col-span-3 grid grid-cols-1 lg:grid-cols-3 border-4 gap-4 mb-8 border-red-800   lg:max-w-[90vw] mx-4 lg:mx-auto ">
-            <div className="bg-white flex flex-col justify-between md:pr-24 relative col-span-2 p-4">
+          <div className="col-span-1 lg:col-span-3 grid grid-cols-1 lg:grid-cols-3 border-4 mb-8 border-red-800   lg:max-w-[90vw] mx-4 lg:mx-auto ">
+            <div className="bg-white flex flex-col justify-between relative col-span-2 p-8">
               <img
                 src={FIRSTTEELOGO}
                 alt="Golf Course"
                 className="object-fill lg:col-span-1"
                 style={{ width: "50%", height: "auto", maxHeight: "350px" }}
               />
-              <p className="tracking-wide text-xl font-primary  font-semibold  my-3 text-justify md:px-6">
+              <p className="tracking-wide text-xl font-primary  font-semibold  my-3 text-justify">
                 First Tee is a youth development organization that enables kids
                 to bulld the strength of character that empowers them through a
                 lifetime of new challenges. By seamlessly integrating the game
@@ -194,44 +192,31 @@ const Community = () => {
                 href="https://firsttee.org"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden lg:block  text-brown py-2 px-8 rounded border-brown border text-xl tracking-wide w-fit ml-0 lg:ml-16 col-span-3"
-                style={{ border: "1px solid #8B4513" }}
+                className="hidden lg:block  text-brown py-2 px-8 rounded border-brown border text-xl tracking-wide w-fit  col-span-3"
+                style={{ border: "2px solid #8B4513" }}
               >
                 CHECK THEM OUT!
               </a>
-              {/* <p className="tracking-wide text-4xl font-primary text-justify font-bold   text-red-800">
-                NO CLUB FEES! OPEN TO THE PUBLIC!
-              </p> */}
-              {/* <button
-                className=" text-black py-2 px-4 rounded text-start border-2 w-fit"
-                style={{ border: "1px solid #8B4513", color: "#8B4513" }}
-              >
-                CHECK THEM OUT!
-              </button> */}
             </div>
 
             <div className="h-full w-full col-span-1">
               <div
-                className="w-full carousel-image-item h-[360px] bg-cover bg-center"
+                className="w-full carousel-image-item h-[360px] bg-cover bg-center border-t-4 lg:border-l-4 lg:border-t-0"
                 style={{
                   backgroundImage: `url(${FirstTee})`,
-                  border: "0px solid #8B4513",
-
-                  borderLeftWidth: "4px",
+                  borderColor: "#8B4513",
                 }}
               ></div>
             </div>
           </div>
 
-          <div className="col-span-1 lg:col-span-3 grid grid-cols-1 lg:grid-cols-3 border-4 gap-4 mb-8 border-red-800   lg:max-w-[90vw] mx-4 lg:mx-auto ">
+          <div className="col-span-1 lg:col-span-3 grid grid-cols-1 lg:grid-cols-3 border-4 mb-8 border-red-800   lg:max-w-[90vw] mx-4 lg:mx-auto ">
             <div className="h-full w-full col-span-1">
               <div
-                className="w-full carousel-image-item h-80 bg-cover bg-center"
+                className="w-full carousel-image-item h-[360px]  bg-cover bg-center  border-b-4 lg:border-r-4 lg:border-b-0"
                 style={{
                   backgroundImage: `url(${YOC})`,
-                  border: "0px solid #8B4513",
-
-                  borderRightWidth: "4px",
+                  borderColor: "#8B4513",
                 }}
               ></div>
             </div>
@@ -243,7 +228,7 @@ const Community = () => {
                 className="object-fill lg:col-span-1"
                 style={{ width: "60%", height: "auto", maxHeight: "450px" }}
               />
-              <p className="tracking-wide text-xl font-primary  font-semibold  my-3 text-justify">
+              <p className="tracking-wide text-xl font-primary  font-semibold  my-2 text-justify">
                 The core purpose of Youth on Course is to provide youth with
                 access to life-changing oppurtunities through golf. YOC members
                 gain oppurtunities through paid high school internships, college
@@ -253,8 +238,8 @@ const Community = () => {
                 href="https://youthoncourse.org"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden lg:block  text-brown py-2 px-8 rounded border-brown border text-xl tracking-wide w-fit ml-0 lg:ml-16 col-span-3"
-                style={{ border: "1px solid #8B4513" }}
+                className="hidden lg:block  text-brown py-2 px-8 rounded border-brown border text-xl tracking-wide w-fit  col-span-3"
+                style={{ border: "2px solid #8B4513" }}
               >
                 CHECK THEM OUT!
               </a>
@@ -268,7 +253,6 @@ const Community = () => {
                 CHECK THEM OUT!
               </button> */}
             </div>
-            
           </div>
         </div>
       </div>

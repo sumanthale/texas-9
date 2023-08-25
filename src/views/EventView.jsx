@@ -37,13 +37,13 @@ const EventView = () => {
               src={Event1}
               alt="Event 1"
               className="object-fill h-full col-span-1 md:col-span-4"
-              style={{ width: "100%", maxHeight: "450px" }}
+              style={{ width: "100%", maxHeight: "350px" }}
             />
             <img
               src={Event2}
               alt="Event 2"
               className="object-fill h-full col-span-1 md:col-span-3"
-              style={{ width: "100%", maxHeight: "450px" }}
+              style={{ width: "100%", maxHeight: "350px" }}
             />
           </div>
         </div>
