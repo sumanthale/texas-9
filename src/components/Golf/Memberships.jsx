@@ -12,20 +12,17 @@ const Membership = () => {
   return (
     <div>
       <MiniHeader heading={"Memberships"} image={MembershipHeader} />
-      <div className="md:col-span-12 text-center my-4 p-1">
-        <h2 className="text-violet text-3xl lg:text-5xl font-semibold mb-2 uppercase">
+      <div className="text-center my-4 p-1">
+        <h2 className="text-violet text-3xl lg:text-5xl font-DinCondensed  mb-2 uppercase">
           YEARLY MEMBERSHIPS
         </h2>
       </div>
 
-      <div className="col-span-1 lg:col-span-3 grid grid-cols-1 lg:grid-cols-2 border-4 gap-4 mb-8 border-violet   lg:max-w-[90vw] mx-4 lg:mx-auto ">
-        {/* Part A: Texas 9 Member */}
-        <div className="col-span-1 lg:col-span-1 p-4">
-          <div className="flex flex-col items-center">
-            {/* Display your logo or other content */}
-          </div>
-          <p className="tracking-wide text-xl font-primary font-semibold my-3 text-justify">
-            <h1 className="text-violet font-bold text-2xl text-center my-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 border-4 gap-4 mb-8 border-violet   lg:max-w-[90vw] mx-4 lg:mx-auto ">
+        <div className="col-span-2 lg:col-span-1 p-4">
+          <div className="flex flex-col items-center"></div>
+          <p className="tracking-wide text-xl font-primary font-semibold my-3 text-start">
+            <h1 className="text-violet font-bold text-4xl text-center my-4 font-DinCondensed">
               TEXAS 9 MEMBER
             </h1>
             <div className="px-2 text">
@@ -44,7 +41,7 @@ const Membership = () => {
               <ul className="list-disc list-inside mt-4 pl-4 lg:pl-10">
                 <li className="text-xl uppercase font-semibold">
                   ADDITONAL FAMILY - $540/PERSOn <br />{" "}
-                  <span className="text-lg font-normal ml-10">
+                  <span className="text-lg font-normal ml-6 lg:ml-10">
                     * up to 4 additional familv members
                   </span>
                 </li>
@@ -53,13 +50,9 @@ const Membership = () => {
           </p>
         </div>
 
-        {/* Part B: Range Member */}
-        <div className="col-span-1 lg:col-span-1 p-4">
-          <div className="flex flex-col items-center">
-            {/* Display your logo or other content */}
-          </div>
-          <p className="tracking-wide text-xl font-primary font-semibold my-3 text-justify">
-            <h1 className="text-violet font-bold text-2xl text-center my-4">
+        <div className="col-span-2 lg:col-span-1 p-4">
+          <p className="tracking-wide text-xl font-primary font-semibold my-3 text-start">
+            <h1 className="text-violet font-bold text-4xl text-center my-4 font-DinCondensed">
               RANGE MEMEBER
             </h1>
             <div className="px-2 text">
@@ -77,7 +70,7 @@ const Membership = () => {
               <ul className="list-disc list-inside mt-4 pl-4 lg:pl-10">
                 <li className="text-xl uppercase font-semibold">
                   ADDITIONAL FAMILY - $324/PERSOn <br />{" "}
-                  <span className="text-lg font-normal ml-10">
+                  <span className="text-lg font-normal ml-6 lg:ml-10">
                     * up to 4 additional family members
                   </span>
                   <br />
@@ -86,12 +79,12 @@ const Membership = () => {
             </div>
           </p>
         </div>
-        <p className="text-violet tracking-wide col-span-2 text-2xl font-primary font-semibold my-3 text-center">
+        <p className="text-violet tracking-wide col-span-2 text-4xl font-DinCondensed font-semibold my-3 text-center">
           VISIT THE CLUB HOUSE TO BECOME A MEMBER!
         </p>
       </div>
 
-      <div className="col-span-1 md:col-span-2 flex justify-center items-center">
+      <div className="flex justify-center items-center">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-14 lg:mx-16">
           <img
             src={MembershipFitness}
@@ -108,20 +101,17 @@ const Membership = () => {
         </div>
       </div>
 
-      <div className="md:col-span-12 text-center my-4 p-1">
-        <h2 className="text-maroon text-3xl lg:text-5xl font-semibold mb-2 uppercase">
+      <div className="text-center my-4 p-1">
+        <h2 className="text-maroon text-3xl lg:text-5xl  font-DinCondensed mb-2 uppercase">
           MONTHLY MEMBERSHIPS
         </h2>
       </div>
 
-      <div className="col-span-1 lg:col-span-3 grid grid-cols-1 lg:grid-cols-2 border-4 gap-4 mb-8 border-red-800   lg:max-w-[90vw] mx-4 lg:mx-auto ">
-        {/* Part A: Texas 9 Member */}
-        <div className="col-span-1 lg:col-span-1 p-4">
-          <div className="flex flex-col items-center">
-            {/* Display your logo or other content */}
-          </div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 border-4 gap-4 mb-8 border-red-800   lg:max-w-[90vw] mx-4 lg:mx-auto ">
+        <div className="col-span-2 lg:col-span-1 p-4">
+          <div className="flex flex-col items-center"></div>
           <p className="tracking-wide text-xl font-primary font-semibold my-3 text-justify">
-            <h1 className="text-maroon font-bold text-2xl text-center my-4">
+            <h1 className="text-maroon font-bold text-4xl font-DinCondensed text-center my-4">
               TEXAS 9 MEMBER
             </h1>
             <div className="px-2 text">
@@ -140,7 +130,7 @@ const Membership = () => {
               <ul className="list-disc list-inside mt-4 pl-4 lg:pl-10">
                 <li className="text-xl uppercase font-semibold">
                   ADDITONAL FAMILY - $50/PERSOn <br />{" "}
-                  <span className="text-lg font-normal ml-10">
+                  <span className="text-lg font-normal ml-6 lg:ml-10">
                     * up to 4 additional family members
                   </span>
                   <br />
@@ -150,10 +140,9 @@ const Membership = () => {
           </p>
         </div>
 
-        {/* Part B: Range Member */}
-        <div className="col-span-1 lg:col-span-1 p-4">
+        <div className="col-span-2 lg:col-span-1 p-4">
           <p className="tracking-wide text-xl font-primary font-semibold my-3 text-justify">
-            <h1 className="text-maroon font-bold text-2xl text-center my-4">
+            <h1 className="text-maroon font-bold text-4xl font-DinCondensed  text-center my-4">
               RANGE MEMEBER
             </h1>
             <div className="px-2 text">
@@ -171,7 +160,7 @@ const Membership = () => {
               <ul className="list-disc list-inside mt-4 pl-4 lg:pl-10">
                 <li className="text-xl uppercase font-semibold">
                   ADDITIONAL FAMILY - $35/PERSOn <br />{" "}
-                  <span className="text-lg font-normal ml-10">
+                  <span className="text-lg font-normal ml-6 lg:ml-10">
                     * up to 4 additional family members
                   </span>
                   <br />
@@ -180,7 +169,7 @@ const Membership = () => {
             </div>
           </p>
         </div>
-        <p className="text-maroon tracking-wide col-span-2 text-2xl font-primary font-semibold my-3 text-center">
+        <p className="text-maroon tracking-wide col-span-2 text-4xl font-DinCondensed   font-semibold my-3 text-center">
           SAVE MORE WITH A YEARLY MEMBERSHIP!
         </p>
       </div>

@@ -44,7 +44,7 @@ const HomeCards = () => {
   };
 
   return (
-    <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-4 gap-x-4 max-w-[90vw] mx-auto  font-primary  mt-10 px-4">
+    <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-4 gap-x-4 max-w-[90vw] mx-auto  font-DinCondensed  mt-10 px-4">
       {isFlipped.map((flipped, index) => (
         <div
           key={index}
@@ -68,7 +68,7 @@ const HomeCards = () => {
           onMouseLeave={() => handleFlip(index, false)}
         >
           <div className={`front ${flipped ? "hidden" : ""}`}>
-            <h1 className="text-center text-white pt-4 text-3xl font-semibold">
+            <h1 className="text-center text-white pt-4 text-3xl ">
               {texts[index].front}
             </h1>
           </div>
@@ -76,7 +76,7 @@ const HomeCards = () => {
             className={`back ${flipped ? "" : "hidden"}`}
             style={{ transform: "rotateX(180deg)" }}
           >
-            <p className="text-center text-white pt-4 text-lg font-semibold">
+            <p className="text-center text-white pt-4 text-lg font-primary ">
               {texts[index].back}
             </p>
           </div>

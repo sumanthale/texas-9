@@ -33,7 +33,7 @@ const NavBar = () => {
   return (
     <>
       {/* <div className="fixed  z-50 w-full bg-[#162649] text-white"> */}
-      <div className="fixed z-50 w-full h-[80px] bg-[#162649] text-white font-Gbook">
+      <div className="fixed z-50 w-full h-[80px] bg-[#162649] text-white font-DinCondensed text-xl">
         <div className=" px-6 py-2 bg-[#7da33f] flex items-center justify-center absolute right-8 lg:right-20  top-16  ">
           <Link to={"/tee-times"} className="hover:text-white">
             BOOK A TEE TIME
@@ -81,7 +81,7 @@ const NavBar = () => {
             }}
           />
 
-<div className="p-4">
+          <div className="p-4">
             {/* <Link to={"/community"}> </Link> */}
             <Link
               to={"/fitness"}
@@ -236,7 +236,7 @@ const NavBar = () => {
                         </svg>
                       </button>
                     </div>
-                    <div className="mt-5 mx-auto text-2xl font-bold underline underline-offset-4">
+                    <div className="mt-5 mx-auto text-3xl font-bold underline underline-offset-4">
                       <img
                         src={LogoImg}
                         alt="Logo"

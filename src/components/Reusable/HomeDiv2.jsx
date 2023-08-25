@@ -39,10 +39,10 @@ const HomeDiv2 = () => {
 
   return (
     <div>
-      <div className=" bg-[#fff]  py-4  font-primary first-letter: ">
+      <div className="  py-4  font-primary first-letter: ">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
-          <div className="bg-[#7DA33F] p-10 flex flex-col items-center text-white col-span-1 lg:col-span-1">
-            <h1 className="uppercase tracking-wide text-4xl font-primary font-bold text-center mt-6">
+          <div className="bg-[#7DA33F] px-8 py-4 flex flex-col items-center text-white col-span-1 lg:col-span-1">
+            <h1 className="uppercase tracking-wide text-4xl font-DinCondensed font-bold text-center mt-6">
               GET YOUR <br />
               TEE TIME!
             </h1>
@@ -100,8 +100,8 @@ const HomeDiv2 = () => {
               </Carousel>
             </div>
 
-            <div className="bg-white flex flex-col justify-between md:pr-24 relative col-span-2">
-              <p className="tracking-wide text-xl font-primary  font-semibold  my-3 text-justify">
+            <div className="bg-white flex flex-col justify-between md:pr-20 relative col-span-2">
+              <p className="tracking-wide text-xl font-primary  font-semibold text-justify">
                 Hailed as one of the best executive golf courses in DFW, our
                 course was designed by Steven D. Plumber, ASGCA, and opened in
                 1999. The course was created to be a public course, filling a
@@ -111,7 +111,7 @@ const HomeDiv2 = () => {
                 interest in adding new amenities and reinforcing the best
                 aspects of the course.
               </p>
-              <p className="tracking-wide text-4xl font-primary text-justify font-bold   text-red-800">
+              <p className="tracking-wide text-4xl bottom-0 relative  lg:absolute font-DinCondensed text-justify font-bold   text-red-800">
                 NO CLUB FEES! OPEN TO THE PUBLIC!
               </p>
             </div>

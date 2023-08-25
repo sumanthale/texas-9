@@ -38,9 +38,9 @@ const LeaveAMessage = ({ header }) => {
   const form = useRef();
 
   return (
-    <div className="bg-[#750b0b] font-primary p-4">
+    <div className="bg-[#750b0b]  font-DinCondensed p-4">
       {submitted && (
-        <h1 className=" text-center font-primary text-xl">
+        <h1 className=" text-center  font-DinCondensed text-xl">
           Submitted Successfully !!
         </h1>
       )}
@@ -52,7 +52,7 @@ const LeaveAMessage = ({ header }) => {
             ref={form}
             className="horizontal-line  ml-auto"
           >
-            <h1 className="uppercase tracking-wide text-2xl md:text-4xl text-center text-white font-primary pb-6 font-bold">
+            <h1 className="uppercase tracking-wide md:text-4xl text-center text-white text-5xl font-DinCondensed pb-6 font-bold">
               {header}
             </h1>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

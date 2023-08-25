@@ -105,40 +105,11 @@ const Footer = () => {
         <p className="text-sm text-center  space-x-2 relative block sm:hidden ">
           <span className="">Copyright {new Date().getFullYear()} Texas 9</span>
           .<span className="">All Rights Reserved</span> .
-          <button onClick={openLightbox} className="cursor-pointer dots">
-            Privacy
-          </button>
+          <button onClick={openLightbox}>Privacy</button> .
           <span className="">Terms of Use</span>
         </p>
       </div>
-      {/* {lightboxOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center ">
-          <div className="bg-white p-4 max-w-3xl rounded-lg w-[100vw] h-full">
-            <iframe
-              src="https://docs.google.com/document/d/e/2PACX-1vTJ6ViVDkQztPK7_pqn1sLTfyqycusF91f-Z7cg4YN5NIJyFsLXmFPLW4J6H9aI1qxAzi4Ph9POb_gQ/pub?embedded=true"
-              title="privacy"
-              style={{
-                height: "100%",
-                width: "100%",
-              }}
-            ></iframe>
-            <a
-              href={"fd"}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cursor-pointer"
-            >
-              Privacy
-            </a>
-            <button
-              onClick={closeLightbox}
-              className="mt-4 px-4 py-2 bg-gray-300 rounded-lg"
-            >
-              Close
-            </button>
-          </div>
-        </div>
-      )} */}
+
       {lightboxOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
           <div className="bg-white p-4 max-w-3xl rounded-lg w-[100vw] h-full relative">

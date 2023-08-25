@@ -12,7 +12,7 @@ const Rates = () => {
 
       <div className="p-5 md:p-16 bg-[#162649]">
         <div
-          className="text-slate-100 pb-10 bg-cover bg-center font-primary"
+          className="text-slate-100 pb-10 bg-cover bg-center font-DinCondensed"
           style={{
             backgroundImage: `url(${BGImg})`,
           }}

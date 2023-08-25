@@ -12,7 +12,7 @@ const AboutView = () => {
   return (
     <>
       <MiniHeader heading={"About Us"} subHeading={""} image={ABOUTHEADER} />
-      <div className="py-6">
+      <div className="py-6 font-primary">
         <p className="text-justify mb-4 px-6 lg:px-16">
           Hailed as one of the best executive golf courses in DFW, our course
           was designed by Steven D. Plumber, ASGCA, and opened in 1999. The
@@ -28,7 +28,7 @@ const AboutView = () => {
         <div className="border-2  p-4 border-green-800 border-r-0 border-l-0">
           <div className="h-full w-full ">
             <div className="text-center mb-4 p-1">
-              <h2 className="text-green text-4xl font-semibold mb-2 uppercase tracking-tighter">
+              <h2 className="text-green font-semibold mb-2 uppercase tracking-tighter text-5xl font-DinCondensed">
                 Meet The Team
               </h2>
             </div>
@@ -39,7 +39,7 @@ const AboutView = () => {
                   alt="Person 1"
                   className="w-80 h-auto object-contain"
                 />
-                <p className="text-center text-green my-2 font-semibold text-3xl">
+                <p className="text-center text-green my-2 font-semibold text-4xl font-DinCondensed">
                   JOSH STUCKY
                 </p>
                 <p className="text-center text-gray-600 text-lg font-semibold">
@@ -52,7 +52,7 @@ const AboutView = () => {
                   alt="Person 2"
                   className="w-80 h-auto object-contain"
                 />
-                <p className="text-center text-green font-semibold my-2 text-3xl">
+                <p className="text-center text-green font-semibold my-2 text-4xl font-DinCondensed">
                   INGRID BORJAS
                 </p>
                 <p className="text-center text-gray-600 text-lg font-semibold">
@@ -65,7 +65,7 @@ const AboutView = () => {
                   alt="Person 3"
                   className="w-80 h-auto object-contain"
                 />
-                <p className="text-center text-green font-semibold my-2 text-3xl">
+                <p className="text-center text-green font-semibold my-2 text-4xl font-DinCondensed">
                   CHRIS HUTCHINSON
                 </p>
                 <p className="text-center text-gray-600 text-lg font-semibold">

@@ -5,7 +5,7 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontFamily: {
-      primary: ["Dosis"],
+      secondary: ["Dosis"],
     },
     extend: {
       colors: {
@@ -16,7 +16,7 @@ module.exports = {
         sans: ['"Open Sans"', "sans-serif"],
         Gbold: ["G bold", "sans-serif"],
         Gboldoblique: ["G boldoblique", "sans-serif"],
-        Gbook: ["G book", "sans-serif"],
+        primary: ["G book", "sans-serif"],
         Gbookoblique: ["G bookoblique", "sans-serif"],
         Gdemi: ["G demi", "sans-serif"],
         Gdemioblique: ["G demioblique", "sans-serif"],
@@ -32,6 +32,7 @@ module.exports = {
         Gthickoblique: ["G thickoblique", "sans-serif"],
         Gxlig: ["G xlig", "sans-serif"],
         Gxligoblique: ["G xligoblique", "sans-serif"],
+        DinCondensed: ["Din Condensed", "sans-serif"],
       },
     },
   },

@@ -1,18 +1,17 @@
 import MiniHeader from "../layout/MainLayout/MiniHeader";
 import Footer from "../reusable/Footer";
-import { Link } from "react-router-dom";
 import { Carousel } from "react-responsive-carousel";
 import Fitness1 from "../assets/golf/fitness1.png";
 import Fitness2 from "../assets/golf/fitness2.png";
 import Fitness3 from "../assets/golf/fitness3.png";
 import Yoga from "../assets/golf/yoga.png";
 import Training from "../assets/golf/training.png";
-
+import { HashLink } from "react-router-hash-link";
 const Fitness = () => {
   return (
     <>
       <MiniHeader heading={"Fitness"} subHeading={""} />
-      <div className="grid grid-cols-1  md:grid-cols-12 gap-6 gap-x-10  pt-6  lg:pr-20 pb-6">
+      <div className="grid grid-cols-1  md:grid-cols-12 gap-6 gap-x-10  pt-6  lg:pr-20 pb-6 font-primary">
         <div className="md:col-span-4 md:order-last mb-2 pr-4  pl-4 ">
           <div className="block md:hidden pl-4 lg:pl-20">
             <p className="text-justify ">
@@ -62,7 +61,7 @@ const Fitness = () => {
             </div>
           </div>
           <div className="border-4  gap-4 p-5 border-[#7da33f]">
-            <h1 className="text-[#7da33f] font-bold text-2xl text-center">
+            <h1 className="text-[#7da33f] font-bold  text-center text-4xl font-DinCondensed">
               PERSONAL TRAINING
             </h1>
             <div className="px-2">
@@ -89,9 +88,9 @@ const Fitness = () => {
               />
 
               <button className="uppercase outline outline-2 px-2 text-[#7da33f] w-full text-xl my-3 mb-0 tracking-wider  outline-[#7da33f] font-semibold">
-                <Link to="/tee-times" className="block w-full h-full">
+                <HashLink to="/#contact" className="block w-full h-full">
                   CONTACT US
-                </Link>
+                </HashLink>
               </button>
             </div>
 
@@ -154,7 +153,9 @@ const Fitness = () => {
           >
             <img src={Yoga} alt="Etiquette" className="max-w-xs " />
             <div className=" pt-4 md:pl-4">
-              <h1 className="text-3xl font-bold mb-3">GET YOUR ZEN ON</h1>
+              <h1 className="font-bold mb-3 text-4xl font-DinCondensed">
+                GET YOUR ZEN ON
+              </h1>
               Here at Texas 9 our yoga philosophy centers around inclusivity and
               accessibility, believing that yoga is for everyone, regardless of
               age or skill level. Classes cater to a diverse range ot

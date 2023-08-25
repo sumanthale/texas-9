@@ -10,7 +10,6 @@ const Home = () => {
     <>
       <Header />
       <HomeCards />
-      {/* <About /> */}
       <HomeDiv2 />
       <LeaveAMessage header={"HAVE QUESTIONS?"} />
       <Footer />

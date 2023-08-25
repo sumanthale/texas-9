@@ -11,7 +11,7 @@ const EventView = () => {
   return (
     <>
       <MiniHeader heading={"EVENTS"} subHeading={""} image={EVENTSHEADER} />
-      <div className="p-6">
+      <div className="p-6 font-primary">
         <div className="grid grid-cols-1  md:grid-cols-12 gap-6 gap-x-10   lg:pr-20 pb-6">
           <div className="md:col-span-12">
             <div className="md:flex justify-center items-center h-full">

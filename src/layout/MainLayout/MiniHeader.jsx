@@ -15,7 +15,7 @@ const MiniHeader = ({ heading, image }) => {
           }`,
         }}
       >
-        <h1 className="text-white text-3xl sm:text-7xl font-primary uppercase font-bold tracking-wide ">
+        <h1 className="text-white text-3xl sm:text-7xl font-DinCondensed uppercase font-bold tracking-wide ">
           {heading}
         </h1>
         {/* <div className="max-w-screen-xl px-4 mx-auto flex justify-center items-center w-full h-full"></div> */}

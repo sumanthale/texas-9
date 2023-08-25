@@ -1,18 +1,18 @@
 import MiniHeader from "../../layout/MainLayout/MiniHeader";
 import Footer from "../../reusable/Footer";
-import { Link } from "react-router-dom";
 import { Carousel } from "react-responsive-carousel";
 import Lessons1 from "../../assets/golf/lessons1.png";
 import Lessons2 from "../../assets/golf/lessons2.png";
 import Lessons3 from "../../assets/golf/lessons3.png";
-import Yoga from "../../assets/golf/yoga.png";
 import Instructor from "../../assets/golf/instructor.png";
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { HashLink } from "react-router-hash-link";
+
 const Lessons = () => {
   return (
     <>
       <MiniHeader heading={"Lessons"} subHeading={""} />
-      <div className="grid grid-cols-1  md:grid-cols-12 gap-6 gap-x-10  pt-6  lg:pr-20 pb-6">
+      <div className="grid grid-cols-1  md:grid-cols-12 gap-6 gap-x-10  pt-6  lg:pr-20 pb-6 font-primary">
         <div className="md:col-span-4 md:order-last mb-2 pr-4  pl-4 ">
           <div className="block md:hidden pl-4 lg:pl-20">
             <p className="text-justify ">
@@ -61,7 +61,7 @@ const Lessons = () => {
             </div>
           </div>
           <div className="border-4  gap-4 p-5 border-[#7da33f]">
-            <h1 className="text-[#7da33f] font-bold text-2xl text-center">
+            <h1 className="text-[#7da33f] font-bold text-4xl font-DinCondensed  text-center">
               LEARN FROM A PRO
             </h1>
             <div className="px-2">
@@ -84,9 +84,9 @@ const Lessons = () => {
               />
 
               <button className="uppercase outline outline-2 px-2 text-[#7da33f] w-full text-xl my-6 mb-0 tracking-wider  outline-[#7da33f] font-semibold">
-                <Link to="/tee-times" className="block w-full h-full">
+                <HashLink to="/#contact" className="block w-full h-full">
                   CONTACT US
-                </Link>
+                </HashLink>
               </button>
             </div>
           </div>
@@ -146,7 +146,7 @@ const Lessons = () => {
             style={{ marginTop: "20px" }}
           >
             {/* <img src={Yoga} alt="Etiquette" className="max-w-xs " /> */}
-            <h1 className="text-xl md:text-4xl font-bold">
+            <h1 className="text-xl md:text-5xl  font-DinCondensed font-bold">
               KEEP AN EYE OUT FOR MORE LESSONS AND <br />
               COLLABROATIONS COMING TO TEXAS 9 SOON!
             </h1>

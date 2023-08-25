@@ -23,11 +23,11 @@ const Tsheet = () => {
         image={TeeTimesHeader}
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-6 gap-x-10 pt-6 lg:pr-20 pb-6">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-6 gap-x-10 pt-6 lg:pr-20 pb-6 font-primary">
         <div className="md:col-span-12 md:flex justify-center items-center h-full">
           <div className="max-w-2xl mx-auto px-18">
             <div className="md:col-span-12 text-center my-4 p-1">
-              <h2 className="text-green text-3xl lg:text-5xl font-semibold mb-2 uppercase">
+              <h2 className="text-green text-3xl lg:text-5xl font-DinCondensed font-semibold mb-2 uppercase">
                 RESERVE YOUR RELAXATION
               </h2>
               <p className="text-center mt-4">

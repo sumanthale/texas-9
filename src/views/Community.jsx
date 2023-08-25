@@ -31,9 +31,9 @@ const Community = () => {
         subHeading={""}
         image={CommunityHeader}
       />
-      <div className="grid grid-cols-1  md:grid-cols-12 gap-6 gap-x-12  pt-6 w-full mx-auto">
+      <div className="grid grid-cols-1  md:grid-cols-12 gap-6 gap-x-12  pt-6 w-full mx-auto font-primary">
         <div className="md:col-span-12">
-          <p className=" md:block text-justify mb-6 mx-auto  lg:max-w-[90vw] ">
+          <p className=" md:block text-justify mb-6 mx-auto  max-w-[90vw] ">
             At our golf course, we recognize that the heart of our establishment
             is the vibrant community that forms around our greens. We understand
             that golf is more than just a game - it's a catalyst for
@@ -56,8 +56,8 @@ const Community = () => {
             />
 
             <div className=" flex items-center justify-center">
-              <div className="absolute top-2 w-full grid grid-cols-2 place-items-center">
-                <p className="text-4xl font-bold justify-self-center absolute text-center">
+              <div className="absolute top-0 lg:top-2 w-full grid grid-cols-2 place-items-center">
+                <p className="font-bold justify-self-center absolute text-center text-5xl font-DinCondensed">
                   Texas 9 Campus
                 </p>
                 <p></p>
@@ -87,7 +87,7 @@ const Community = () => {
           <div className="bg-[#172649] font-primary p-4 ">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-x-10  mx-auto  lg:max-w-[80vw] text-center md:text-start">
               <div className="p-4 lg:pl-10">
-                <h2 className="text-4xl font-semibold mb-2 text-white uppercase">
+                <h2 className="font-semibold mb-2 text-white uppercase text-5xl font-DinCondensed">
                   team enoch
                 </h2>
                 <p className="text-white mb-4 text-lg">
@@ -103,7 +103,7 @@ const Community = () => {
                 </button>
               </div>
               <div className="p-4 lg:pl-10">
-                <h2 className="text-4xl font-semibold mb-2 text-white">
+                <h2 className="text-5xl font-DinCondensed font-semibold mb-2 text-white">
                   TEXAS HEALTH SPORTS MEDICINE
                 </h2>
                 <p className="text-white mb-4 text-lg">
@@ -122,7 +122,7 @@ const Community = () => {
           </div>
 
           <div className="md:col-span-12 text-center my-4 p-1">
-            <h2 className="text-brown text-3xl lg:text-5xl font-semibold mb-2 uppercase">
+            <h2 className="text-brown text-3xl lg:text-5xl font-DinCondensed font-semibold mb-2 uppercase">
               Who We Work With
             </h2>
           </div>
@@ -172,7 +172,7 @@ const Community = () => {
           </div>
 
           <div className="col-span-1 lg:col-span-3 grid grid-cols-1 lg:grid-cols-3 border-4 mb-8 border-red-800   lg:max-w-[90vw] mx-4 lg:mx-auto ">
-            <div className="bg-white flex flex-col justify-between relative col-span-2 p-8">
+            <div className="bg-white flex flex-col justify-between relative col-span-2 p-4">
               <img
                 src={FIRSTTEELOGO}
                 alt="Golf Course"
@@ -192,7 +192,7 @@ const Community = () => {
                 href="https://firsttee.org"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden lg:block  text-brown py-2 px-8 rounded border-brown border text-xl tracking-wide w-fit  col-span-3"
+                className="text-brown py-2 px-8 rounded border-brown border text-xl tracking-wide w-fit  col-span-3"
                 style={{ border: "2px solid #8B4513" }}
               >
                 CHECK THEM OUT!
@@ -201,7 +201,7 @@ const Community = () => {
 
             <div className="h-full w-full col-span-1">
               <div
-                className="w-full carousel-image-item h-[360px] bg-cover bg-center border-t-4 lg:border-l-4 lg:border-t-0"
+                className="w-full carousel-image-item h-[370px] bg-cover bg-center border-t-4 lg:border-l-4 lg:border-t-0"
                 style={{
                   backgroundImage: `url(${FirstTee})`,
                   borderColor: "#8B4513",
@@ -238,20 +238,11 @@ const Community = () => {
                 href="https://youthoncourse.org"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden lg:block  text-brown py-2 px-8 rounded border-brown border text-xl tracking-wide w-fit  col-span-3"
+                className="text-brown py-2 px-8 rounded border-brown border text-xl tracking-wide w-fit  col-span-3"
                 style={{ border: "2px solid #8B4513" }}
               >
                 CHECK THEM OUT!
               </a>
-
-              {/* <button
-                className=" text-black py-2 px-4 rounded text-start border-2 w-fit"
-                style={{ border: "1px solid #8B4513", color: "#8B4513" }}
-              >
-                
-                
-                CHECK THEM OUT!
-              </button> */}
             </div>
           </div>
         </div>

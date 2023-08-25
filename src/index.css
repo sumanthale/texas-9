@@ -487,9 +487,12 @@ a {
 }
 @font-face {
   font-family: "G xligoblique";
-  src: url("./assets/fonts/Fontspring-DEMO-allroundgothic-xligoblique.ot") f;
+  src: url("./assets/fonts/Fontspring-DEMO-allroundgothic-xligoblique.otf");
 }
-
+@font-face {
+  font-family: "Din Condensed";
+  src: url("./assets/fonts/din-condensed_demi-bold.otf");
+}
 
 .active {
   border-bottom: 2px solid white; /* Adjust the color as needed */
@@ -503,22 +506,22 @@ a {
   border-color: brown;
 }
 
-.text-green{
+.text-green {
   color: #7ca23f;
 }
 
-.text-violet{
+.text-violet {
   color: #172649;
 }
 
-.border-violet{
+.border-violet {
   border-color: #172649;
 }
 
-.border-maroon{
+.border-maroon {
   color: #791214;
 }
 
-.text-maroon{
+.text-maroon {
   color: #791214;
 }

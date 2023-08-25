@@ -36,14 +36,14 @@ const Golf = () => {
           </div>
         </div>
 
-        <div className="col-span-12 grid grid-cols-1 lg:grid-cols-12 gap-4">
+        <div className="col-span-12 grid grid-cols-1 lg:grid-cols-12 gap-x-10 gap-y-4">
           <img
             src={MapCourse}
             alt="Golf Course"
-            className="object-fill col-span-8"
+            className="object-fill col-span-1 lg:col-span-9"
             style={{ width: "100%", height: "auto" }}
           />
-          <div className="col-span-4 flex  flex-col items-center justify-around space-y-4">
+          <div className="col-span-1 lg:col-span-3 flex  flex-col items-center justify-center  lg:justify-around space-y-4 font-bold px-8">
             <div>
               <button className="uppercase outline outline-1 px-2 text-[#7da33f] text-xl tracking-wider outline-[#7da33f]">
                 <Link to="/tee-times" className="block w-full h-full">
@@ -78,9 +78,9 @@ const Golf = () => {
             <img
               src={GolfBallPattern}
               alt="balls"
-              className="absolute -z-10 -left-20"
+              className="hidden lg:block absolute -z-10 -left-20"
             />
-            <h1 className="absolute text-xl md:text-3xl font-bold left-10">
+            <h1 className="absolute text-xl md:text-3xl font-bold left-10 top-3">
               KNOW THE ETIQUTTE
             </h1>
             <ul className="list-disc md:col-start-2 md:col-span-6 pt-10 mx-auto px-6 place-self-center">

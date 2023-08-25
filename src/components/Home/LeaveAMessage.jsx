@@ -38,9 +38,9 @@ const LeaveAMessage = ({ header }) => {
   const form = useRef();
 
   return (
-    <div className="bg-[#750b0b] font-primary p-4">
+    <div className="bg-[#750b0b] font-DinCondensed p-4" id="contact">
       {submitted && (
-        <h1 className=" text-center font-primary text-xl">
+        <h1 className=" text-center font-DinCondensed text-xl">
           Submitted Successfully !!
         </h1>
       )}

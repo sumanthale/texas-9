@@ -16,7 +16,7 @@ export default function IndexPage() {
             <details className="group [&_summary::-webkit-details-marker]:hidden">
               <summary className="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-300 hover:bg-gray-100 hover:text-gray-700">
                 <div className="flex items-center gap-2">
-                  <span className="text-sm font-medium"> GOLF </span>
+                  <span className="text-sm font-medium"> Golf </span>
                 </div>
 
                 <span className="shrink-0 transition duration-300 group-open:-rotate-180">
@@ -63,44 +63,12 @@ export default function IndexPage() {
                 </Link>
               </nav>
             </details>
-            <details className="group [&_summary::-webkit-details-marker]:hidden">
-              <summary className="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-300 hover:bg-gray-100 hover:text-gray-700">
-                <div className="flex items-center gap-2">
-                  <span className="text-sm font-medium"> Fitness </span>
-                </div>
-
-                <span className="shrink-0 transition duration-300 group-open:-rotate-180">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </span>
-              </summary>
-
-              <nav aria-label="Teams Nav" className="mt-2 flex flex-col px-4">
-                <Link
-                  to="/memberships"
-                  className="flex items-center gap-2 rounded-lg px-4 py-2 text-gray-300 hover:bg-gray-100 hover:text-gray-700"
-                >
-                  <span className="text-sm font-medium"> Memberships </span>
-                </Link>
-
-                <Link
-                  to="/services"
-                  className="flex items-center gap-2 rounded-lg px-4 py-2 text-gray-300 hover:bg-gray-100 hover:text-gray-700"
-                >
-                  <span className="text-sm font-medium">Services</span>
-                </Link>
-              </nav>
-            </details>
+            <Link
+              to="/fitness"
+              className="flex items-center gap-2 rounded-lg px-4 py-2 text-gray-300 hover:bg-gray-100 hover:text-gray-800"
+            >
+              <span className="text-sm font-medium"> Fitness</span>
+            </Link>
             <Link
               to="/tee-times"
               className="flex items-center gap-2 rounded-lg px-4 py-2 text-gray-300 hover:bg-gray-100 hover:text-gray-800"
