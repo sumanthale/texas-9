@@ -55,23 +55,40 @@ const Community = () => {
               style={{ width: "100%", height: "auto", maxHeight: "450px" }}
             />
 
-            <div className="absolute top-2 w-full">
-              <p className="text-center text-4xl lg:text-6xl font-bold ">
-                Texas 9 Campus
-              </p>
-            </div>
+           
 
-            {/* <div className="absolute top-2 w-full grid grid-cols-3 place-items-center">
-              <p className="  text-center text-4xl font-bold justify-self-end">
+
+<div className=" flex items-center justify-center">
+             <div className="absolute top-2 w-full grid grid-cols-2 place-items-center">
+              <p className="  text-right text-4xl font-bold justify-self-end">
                 Texas 9 Campus
               </p>
               <p className="  text-center  font-bold max-w-sm">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Asperiores saepe incidunt non. Iusto neque accusantium vel odit
-                porro, explicabo nisi voluptate esse!
+                Texas 9 has the honor of sharing it's clubhouse and campus with a few local companies that make us who we are?
               </p>
-            </div> */}
-          </div>
+            </div>   
+            </div>
+
+
+{/* <div className="relative flex items-center justify-center">
+            <div className="absolute top-2 w-full flex justify-center">
+              <div className="grid grid-cols-3 place-items-center">
+                <p className="text-center text-4xl font-bold">
+                  Texas 9 Campus
+                </p>
+                <p className="text-center font-bold max-w-sm">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Asperiores saepe incidunt non. Iusto neque accusantium vel odit
+                  porro, explicabo nisi voluptate esse!
+                </p>
+              </div>
+            </div>
+          </div> */}
+
+
+          </div> 
+
+
 
           <div className="bg-[#172649] font-primary p-4 ">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-x-10  mx-auto  lg:max-w-[80vw] text-center md:text-start">
@@ -85,7 +102,7 @@ const Community = () => {
                   Roofing needs!
                 </p>
                 <button className="text-white py-2 px-4 rounded border-2 ">
-                  <Link to="https://www.teamenoch.com"> LEARN MORE!</Link>
+                  <Link to="https://www.teamenoch.com" target={"_blank"}> LEARN MORE!</Link>
                 </button>
               </div>
               <div className="p-4 lg:pl-10">
@@ -98,7 +115,7 @@ const Community = () => {
                   pnvsical therapv and more
                 </p>
                 <button className=" text-white py-2 px-4 rounded border-2">
-                  LEARN MORE!
+                <Link to="https://www.texashealth.org" target={"_blank"}> LEARN MORE!</Link>
                 </button>
               </div>
             </div>
@@ -145,7 +162,7 @@ const Community = () => {
                 community, the support they received
               </p>
               <a
-                href="https://www.google.com/"
+                href="http://kjchoi.igearmall.biz/eng/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hidden lg:block  text-brown py-2 px-8 rounded border-brown border text-xl tracking-wide w-fit ml-0 lg:ml-16 col-span-3"
@@ -173,15 +190,24 @@ const Community = () => {
                 resilience that kids can carry to everything they do. We're
                 Building Game Changers through our junior golf programs.
               </p>
+              <a
+                href="https://firsttee.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hidden lg:block  text-brown py-2 px-8 rounded border-brown border text-xl tracking-wide w-fit ml-0 lg:ml-16 col-span-3"
+                style={{ border: "1px solid #8B4513" }}
+              >
+                CHECK THEM OUT!
+              </a>
               {/* <p className="tracking-wide text-4xl font-primary text-justify font-bold   text-red-800">
                 NO CLUB FEES! OPEN TO THE PUBLIC!
               </p> */}
-              <button
+              {/* <button
                 className=" text-black py-2 px-4 rounded text-start border-2 w-fit"
                 style={{ border: "1px solid #8B4513", color: "#8B4513" }}
               >
                 CHECK THEM OUT!
-              </button>
+              </button> */}
             </div>
 
             <div className="h-full w-full col-span-1">
@@ -223,14 +249,26 @@ const Community = () => {
                 gain oppurtunities through paid high school internships, college
                 scholarships and more, all while forging lifelong connections.
               </p>
+              <a
+                href="https://youthoncourse.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hidden lg:block  text-brown py-2 px-8 rounded border-brown border text-xl tracking-wide w-fit ml-0 lg:ml-16 col-span-3"
+                style={{ border: "1px solid #8B4513" }}
+              >
+                CHECK THEM OUT!
+              </a>
 
-              <button
+              {/* <button
                 className=" text-black py-2 px-4 rounded text-start border-2 w-fit"
                 style={{ border: "1px solid #8B4513", color: "#8B4513" }}
               >
+                
+                
                 CHECK THEM OUT!
-              </button>
+              </button> */}
             </div>
+            
           </div>
         </div>
       </div>

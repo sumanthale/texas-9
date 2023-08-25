@@ -111,11 +111,11 @@ const Footer = () => {
           <span className="">Terms of Use</span>
         </p>
       </div>
-      {lightboxOpen && (
+      {/* {lightboxOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center ">
           <div className="bg-white p-4 max-w-3xl rounded-lg w-[100vw] h-full">
             <iframe
-              src="https://docs.google.com/document/d/e/2PACX-1vSVHw6Y3ctzda_6SgSBsoo9dz_8LavIbYpW3EfZSMISE8037IW95vs6MtJ2iWZ-JZ0ICjcUS64kdVth/pub?embedded=true"
+              src="https://docs.google.com/document/d/e/2PACX-1vTJ6ViVDkQztPK7_pqn1sLTfyqycusF91f-Z7cg4YN5NIJyFsLXmFPLW4J6H9aI1qxAzi4Ph9POb_gQ/pub?embedded=true"
               title="privacy"
               style={{
                 height: "100%",
@@ -136,6 +136,26 @@ const Footer = () => {
             >
               Close
             </button>
+          </div>
+        </div>
+      )} */}
+      {lightboxOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+          <div className="bg-white p-4 max-w-3xl rounded-lg w-[100vw] h-full relative">
+            <button
+              onClick={closeLightbox}
+              className="absolute top-4 right-4 text-gray-700 cursor-pointer"
+            >
+              Close
+            </button>
+            <iframe
+              src="https://docs.google.com/document/d/e/2PACX-1vTJ6ViVDkQztPK7_pqn1sLTfyqycusF91f-Z7cg4YN5NIJyFsLXmFPLW4J6H9aI1qxAzi4Ph9POb_gQ/pub?embedded=true"
+              title="privacy"
+              style={{
+                height: "calc(100% - 60px)", // Adjust to leave space for close button
+                width: "100%",
+              }}
+            ></iframe>
           </div>
         </div>
       )}

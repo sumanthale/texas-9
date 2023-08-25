@@ -4,12 +4,10 @@ import Footer from "../reusable/Footer";
 import { LiaGolfBallSolid } from "react-icons/lia";
 import LeaveAMessage from "../components/Home/LeaveAMessage";
 import MapCourse from "../assets/golf/mapcourse.png";
-import Golf1 from "../assets/golf/golf1.png";
-import Golf2 from "../assets/golf/golf2.png";
-import Golf3 from "../assets/golf/golf3.png";
-import Golf4 from "../assets/golf/golf4.png";
-import Golf5 from "../assets/golf/golf5.png";
-import Golf6 from "../assets/golf/golf6.png";
+import Golf1 from "../assets/golf/golf-1.png";
+import Golf2 from "../assets/golf/golf-2.png";
+import Golf3 from "../assets/golf/golf-3.png";
+
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../index.css";
@@ -115,57 +113,29 @@ const Golf = () => {
               <li>fix your ball mark after you hit when on the green </li>
             </ul>
 
-            <div className="md:col-span-3 py-4">
-              <Carousel
-                autoPlay
-                infiniteLoop
-                swipeable={false}
-                showArrows={false}
-                showStatus={false}
-                showThumbs={false}
-                showIndicators={false}
-                interval={10000}
-                stopOnHover={false}
-                className="carousel"
-                style={{ maxHeight: "100%", maxWidth: "60%", margin: "0 auto" }}
-              >
-                <div
-                  className="w-full carousel-image-item h-[350px] bg-cover bg-center"
-                  style={{
-                    backgroundImage: `url(${Golf1})`,
-                  }}
-                ></div>
-                <div
-                  className="w-full carousel-image-item h-[350px] bg-cover bg-center"
-                  style={{
-                    backgroundImage: `url(${Golf2})`,
-                  }}
-                ></div>
-                <div
-                  className="w-full carousel-image-item h-[350px] bg-cover bg-center"
-                  style={{
-                    backgroundImage: `url(${Golf3})`,
-                  }}
-                ></div>
-                <div
-                  className="w-full carousel-image-item h-[350px] bg-cover bg-center"
-                  style={{
-                    backgroundImage: `url(${Golf4})`,
-                  }}
-                ></div>
-                <div
-                  className="w-full carousel-image-item h-[350px] bg-cover bg-center"
-                  style={{
-                    backgroundImage: `url(${Golf5})`,
-                  }}
-                ></div>
-                <div
-                  className="w-full carousel-image-item h-[350px] bg-cover bg-center"
-                  style={{
-                    backgroundImage: `url(${Golf6})`,
-                  }}
-                ></div>
-              </Carousel>
+            <div className="md:col-span-3 py-4 flex">
+            <img
+            src={Golf1}
+            alt="Golf Course"
+            className="object-fill"
+            style={{ width: "80%", height: "auto", maxHeight: "420px", marginRight: "30px" }}
+          />
+           <img
+            src={Golf2}
+            alt="Golf Course"
+            className="object-fill"
+            style={{ width: "80%", height: "auto", maxHeight: "420px", marginRight: "30px" }}
+          />
+
+          <img
+            src={Golf3}
+            alt="Golf Course"
+            className="object-fill"
+            style={{ width: "80%", height: "auto", maxHeight: "420px" }}
+          />
+
+          
+             
             </div>
           </div>
         </div> 
