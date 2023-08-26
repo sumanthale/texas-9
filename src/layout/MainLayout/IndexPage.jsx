@@ -37,26 +37,26 @@ export default function IndexPage() {
 
               <nav aria-label="Teams Nav" className="mt-2 flex flex-col px-4">
                 <Link
-                  to="/rates"
+                  to="/golf/rates"
                   className="flex items-center gap-2 rounded-lg px-4 py-2 text-gray-300 hover:bg-gray-100 hover:text-gray-700"
                 >
                   <span className="text-sm font-medium"> Rates </span>
                 </Link>
 
                 <Link
-                  to="/memberships"
+                  to="/golf/memberships"
                   className="flex items-center gap-2 rounded-lg px-4 py-2 text-gray-300 hover:bg-gray-100 hover:text-gray-700"
                 >
                   <span className="text-sm font-medium">Memberships</span>
                 </Link>
                 <Link
-                  to="/lessons"
+                  to="/golf/lessons"
                   className="flex items-center gap-2 rounded-lg px-4 py-2 text-gray-300 hover:bg-gray-100 hover:text-gray-700"
                 >
                   <span className="text-sm font-medium"> Lessons</span>
                 </Link>
                 <Link
-                  to="/tee-times"
+                  to="/golf/tee-times"
                   className="flex items-center gap-2 rounded-lg px-4 py-2 text-gray-300 hover:bg-gray-100 hover:text-gray-700"
                 >
                   <span className="text-sm font-medium"> Tee Times</span>
