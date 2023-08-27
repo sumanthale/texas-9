@@ -32,12 +32,12 @@ const Header = () => {
       <NavBar />
 
       <div className="pt-20 font-primary overflow-hidden">
-        <Slider {...settings} className="h-[55vh]">
+        <Slider {...settings} className="mt-10 lg:mt-0 h-full lg:h-[55vh]">
           {images.map((image, idx) => (
             <div key={idx} className="w-full">
               <img
                 src={image}
-                className="w-full h-[55vh] object-center object-fill lg:object-cover "
+                className="w-full h-full lg:h-[55vh] object-center object-contain lg:object-cover "
                 alt=""
               />
             </div>

@@ -147,11 +147,9 @@ const LeaveAMessage = ({ header }) => {
                 <option value="Topic" selected disabled hidden>
                   TOPIC
                 </option>
-                <option value="Job Interest">Job Interest</option>
-                <option value="General Inquiry">Tee Time</option>
-                <option value="Technical Support">Rates</option>
+                <option value="Job Interest">Golf</option>
                 <option value="Feedback">Memberships</option>
-                <option value="Other">Events</option>
+                <option value="Other">Events Rentals</option>
                 <option value="Other">Other</option>
               </select>
               <textarea

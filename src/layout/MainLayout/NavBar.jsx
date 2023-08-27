@@ -34,7 +34,7 @@ const NavBar = () => {
     <>
       {/* <div className="fixed  z-50 w-full bg-[#162649] text-white"> */}
       <div className="fixed z-50 w-full h-[80px] bg-[#162649] text-white font-DinCondensed text-xl">
-        <div className=" px-6 py-2 bg-[#7da33f] flex items-center justify-center absolute right-8 lg:right-20  top-16  ">
+        <div className=" px-6 py-2 bg-[#7da33f] flex items-center justify-center absolute right-8 lg:right-20 top-20  md:top-16  ">
           <Link to={"/tee-times"} className="hover:text-white">
             BOOK A TEE TIME
           </Link>
@@ -43,7 +43,7 @@ const NavBar = () => {
           <div className="mr-auto p-4 lg:ml-16">
             <Link to={"/"}>
               <img
-                className="absolute top-2 h-[50px]"
+                className="absolute top-2 h-[50px] z-30"
                 src={LogoImg}
                 alt="Logo"
               />
@@ -190,7 +190,9 @@ const NavBar = () => {
         </div>
         <div className="h-full flex lg:hidden items-center  pr-10">
           <div className="mr-auto p-3">
-            <img className="absolute h-16 top-2" src={LogoImg} alt="Logo" />
+            <Link to={"/"}>
+              <img className="absolute h-16 top-2" src={LogoImg} alt="Logo" />
+            </Link>
           </div>
           <button
             onClick={() => {

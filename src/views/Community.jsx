@@ -56,7 +56,7 @@ const Community = () => {
             />
 
             <div className=" flex items-center justify-center">
-              <div className="absolute top-0 lg:top-2 w-full grid grid-cols-2 place-items-center">
+              <div className="absolute top-8 lg:top-2 w-full grid grid-cols-2 place-items-center">
                 <p className="font-bold justify-self-center absolute text-center text-5xl font-DinCondensed">
                   Texas 9 Campus
                 </p>

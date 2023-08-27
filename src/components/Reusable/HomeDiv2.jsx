@@ -111,7 +111,7 @@ const HomeDiv2 = () => {
                 interest in adding new amenities and reinforcing the best
                 aspects of the course.
               </p>
-              <p className="tracking-wide text-4xl bottom-0 relative  lg:absolute font-DinCondensed text-justify font-bold   text-red-800">
+              <p className="tracking-wide text-4xl bottom-0 relative  lg:absolute font-DinCondensed text-left font-bold   text-red-800">
                 NO CLUB FEES! OPEN TO THE PUBLIC!
               </p>
             </div>
@@ -138,7 +138,10 @@ const HomeDiv2 = () => {
               onChange={setCurrentReview}
             >
               {reviews.map((review) => (
-                <div key={review.id} className="review-slide text-justify">
+                <div
+                  key={review.id}
+                  className="review-slide text-left lg:text-justify"
+                >
                   <p dangerouslySetInnerHTML={{ __html: review.text }}></p>
                   <p className="text-right font-bold">- {review.author}</p>
                 </div>
@@ -147,7 +150,10 @@ const HomeDiv2 = () => {
           </div>
           <div className="hidden hero-content md:flex w-[70vw] mr-auto">
             {reviews.map((review) => (
-              <div key={review.id} className="review-slide text-justify">
+              <div
+                key={review.id}
+                className="review-slide text-left lg:text-justify"
+              >
                 <p dangerouslySetInnerHTML={{ __html: review.text }}></p>
                 <p className="text-right font-bold">- {review.author}</p>
               </div>
