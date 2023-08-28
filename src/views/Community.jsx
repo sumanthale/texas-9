@@ -92,7 +92,7 @@ const Community = () => {
                 </h2>
                 <p className="text-white mb-4 text-lg">
                   Team Enoch's roots are right here, in DFW serving the
-                  community with all their HVAC, Electrical, Flumming and
+                  community with all their HVAC, Electrical, Plumbing and
                   Roofing needs!
                 </p>
                 <button className="text-white py-2 px-4 rounded border-2 ">
