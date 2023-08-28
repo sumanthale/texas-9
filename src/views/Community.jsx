@@ -179,7 +179,7 @@ const Community = () => {
                 className="object-fill lg:col-span-1"
                 style={{ width: "50%", height: "auto", maxHeight: "350px" }}
               />
-              <p className="tracking-wide text-xl font-primary  font-semibold  my-3 text-justify">
+              <p className="tracking-wide text-xl  font-semibold  my-3 text-justify font-ShreeDevanagari">
                 First Tee is a youth development organization that enables kids
                 to bulld the strength of character that empowers them through a
                 lifetime of new challenges. By seamlessly integrating the game

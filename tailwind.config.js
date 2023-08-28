@@ -33,6 +33,7 @@ module.exports = {
         Gxlig: ["G xlig", "sans-serif"],
         Gxligoblique: ["G xligoblique", "sans-serif"],
         DinCondensed: ["Din Condensed", "sans-serif"],
+        ShreeDevanagari: ["Shree Devanagari", "sans-serif"],
       },
     },
   },

@@ -493,6 +493,10 @@ a {
   font-family: "Din Condensed";
   src: url("./assets/fonts/din-condensed_demi-bold.otf");
 }
+@font-face {
+  font-family: "Shree Devanagari";
+  src: url("./assets/fonts/Shree-Devanagari-714.ttf");
+}
 
 .active {
   border-bottom: 2px solid white; /* Adjust the color as needed */

@@ -51,7 +51,7 @@ const Rates = () => {
                       course - $10/<span className="text-sm">person</span>
                     </li>
                     <li className="lowercase font-thin text-lg">
-                      golf cart - $18/<span className="text-sm">person</span>
+                      golf cart - $18/<span className="text-sm font-">person</span>
                     </li>
                   </ul>
                 </li>
