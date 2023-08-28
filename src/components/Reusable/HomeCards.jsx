@@ -76,7 +76,7 @@ const HomeCards = () => {
             className={`back ${flipped ? "" : "hidden"}`}
             style={{ transform: "rotateX(180deg)" }}
           >
-            <p className="text-center text-white pt-4 text-lg font-primary ">
+            <p className="text-center text-white pt-4 text-lg font-primary font-semibold ">
               {texts[index].back}
             </p>
           </div>

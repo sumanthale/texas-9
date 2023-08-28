@@ -38,9 +38,9 @@ const LeaveAMessage2 = ({ header }) => {
   const form = useRef();
 
   return (
-    <div className="bg-[#750b0b] font-primary p-4">
+    <div className="bg-[#750b0b] font-primary font-semibold p-4">
       {submitted && (
-        <h1 className=" text-center font-primary text-xl">
+        <h1 className=" text-center font-primary font-semibold text-xl">
           Submitted Successfully !!
         </h1>
       )}
@@ -71,7 +71,7 @@ const LeaveAMessage2 = ({ header }) => {
             <p className="text-xl">
               <a href="mailto:contact@texas9.com"> contact@texas9.com</a>
             </p>
-            
+
             {/* <a
               style={{ backgroundColor: "#7DA33F", color: "#FFF" }}
               href="https://goo.gl/maps/iPceoCQZ3R8JjvR58"
@@ -88,7 +88,7 @@ const LeaveAMessage2 = ({ header }) => {
             ref={form}
             className="horizontal-line  ml-auto"
           >
-            <h1 className="uppercase tracking-wide text-3xl text-white font-primary pb-4 font-bold">
+            <h1 className="uppercase tracking-wide text-3xl text-white font-primary font-semibold pb-4 font-bold">
               {header}
             </h1>
             <div className="grid grid-cols-2 gap-4">
@@ -152,7 +152,7 @@ const LeaveAMessage2 = ({ header }) => {
             <div className="w-full flex">
               <button
                 type="submit"
-                className="uppercase px-4 py-2 ml-auto  text-white text-sm font-medium"
+                className="uppercase px-4 py-2 ml-auto  text-white text-sm font-GBook font-semibold"
                 style={{ backgroundColor: "#7DA33F", color: "#FFF" }}
               >
                 Submit

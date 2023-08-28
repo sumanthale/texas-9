@@ -21,7 +21,7 @@ const Membership = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 border-4 gap-4 mb-8 border-violet   lg:max-w-[90vw] mx-4 lg:mx-auto ">
         <div className="col-span-2 lg:col-span-1 p-4">
           <div className="flex flex-col items-center"></div>
-          <p className="tracking-wide text-xl font-primary font-semibold my-3 text-start">
+          <p className="tracking-wide text-xl font-primary  font-semibold my-3 text-start">
             <h1 className="text-violet font-bold text-4xl text-center my-4 font-DinCondensed">
               TEXAS 9 MEMBER
             </h1>
@@ -39,8 +39,8 @@ const Membership = () => {
                 </li>
               </ul>
               <ul className="list-disc list-inside mt-4 pl-4 lg:pl-10">
-                <li className="text-xl uppercase font-semibold">
-                  ADDITONAL FAMILY - $540/PERSOn <br />{" "}
+                <li className="text-xl  font-semibold">
+                  ADDITONAL FAMILY - $540/PERSON <br />{" "}
                   <span className="text-lg font-normal ml-6 lg:ml-10">
                     * up to 4 additional familv members
                   </span>
@@ -51,12 +51,12 @@ const Membership = () => {
         </div>
 
         <div className="col-span-2 lg:col-span-1 p-4">
-          <p className="tracking-wide text-xl font-primary font-semibold my-3 text-start">
+          <p className="tracking-wide text-xl font-primary  font-semibold my-3 text-start">
             <h1 className="text-violet font-bold text-4xl text-center my-4 font-DinCondensed">
               RANGE MEMEBER
             </h1>
             <div className="px-2 text">
-              <p className="text-center  my-4">
+              <p className="text-center  my-4 h-20">
                 Texas 9 Range Members receive unlimited access to the driving
                 range anytime day or night to perfect their swing.
               </p>
@@ -68,8 +68,8 @@ const Membership = () => {
                 </li>
               </ul>
               <ul className="list-disc list-inside mt-4 pl-4 lg:pl-10">
-                <li className="text-xl uppercase font-semibold">
-                  ADDITIONAL FAMILY - $324/PERSOn <br />{" "}
+                <li className="text-xl  font-semibold">
+                  ADDITIONAL FAMILY - $324/PERSON <br />{" "}
                   <span className="text-lg font-normal ml-6 lg:ml-10">
                     * up to 4 additional family members
                   </span>
@@ -110,7 +110,7 @@ const Membership = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 border-4 gap-4 mb-8 border-red-800   lg:max-w-[90vw] mx-4 lg:mx-auto ">
         <div className="col-span-2 lg:col-span-1 p-4">
           <div className="flex flex-col items-center"></div>
-          <p className="tracking-wide text-xl font-primary font-semibold my-3 text-justify">
+          <p className="tracking-wide text-xl font-primary  font-semibold my-3 text-justify">
             <h1 className="text-maroon font-bold text-4xl font-DinCondensed text-center my-4">
               TEXAS 9 MEMBER
             </h1>
@@ -128,8 +128,8 @@ const Membership = () => {
                 </li>
               </ul>
               <ul className="list-disc list-inside mt-4 pl-4 lg:pl-10">
-                <li className="text-xl uppercase font-semibold">
-                  ADDITONAL FAMILY - $50/PERSOn <br />{" "}
+                <li className="text-xl  font-semibold">
+                  ADDITONAL FAMILY - $50/PERSON <br />{" "}
                   <span className="text-lg font-normal ml-6 lg:ml-10">
                     * up to 4 additional family members
                   </span>
@@ -141,12 +141,12 @@ const Membership = () => {
         </div>
 
         <div className="col-span-2 lg:col-span-1 p-4">
-          <p className="tracking-wide text-xl font-primary font-semibold my-3 text-justify">
+          <p className="tracking-wide text-xl font-primary  font-semibold my-3 text-justify">
             <h1 className="text-maroon font-bold text-4xl font-DinCondensed  text-center my-4">
               RANGE MEMEBER
             </h1>
             <div className="px-2 text">
-              <p className="text-center  my-4">
+              <p className="text-center  my-4 h-20">
                 Texas 9 Range Members receive unlimited access to the driving
                 range anytime day or night to perfect their swing.
               </p>
@@ -158,8 +158,8 @@ const Membership = () => {
                 </li>
               </ul>
               <ul className="list-disc list-inside mt-4 pl-4 lg:pl-10">
-                <li className="text-xl uppercase font-semibold">
-                  ADDITIONAL FAMILY - $35/PERSOn <br />{" "}
+                <li className="text-xl  font-semibold">
+                  ADDITIONAL FAMILY - $35/PERSON <br />{" "}
                   <span className="text-lg font-normal ml-6 lg:ml-10">
                     * up to 4 additional family members
                   </span>

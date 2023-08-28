@@ -63,15 +63,17 @@ const LeaveAMessage = ({ header }) => {
             className="col-span-3"
           ></iframe>
 
-          <div className="text-white space-y-2 col-span-1 justify-self-center ml-4">
-            <h1 className="text-3xl uppercases font-bold w-48">FIND TEXAS 9</h1>
-            <p className="text-xl">
+          <div className="text-white space-y-2 col-span-1 ml-10  justify-self-center mt-2 lg:mt-0 lg:ml-4 font-primary ">
+            <h1 className="text-3xl uppercases font-DinCondensed w-48">
+              FIND TEXAS 9
+            </h1>
+            <p className="text-lg">
               <a href="tel:+1-817-303-4370"> 817-303-4370</a>
             </p>
-            <p className="text-xl">
+            <p className="text-lg">
               <a href="mailto:contact@texas9.com"> contact@texas9.com</a>
             </p>
-            <p className="text-xl pb-5">
+            <p className="text-lg pb-5">
               {" "}
               <a
                 href="https://goo.gl/maps/iPceoCQZ3R8JjvR58"
@@ -91,7 +93,7 @@ const LeaveAMessage = ({ header }) => {
               rel="noopener noreferrer"
             >
               <span
-                className="text-sm font-medium px-4 py-2"
+                className="text-lg font-medium px-4 py-2 font-GBook"
                 style={{ backgroundColor: "#7DA33F", color: "#FFF" }}
               >
                 PLAN YOUR VISIT
@@ -99,18 +101,18 @@ const LeaveAMessage = ({ header }) => {
             </a>
           </div>
         </div>
-        <div className="ml-auto p-4 col-span-2 w-[90%]">
+        <div className="ml-auto p-4 col-span-2 lg:w-[90%]">
           <form
             onSubmit={handleSubmit}
             ref={form}
             className="horizontal-line  ml-auto"
           >
-            <h1 className="uppercase tracking-wide text-3xl text-white font-primary pb-4 font-bold">
+            <h1 className="uppercase tracking-wide text-center text-3xl text-white font-DinCondensed pb-4 font-bold">
               {header}
             </h1>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-2 font-primary font-semibold">
               <input
-                className="bg-transparent outline outline-1 outline-white mb-4 h-14 w-full max-w-screen-md rounded-sm p-4  caret-black
+                className="bg-transparent outline outline-1 outline-white  h-14 w-full max-w-screen-md rounded-sm p-3  caret-black
                   bg-white placeholder:text-black"
                 type="text"
                 placeholder="NAME"
@@ -119,7 +121,7 @@ const LeaveAMessage = ({ header }) => {
                 name="from_name"
               />
               <input
-                className="bg-transparent outline outline-1 outline-white mb-4 h-14 w-full max-w-screen-md rounded-sm p-4  caret-black
+                className="bg-transparent outline outline-1 outline-white  h-14 w-full max-w-screen-md rounded-sm p-3  caret-black
                   bg-white placeholder:text-black"
                 type="email"
                 placeholder="EMAIL"
@@ -128,7 +130,7 @@ const LeaveAMessage = ({ header }) => {
                 ref={emailRef}
               />
               <input
-                className="bg-transparent outline outline-1 outline-white mb-4 h-14 w-full max-w-screen-md rounded-sm p-4  caret-black
+                className="bg-transparent outline outline-1 outline-white  h-14 w-full max-w-screen-md rounded-sm p-3  caret-black
                   bg-white placeholder:text-black"
                 type="tel"
                 placeholder="PHONE"
@@ -137,7 +139,7 @@ const LeaveAMessage = ({ header }) => {
                 name="from_phone"
               />
               <select
-                className="bg-transparent outline outline-1 outline-white mb-4 h-14 w-full max-w-screen-md rounded-sm p-4  caret-black
+                className="bg-transparent outline outline-1 outline-white  h-14 w-full max-w-screen-md rounded-sm p-3  caret-black
                   bg-white placeholder:text-black"
                 required
                 name="subject"
@@ -153,7 +155,7 @@ const LeaveAMessage = ({ header }) => {
                 <option value="Other">Other</option>
               </select>
               <textarea
-                className="bg-transparent outline outline-1 outline-white mb-4 w-full max-w-screen-md rounded-sm p-4  caret-black col-span-2
+                className="bg-transparent outline outline-1 outline-white mb-3 w-full max-w-screen-md rounded-sm p-3  caret-black col-span-2
                   bg-white placeholder:text-black"
                 name="message"
                 id="description"
@@ -167,7 +169,7 @@ const LeaveAMessage = ({ header }) => {
             <div className="w-full flex">
               <button
                 type="submit"
-                className="uppercase px-4 py-2 ml-auto  text-white text-sm font-medium"
+                className="uppercase px-6 py-2 ml-auto  text-white text-lg font-GBook font-semibold"
                 style={{ backgroundColor: "#7DA33F", color: "#FFF" }}
               >
                 Submit

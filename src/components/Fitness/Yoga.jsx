@@ -15,19 +15,19 @@ const Yoga = () => {
             />
           </div>
           <div className="">
-            <h1 className="uppercase tracking-wide text-2xl font-primary font-bold text-green-600 ">
+            <h1 className="uppercase tracking-wide text-2xl font-primary font-semibold font-bold text-green-600 ">
               Yoga
             </h1>
-            <h1 className="tracking-wide text-md font-primary  my-3 ">
+            <h1 className="tracking-wide text-md font-primary font-semibold  my-3 ">
               Discover inner peace and enhance your physical and mental
               well-being through our transformative Yoga classes, fostering
               balance, flexibility, and mindfulness for a harmonious and
               rejuvenating experience.
             </h1>
-            <h1 className="uppercase tracking-wide my-3 text-2xl font-primary font-bold text-green-600">
+            <h1 className="uppercase tracking-wide my-3 text-2xl font-primary font-semibold font-bold text-green-600">
               BENEFIT
             </h1>
-            <h1 className=" my-4 tracking-wide text-xl font-primary font-bold ">
+            <h1 className=" my-4 tracking-wide text-xl font-primary font-semibold font-bold ">
               Flexibility | Stress reduction | Mental & Emotional Well Being
             </h1>
 

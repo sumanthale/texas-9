@@ -55,9 +55,9 @@ const LeaveAMessage = ({ header }) => {
             <h1 className="uppercase tracking-wide md:text-4xl text-center text-white text-5xl font-DinCondensed pb-6 font-bold">
               {header}
             </h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 font-primary font-semibold">
               <input
-                className="col-span-1 bg-transparent outline outline-1 outline-white mb-4 h-14 w-full max-w-screen-md rounded-sm p-4  caret-black
+                className="col-span-1 bg-transparent outline outline-1 outline-white  h-14 w-full max-w-screen-md rounded-sm p-3  caret-black
                   bg-white placeholder:text-black"
                 type="text"
                 placeholder="NAME"
@@ -66,7 +66,7 @@ const LeaveAMessage = ({ header }) => {
                 name="from_name"
               />
               <input
-                className="col-span-1 bg-transparent outline outline-1 outline-white mb-4 h-14 w-full max-w-screen-md rounded-sm p-4  caret-black
+                className="col-span-1 bg-transparent outline outline-1 outline-white  h-14 w-full max-w-screen-md rounded-sm p-3  caret-black
                   bg-white placeholder:text-black"
                 type="email"
                 placeholder="EMAIL"
@@ -75,7 +75,7 @@ const LeaveAMessage = ({ header }) => {
                 ref={emailRef}
               />
               <input
-                className="col-span-1 bg-transparent outline outline-1 outline-white mb-4 h-14 w-full max-w-screen-md rounded-sm p-4  caret-black
+                className="col-span-1 bg-transparent outline outline-1 outline-white  h-14 w-full max-w-screen-md rounded-sm p-3  caret-black
                   bg-white placeholder:text-black"
                 type="tel"
                 placeholder="PHONE"
@@ -84,7 +84,7 @@ const LeaveAMessage = ({ header }) => {
                 name="from_phone"
               />
               <select
-                className="col-span-1 bg-transparent outline outline-1 outline-white mb-4 h-14 w-full max-w-screen-md rounded-sm p-4  caret-black
+                className="col-span-1 bg-transparent outline outline-1 outline-white  h-14 w-full max-w-screen-md rounded-sm p-3  caret-black
                   bg-white placeholder:text-black"
                 required
                 name="subject"
@@ -100,7 +100,7 @@ const LeaveAMessage = ({ header }) => {
                 <option value="Other">Other</option>
               </select>
               <textarea
-                className="col-span-1 bg-transparent outline outline-1 outline-white mb-4 w-full  rounded-sm p-4  caret-black md:col-span-2
+                className="col-span-1 bg-transparent outline outline-1 outline-white mb-2 w-full  rounded-sm p-3  caret-black md:col-span-2
                   bg-white placeholder:text-black"
                 name="message"
                 id="description"
@@ -114,7 +114,7 @@ const LeaveAMessage = ({ header }) => {
             <div className="w-full flex">
               <button
                 type="submit"
-                className="uppercase px-4 py-2 ml-auto  text-white text-sm font-medium"
+                className="uppercase px-6 py-2 ml-auto  text-white text-lg font-GBook font-semibold"
                 style={{ backgroundColor: "#7DA33F", color: "#FFF" }}
               >
                 Submit

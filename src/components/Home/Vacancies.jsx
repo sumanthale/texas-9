@@ -5,7 +5,7 @@ const Vacancies = () => {
   return (
     <div className="my-6">
       <div className="flex flex-col justify-center items-center h-full">
-        <h1 className="uppercase text-center tracking-wide text-2xl font-primary my-4 text">
+        <h1 className="uppercase text-center tracking-wide text-2xl font-primary font-semibold my-4 text">
           Vacancies
         </h1>
 

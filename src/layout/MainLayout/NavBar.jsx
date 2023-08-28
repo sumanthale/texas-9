@@ -34,12 +34,12 @@ const NavBar = () => {
     <>
       {/* <div className="fixed  z-50 w-full bg-[#162649] text-white"> */}
       <div className="fixed z-50 w-full h-[80px] bg-[#162649] text-white font-DinCondensed text-xl">
-        <div className=" px-6 py-2 bg-[#7da33f] flex items-center justify-center absolute right-8 lg:right-20 top-20  md:top-16  ">
-          <Link to={"/tee-times"} className="hover:text-white">
+        <div className=" px-6 py-2 bg-[#7da33f] flex items-center justify-center absolute right-8 lg:right-24 top-20  md:top-16  ">
+          <Link to={"/tee-times"} className="hover:text-white font-GBook">
             BOOK A TEE TIME
           </Link>
         </div>
-        <div className="hidden lg:flex items-center font-semibold  links justify-center pr-10 h-[80px] relative ">
+        <div className="hidden lg:flex items-center font-semibold  links justify-center pr-6 h-[80px] relative ">
           <div className="mr-auto p-4 lg:ml-16">
             <Link to={"/"}>
               <img
@@ -151,22 +151,6 @@ const NavBar = () => {
             </Link>
           </div>
 
-          {/* <div
-          className="dot-separator"
-          style={{
-            width: "6px",
-            height: "6px",
-            backgroundColor: "#888", // or any other grey color you prefer
-            borderRadius: "50%",
-            margin: "0 10px", // adjust the margin to control the spacing
-          }}
-        />
-
-
-          <div className="p-4">
-            <Link to={"/contact"}>CONTACT</Link>
-          </div> */}
-
           <div
             className="dot-separator"
             style={{
@@ -238,7 +222,10 @@ const NavBar = () => {
                         </svg>
                       </button>
                     </div>
-                    <div className="mt-5 mx-auto text-3xl font-bold underline underline-offset-4">
+                    <Link
+                      to="/"
+                      className="mt-5 mx-auto text-3xl font-bold underline underline-offset-4"
+                    >
                       <img
                         src={LogoImg}
                         alt="Logo"
@@ -247,7 +234,7 @@ const NavBar = () => {
                           margin: "0 auto",
                         }}
                       />
-                    </div>
+                    </Link>
                     <div className="relative mt-2 flex-1 px-4 sm:px-6">
                       <IndexPage />
                     </div>

@@ -5,7 +5,7 @@ import GolfLesson from "../../assets/golf/golf-lesson.jpeg";
 import { Link } from "react-router-dom";
 const FitnessCards = () => {
   return (
-    <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-y-6 md:gap-y-16  font-primary gap-8 ">
+    <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-y-6 md:gap-y-16  font-primary font-semibold gap-8 ">
       <Link to="/golf/rates">
         <div
           className="h-60 bg-cover bg-center"

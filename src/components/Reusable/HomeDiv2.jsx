@@ -16,13 +16,13 @@ const HomeDiv2 = () => {
   const reviews = [
     {
       id: 1,
-      text: `<b style="font-size:22px">NINE HOLE LITTLE PARADISE</b>.\nExcellent course to work on your short game. Staff was friendlier than any big course I have gone to!`,
+      text: `<b style="font-size:22px; font-family:'Din Condensed'">NINE HOLE LITTLE PARADISE</b>.\nExcellent course to work on your short game. Staff was friendlier than any big course I have gone to!`,
       author: "HECTOR GARZA",
     },
     // Add more reviews here
     {
       id: 2,
-      text: `Hospitality is everything and we immediately felt welcomed! The course was awesome and they even have brand <b style="font-size:22px">NEW EPIC GOLF CARTS</b> that are a must.`,
+      text: `Hospitality is everything and we immediately felt welcomed! The course was awesome and they even have brand <b style="font-size:22px; font-family:'Din Condensed'">NEW EPIC GOLF CARTS</b> that are a must.`,
       author: "ARMANDO AGUILAR",
     },
   ];
@@ -39,26 +39,41 @@ const HomeDiv2 = () => {
 
   return (
     <div>
-      <div className="  py-4  font-primary first-letter: ">
+      <div className="  py-4  font-primary font-semibold first-letter: ">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
           <div className="bg-[#7DA33F] px-8 py-4 flex flex-col items-center text-white col-span-1 lg:col-span-1">
-            <h1 className="uppercase tracking-wide text-4xl font-DinCondensed font-bold text-center mt-6">
-              GET YOUR <br />
+            <h1 className="uppercase tracking-wide text-4xl lg:text-6xl font-DinCondensed font-bold text-center mt-6">
+              GET YOUR <br className="hidden lg:block" />
               TEE TIME!
             </h1>
-            <p className="tracking-wide text-xl font-primary text-center font-semibold my-3 lg:mx-16">
+            <p className="tracking-wide text-lg lg:text-xl font-primary font-semibold text-center  my-2 mx-8 lg:mx-14">
               Minimize the wait and schedule your next visit on our nine hole
               course.
             </p>
             <Link
               to="/tee-times"
-              className=" p-2 px-8 text-2xl bg-[#7DA33F]  hover:text-gray-800 border-2 border-white"
+              className=" p-2 px-8 text-2xl bg-[#7DA33F]  hover:text-gray-800 border-2 border-white font-GBook"
             >
               BOOK NOW
             </Link>
           </div>
 
           <div className="col-span-1 lg:col-span-3 grid grid-cols-1 lg:grid-cols-3 border-2 gap-4 p-4 border-red-800 border-r-0 -pr">
+            <div className="flex lg:hidden bg-white  flex-col justify-between md:pr-20 relative col-span-2">
+              <p className=" tracking-wide text-xl font-primary  font-semibold text-left lg:text-justify">
+                Hailed as one of the best executive golf courses in DFW, our
+                course was designed by Steven D. Plumber, ASGCA, and opened in
+                1999. The course was created to be a public course, filling a
+                niche in DFW so the greater community can have better access to
+                the benefits of golf. Formerly known as Texas Golf Center, the
+                course came under new management in 2023 with an explicit
+                interest in adding new amenities and reinforcing the best
+                aspects of the course.
+              </p>
+              <p className="tracking-wide text-4xl lg:text-5xl -bottom-2  relative  lg:absolute font-DinCondensed text-left font-bold   text-red-800">
+                NO CLUB FEES! OPEN TO THE PUBLIC!
+              </p>
+            </div>
             <div className="h-full w-full col-span-1">
               <Carousel
                 autoPlay
@@ -100,15 +115,18 @@ const HomeDiv2 = () => {
               </Carousel>
             </div>
 
-            <div className="bg-white flex flex-col justify-between md:pr-20 relative col-span-2">
-              <p className="tracking-wide text-xl font-primary  font-semibold text-justify">
-              Hailed as one of the best executive golf courses in DFW, our course was designed by Steven D.
-              Plumber, ASGCA, and opened in 1999. The course was created to be a public course, filling a niche in DFW
-              so the greater community can have better access to the benefits of golf. Formerly known as Texas Golf Center,
-              the course came under new management in 2023 with an explicit interest in adding new amenities and reinforcing the best aspects of the course.
-
+            <div className="hidden lg:flex bg-white  flex-col justify-between md:pr-20 relative col-span-2">
+              <p className=" tracking-wide text-xl font-primary  font-semibold text-left lg:text-justify">
+                Hailed as one of the best executive golf courses in DFW, our
+                course was designed by Steven D. Plumber, ASGCA, and opened in
+                1999. The course was created to be a public course, filling a
+                niche in DFW so the greater community can have better access to
+                the benefits of golf. Formerly known as Texas Golf Center, the
+                course came under new management in 2023 with an explicit
+                interest in adding new amenities and reinforcing the best
+                aspects of the course.
               </p>
-              <p className="tracking-wide text-4xl bottom-0 relative  lg:absolute font-DinCondensed text-left font-bold   text-red-800">
+              <p className="tracking-wide text-4xl lg:text-5xl -bottom-2  relative  lg:absolute font-DinCondensed text-left font-bold   text-red-800">
                 NO CLUB FEES! OPEN TO THE PUBLIC!
               </p>
             </div>
@@ -137,10 +155,12 @@ const HomeDiv2 = () => {
               {reviews.map((review) => (
                 <div
                   key={review.id}
-                  className="review-slide text-left lg:text-justify"
+                  className="review-slide text-center lg:text-justify font-primary font-semibold"
                 >
                   <p dangerouslySetInnerHTML={{ __html: review.text }}></p>
-                  <p className="text-right font-bold">- {review.author}</p>
+                  <p className="text-right font-DinCondensed font-bold ">
+                    - {review.author}
+                  </p>
                 </div>
               ))}
             </Carousel>
@@ -149,10 +169,12 @@ const HomeDiv2 = () => {
             {reviews.map((review) => (
               <div
                 key={review.id}
-                className="review-slide text-left lg:text-justify"
+                className="review-slide text-center lg:text-justify font-primary font-semibold"
               >
                 <p dangerouslySetInnerHTML={{ __html: review.text }}></p>
-                <p className="text-right font-bold">- {review.author}</p>
+                <p className="text-right font-DinCondensed font-bold">
+                  - {review.author}
+                </p>
               </div>
             ))}
           </div>

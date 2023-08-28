@@ -12,12 +12,12 @@ const FitnessMembership = () => {
       <MiniHeader heading={"Fitness"} subHeading={""} image={FtinessImg} />
       <div className="p-5 md:p-16 bg-[#162649]">
         <div
-          className="text-slate-100 bg-cover pt-10 font-primary mb-10"
+          className="text-slate-100 bg-cover pt-10 font-primary font-semibold mb-10"
           style={{
             backgroundImage: `url(${RangeImg})`,
           }}
         >
-          {/* <h1 className=" tracking-wide text-2xl sm:text-4xl md:text-5xl lg:text-7xl text-black font-bold  font-primary text-center py-8 px-4  w-fit m-auto  rounded-xl">
+          {/* <h1 className=" tracking-wide text-2xl sm:text-4xl md:text-5xl lg:text-7xl text-black font-bold  font-primary font-semibold text-center py-8 px-4  w-fit m-auto  rounded-xl">
           Become a Texas 9 GYM member today!
         </h1> */}
           <div className="m-auto w-full py-8 flex items-center justify-center gap-4 text-xl font-bold text-black ">
@@ -35,9 +35,9 @@ const FitnessMembership = () => {
 
           {!isMonthly ? (
             <div className="mx-4 grid grid-cols-1 pb-8 justify-items-center gap-y-8">
-              <div className="card-fitness font-primary">
+              <div className="card-fitness font-primary font-semibold">
                 <div className="content-membership">
-                  <div className="text-5xl font-bold font-primary mb-8 text-white">
+                  <div className="text-5xl font-bold font-primary font-semibold mb-8 text-white">
                     Monthly Membership
                   </div>
 
@@ -71,9 +71,9 @@ const FitnessMembership = () => {
             </div>
           ) : (
             <div className="mx-4 grid grid-cols-1 pb-8 justify-items-center gap-y-8">
-              <div className="card-fitness font-primary ">
+              <div className="card-fitness font-primary font-semibold ">
                 <div className="content-membership">
-                  <div className="text-5xl font-bold font-primary mb-8 text-white">
+                  <div className="text-5xl font-bold font-primary font-semibold mb-8 text-white">
                     Yearly Membership
                   </div>
 

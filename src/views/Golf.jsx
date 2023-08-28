@@ -20,7 +20,7 @@ const Golf = () => {
       <MiniHeader heading={"Golf"} subHeading={""} />
       <div className="grid grid-cols-1  md:grid-cols-12 pt-6 w-full max-w-[90vw] mx-auto px-4">
         <div className="col-span-12 mb-2 ">
-          <div className="text-justify ">
+          <div className="text-justify font-primary font-semibold">
             Nestled amidst rolling hills and picturesque landscapes, the quaint
             9-hole golf course offers a delightful escape for both novice and
             experienced golfers alike. Its compact layout weaves through lush
@@ -46,21 +46,30 @@ const Golf = () => {
           <div className="col-span-4 flex  flex-col items-center justify-around space-y-4">
             <div>
               <button className="uppercase outline outline-1 px-2 text-[#7da33f] text-xl tracking-wider outline-[#7da33f]">
-                <Link to="/tee-times" className="block w-full h-full">
+                <Link
+                  to="/tee-times"
+                  className="block w-full h-full font-GBook"
+                >
                   Book Your Tee Time
                 </Link>
               </button>
             </div>
             <div>
               <button className="uppercase outline outline-1 px-2 text-maroon text-xl tracking-wider outline-[#791214]">
-                <Link to="/tee-times" className="block w-full h-full">
+                <Link
+                  to="/tee-times"
+                  className="block w-full h-full font-GBook"
+                >
                   PLAY MORE SAVE MORE WITH A MEMBERSHIP!
                 </Link>
               </button>
             </div>
             <div>
               <button className="uppercase outline outline-1 px-2 text-violet text-xl tracking-wider outline-[#172649]">
-                <Link to="/tee-times" className="block w-full h-full">
+                <Link
+                  to="/tee-times"
+                  className="block w-full h-full font-GBook"
+                >
                   BOOK A PRIVATE LESSON
                 </Link>
               </button>
@@ -83,7 +92,7 @@ const Golf = () => {
             <h1 className="absolute text-xl md:text-3xl font-bold left-10">
               KNOW THE ETIQUTTE
             </h1>
-            <ul className="list-disc md:col-start-2 md:col-span-6 pt-10 mx-auto px-6 place-self-center">
+            <ul className="list-disc md:col-start-2 md:col-span-6 pt-10 mx-auto px-6 place-self-center font-primary font-semibold">
               <li>show up early to take advantage of your tee time </li>
               <li>obey the cart rules & stay on the path </li>
               <li>warm up with three balls</li>

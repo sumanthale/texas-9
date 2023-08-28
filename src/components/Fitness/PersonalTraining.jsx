@@ -15,10 +15,10 @@ const PersonalTraining = () => {
             />
           </div>
           <div className="">
-            <h1 className="uppercase tracking-wide text-2xl font-primary font-bold text-green-600 ">
+            <h1 className="uppercase tracking-wide text-2xl font-primary font-semibold font-bold text-green-600 ">
               Personal Training
             </h1>
-            <h1 className="tracking-wide text-md font-primary  my-3 ">
+            <h1 className="tracking-wide text-md font-primary font-semibold  my-3 ">
               Achieve your fitness goals faster and with personalized guidance
               through our exceptional Personal Training program. Our certified
               trainers will design tailored workout routines, provide expert
@@ -27,10 +27,10 @@ const PersonalTraining = () => {
               overall fitness. Elevate your training experience and unlock your
               fitness potential with our dedicated Personal Training sessions.
             </h1>
-            <h1 className="uppercase tracking-wide my-3 text-2xl font-primary font-bold text-green-600">
+            <h1 className="uppercase tracking-wide my-3 text-2xl font-primary font-semibold font-bold text-green-600">
               BENEFIT
             </h1>
-            <h1 className=" my-4 tracking-wide text-xl font-primary font-bold ">
+            <h1 className=" my-4 tracking-wide text-xl font-primary font-semibold font-bold ">
               Pre-Workout Mobility & Stretching | Resistance-Balance-Performance
               Training | Cooldown & Massage Therapy
             </h1>

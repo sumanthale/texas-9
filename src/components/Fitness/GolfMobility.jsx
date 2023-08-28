@@ -18,19 +18,19 @@ const GolfMobility = () => {
             />
           </div>
           <div className="">
-            <h1 className="uppercase tracking-wide text-2xl font-primary font-bold text-green-600 ">
+            <h1 className="uppercase tracking-wide text-2xl font-primary font-semibold font-bold text-green-600 ">
               Golf Mobility & Strength Training
             </h1>
-            <h1 className="tracking-wide text-md font-primary  my-3 ">
+            <h1 className="tracking-wide text-md font-primary font-semibold  my-3 ">
               Elevate your golf performance with our dynamic Golf Mobility &
               Strength Training program, designed to enhance flexibility, build
               strength, and optimize your body's potential for a powerful and
               precise swing.
             </h1>
-            <h1 className="uppercase tracking-wide my-3 text-2xl font-primary font-bold text-green-600">
+            <h1 className="uppercase tracking-wide my-3 text-2xl font-primary font-semibold font-bold text-green-600">
               BENEFIT
             </h1>
-            <h1 className=" my-4 tracking-wide text-xl font-primary font-bold ">
+            <h1 className=" my-4 tracking-wide text-xl font-primary font-semibold font-bold ">
               Improved Golf Swing Mechanics | Increased Power and Distance |
               Enhanced Stability and Balance
             </h1>

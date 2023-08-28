@@ -21,10 +21,10 @@ const MainCard = ({
         {/* <img src={Img} alt="hGolfMobility" /> */}
       </div>
       <div className="bg-white p-10 flex flex-col items-center justify-center relative">
-        <h1 className="uppercase tracking-wide text-4xl font-primary font-bold  text-center mt-6">
+        <h1 className="uppercase tracking-wide text-4xl font-primary font-semibold font-bold  text-center mt-6">
           {header}
         </h1>
-        <h1 className="tracking-wide text-md font-primary text-center font-semibold  my-3 ">
+        <h1 className="tracking-wide text-md font-primary font-semibold text-center font-semibold  my-3 ">
           {body}
         </h1>
 

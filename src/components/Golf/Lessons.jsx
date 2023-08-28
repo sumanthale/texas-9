@@ -12,7 +12,7 @@ const Lessons = () => {
   return (
     <>
       <MiniHeader heading={"Lessons"} subHeading={""} />
-      <div className="grid grid-cols-1  md:grid-cols-12 gap-6 gap-x-10  pt-6  lg:pr-20 pb-6 font-primary">
+      <div className="grid grid-cols-1  md:grid-cols-12 gap-6 gap-x-10  pt-6  lg:pr-20 pb-6 font-primary font-semibold">
         <div className="md:col-span-4 md:order-last mb-2 pr-4  pl-4 ">
           <div className="block md:hidden pl-4 lg:pl-20">
             <p className="text-justify ">
@@ -83,7 +83,7 @@ const Lessons = () => {
                 style={{ width: "100%", height: "auto", maxHeight: "350px" }}
               />
 
-              <button className="uppercase outline outline-2 px-2 text-[#7da33f] w-full text-xl my-6 mb-0 tracking-wider  outline-[#7da33f] font-semibold">
+              <button className="uppercase outline outline-2 px-2 text-[#7da33f] w-full text-xl my-6 mb-0 tracking-wider  outline-[#7da33f] font-GBook ">
                 <HashLink to="/#contact" className="block w-full h-full">
                   CONTACT US
                 </HashLink>

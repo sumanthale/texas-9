@@ -22,36 +22,52 @@ const Footer = () => {
   const closeLightbox = () => {
     setLightboxOpen(false);
   };
+
   return (
     <div className="bg-[#162649] text-white ">
-      <div className="max-w-[92vw] p-4  lg:mr-20">
-        <div className="grid grid-cols-1 md:grid-cols-4 mx-auto  gap-y-4">
-          <div className="">
-            {/* <h1 className="font-primary text-white text-2xl tracking-wide">
-              Quick Links
-            </h1> */}
-            <div className="flex flex-col items-center justify-center h-full">
-              <div className="flex flex-col space-y-2 mt-4 text-white">
-                <Link to="/golf/memberships">Memberships</Link>
-                <Link to="/golf/rates">Rates</Link>
-                <Link to="/about">About Us</Link>
-                <Link to="https://www.google.com/maps/place/Texas+9+Golf/@32.7636731,-97.1563432,19z/data=!4m6!3m5!1s0x864e7c150bddb88d:0xfde02fba666ba711!8m2!3d32.7636731!4d-97.1556995!16s%2Fg%2F1tq8jzdh?entry=ttu">
-                  Plan Your Visit
-                </Link>
-                <Link to="/tee-times" className="items-center rounded-lg  ">
-                  <span
-                    className="text-sm font-medium  px-4 py-2"
-                    style={{ backgroundColor: "#7DA33F", color: "#FFF" }}
-                  >
-                    BOOK A TEE TIME
-                  </span>
-                </Link>
-              </div>
+      <div className="md:max-w-[92vw] p-2 md:p-4  lg:mr-20">
+        <div className="grid grid-cols-2 md:grid-cols-4 mx-auto  gap-y-4 font-primary font-semibold">
+          <div className="flex flex-col items-center justify-center h-full">
+            <div className="flex flex-col space-y-2  md:mt-4 text-white">
+              <Link to="/golf/memberships">Memberships</Link>
+              <Link to="/golf/rates">Rates</Link>
+              <Link to="/about">About Us</Link>
+              <Link to="https://www.google.com/maps/place/Texas+9+Golf/@32.7636731,-97.1563432,19z/data=!4m6!3m5!1s0x864e7c150bddb88d:0xfde02fba666ba711!8m2!3d32.7636731!4d-97.1556995!16s%2Fg%2F1tq8jzdh?entry=ttu">
+                Plan Your Visit
+              </Link>
+              <Link
+                to="/tee-times"
+                className="items-center rounded-lg font-GBook "
+              >
+                <span
+                  className="text-sm font-medium  px-4 py-2"
+                  style={{ backgroundColor: "#7DA33F", color: "#FFF" }}
+                >
+                  BOOK A TEE TIME
+                </span>
+              </Link>
             </div>
           </div>
 
-          <div className="col-span-1 md:col-span-2 md:px-4 w-100 md:w-4/5 mx-auto">
-            <img src={LogoImg} alt="Logo" style={{}} className="mx-auto h-40" />
+          <div className="hidden md:flex col-span-1 md:col-span-2 md:px-4 w-100 md:w-4/5 mx-auto flex-col ">
+            <img
+              src={LogoImg}
+              alt="Logo"
+              style={{}}
+              className="mx-auto  h-24 lg:h-32"
+            />
+            <div className="hidden lg:block mt-8">
+              <p className="text-sm text-center  space-x-4 relative hidden sm:block font-primary font-semibold">
+                <span className="dots">
+                  Copyright {new Date().getFullYear()} Texas 9
+                </span>
+                <span className="dots">All Rights Reserved</span>
+                <button onClick={openLightbox} className="cursor-pointer dots">
+                  Privacy
+                </button>
+                <span className="">Terms of Use</span>
+              </p>
+            </div>
           </div>
           <div className="place-content-start lg:place-self-end">
             <div className="flex flex-col items-center justify-center h-full">
@@ -91,27 +107,20 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
-        <p className="text-sm text-center  space-x-4 relative hidden sm:block">
-          <span className="dots">
-            Copyright {new Date().getFullYear()} Texas 9
-          </span>
-          <span className="dots">All Rights Reserved</span>
-          <button onClick={openLightbox} className="cursor-pointer dots">
-            Privacy
-          </button>
-          <span className="">Terms of Use</span>
-        </p>
-        <p className="text-sm text-center  space-x-2 relative block sm:hidden ">
-          <span className="">Copyright {new Date().getFullYear()} Texas 9</span>
-          .<span className="">All Rights Reserved</span> .
-          <button onClick={openLightbox}>Privacy</button> .
-          <span className="">Terms of Use</span>
-        </p>
+        <div className="block lg:hidden mt-4 lg:mt-8">
+          <p className="text-sm text-center  space-x-2 relative block sm:hidden font-primary font-semibold">
+            <span className="">
+              Copyright {new Date().getFullYear()} Texas 9
+            </span>
+            .<span className="">All Rights Reserved</span> .
+            <button onClick={openLightbox}>Privacy</button> .
+            <span className="">Terms of Use</span>
+          </p>
+        </div>
       </div>
 
       {lightboxOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 font-primary font-semibold">
           <div className="bg-white p-4 max-w-3xl rounded-lg w-[100vw] h-full relative">
             <button
               onClick={closeLightbox}
@@ -122,6 +131,7 @@ const Footer = () => {
             <iframe
               src="https://docs.google.com/document/d/e/2PACX-1vTJ6ViVDkQztPK7_pqn1sLTfyqycusF91f-Z7cg4YN5NIJyFsLXmFPLW4J6H9aI1qxAzi4Ph9POb_gQ/pub?embedded=true"
               title="privacy"
+              id="iframe"
               style={{
                 height: "calc(100% - 60px)", // Adjust to leave space for close button
                 width: "100%",

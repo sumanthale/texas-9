@@ -15,19 +15,19 @@ const MassageTherapy = () => {
             />
           </div>
           <div className="">
-            <h1 className="uppercase tracking-wide text-2xl font-primary font-bold text-green-600 ">
+            <h1 className="uppercase tracking-wide text-2xl font-primary font-semibold font-bold text-green-600 ">
               Massage Therapy
             </h1>
-            <h1 className="tracking-wide text-md font-primary  my-3 ">
+            <h1 className="tracking-wide text-md font-primary font-semibold  my-3 ">
               Indulge in the ultimate relaxation and rejuvenation with our
               exquisite Massage Therapy sessions, tailored to release tension,
               alleviate muscle soreness, and promote overall physical and mental
               well-being.
             </h1>
-            <h1 className="uppercase tracking-wide my-3 text-2xl font-primary font-bold text-green-600">
+            <h1 className="uppercase tracking-wide my-3 text-2xl font-primary font-semibold font-bold text-green-600">
               BENEFIT
             </h1>
-            <h1 className=" my-4 tracking-wide text-xl font-primary font-bold ">
+            <h1 className=" my-4 tracking-wide text-xl font-primary font-semibold font-bold ">
               Muscle Tension Relief | Improved Posture and Alignment | Enhanced
               Immune Function{" "}
             </h1>

@@ -9,7 +9,7 @@ import { BiBuildings } from "react-icons/bi";
 const ManagementServices = () => {
   return (
     <div className="min-h-screen px-4 py-8  md:p-10 max-w-screen-lg mx-auto">
-      <h1 className="font-primary tracking-wide text-3xl text-center mt-8">
+      <h1 className="font-primary font-semibold tracking-wide text-3xl text-center mt-8">
         MANAGEMENT SERVICES
       </h1>
       <h1 className="tracking-widest text-xl text-center mt-4 text-secondary">
@@ -22,7 +22,9 @@ const ManagementServices = () => {
           </div>
 
           <div>
-            <h2 className="font-primary text-xl mb-1">RENT INVOICING</h2>
+            <h2 className="font-primary font-semibold text-xl mb-1">
+              RENT INVOICING
+            </h2>
             <p className="text-secondary">
               In order to help your tenants stay on top of rent payments, we
               send out monthly invoices (including a detailed breakdown of
@@ -35,7 +37,9 @@ const ManagementServices = () => {
             <RiMoneyDollarCircleLine />
           </div>
           <div>
-            <h2 className="font-primary text-xl mb-1">RENT COLLECTION</h2>
+            <h2 className="font-primary font-semibold text-xl mb-1">
+              RENT COLLECTION
+            </h2>
             <p className="text-secondary">
               Tenants can pay their rent online, in real time, via electronic
               fund transfers or even pay by credit card. Through this
@@ -49,7 +53,9 @@ const ManagementServices = () => {
             <SlGraph />
           </div>
           <div>
-            <h2 className="font-primary text-xl mb-1">EXPENSES</h2>
+            <h2 className="font-primary font-semibold text-xl mb-1">
+              EXPENSES
+            </h2>
             <p className="text-secondary">
               We pay all vendors on behalf of the property on time, and such
               information is automatically compiled for owners to review at any
@@ -63,7 +69,9 @@ const ManagementServices = () => {
             <VscTools />
           </div>
           <div>
-            <h2 className="font-primary text-xl mb-1">REPAIR & MAINTENANCE</h2>
+            <h2 className="font-primary font-semibold text-xl mb-1">
+              REPAIR & MAINTENANCE
+            </h2>
             <p className="text-secondary">
               Outside of responsiveness and organization, we thoroughly screen
               all of the vendors we work with to ensure your property is getting
@@ -77,7 +85,9 @@ const ManagementServices = () => {
             <BsFileEarmarkBarGraph />
           </div>
           <div>
-            <h2 className="font-primary text-xl mb-1">FINANCIAL REPORTING</h2>
+            <h2 className="font-primary font-semibold text-xl mb-1">
+              FINANCIAL REPORTING
+            </h2>
             <p className="text-secondary">
               Running a property is no different than running a business. We
               provide monthly, quarterly, and annual financial reports. Also,
@@ -91,7 +101,7 @@ const ManagementServices = () => {
             <BiBuildings />
           </div>
           <div>
-            <h2 className="font-primary text-xl mb-1">
+            <h2 className="font-primary font-semibold text-xl mb-1">
               APARTMENT TURNOVER SERVICE
             </h2>
             <p className="text-secondary">

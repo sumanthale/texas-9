@@ -15,7 +15,7 @@ const Contact = () => {
       <LeaveAMessage header={"HAVE QUESTIONS?"} />
       <div className="bg-white  px-4 ">
         <div className=" md:p-10 md:py-4 mx-auto ">
-          <h1 className="font-primary tracking-wide text-3xl text-center mt-8">
+          <h1 className="font-primary font-semibold tracking-wide text-3xl text-center mt-8">
             You Can Find Us @
           </h1>
 
@@ -26,7 +26,7 @@ const Contact = () => {
               </div>
 
               <div>
-                <h2 className="font-primary text-xl mb-1">
+                <h2 className="font-primary font-semibold text-xl mb-1">
                   Fort Worth Location
                 </h2>
                 <p className="text-black">
@@ -46,7 +46,7 @@ const Contact = () => {
               </div>
 
               <div>
-                <h2 className="font-primary text-xl mb-1">
+                <h2 className="font-primary font-semibold text-xl mb-1">
                   <a href="tel:+1-817-303-4370">+1 (817) 303-4370</a>
                 </h2>
               </div>
@@ -58,7 +58,7 @@ const Contact = () => {
               </div>
 
               <div>
-                <h2 className="font-primary text-xl mb-1">
+                <h2 className="font-primary font-semibold text-xl mb-1">
                   <a href="mailto:contact@texas9.com">contact@texas9.com</a>
                 </h2>
               </div>
@@ -70,7 +70,7 @@ const Contact = () => {
               </div>
 
               <div>
-                <h2 className="font-primary text-xl mb-1">
+                <h2 className="font-primary font-semibold text-xl mb-1">
                   Monday-Sunday 7:00 am – 9:00 pm
                 </h2>
               </div>

@@ -12,7 +12,7 @@ const AboutView = () => {
   return (
     <>
       <MiniHeader heading={"About Us"} subHeading={""} image={ABOUTHEADER} />
-      <div className="py-6 font-primary">
+      <div className="py-6 font-primary font-semibold">
         <p className="text-justify mb-4 px-6 lg:px-16">
           Hailed as one of the best executive golf courses in DFW, our course
           was designed by Steven D. Plumber, ASGCA, and opened in 1999. The
