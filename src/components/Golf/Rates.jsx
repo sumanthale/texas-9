@@ -5,6 +5,7 @@ import Golfer from "../../assets/golf/rates-golfer.png";
 import DrivingRange from "../../assets/golf/rates-drivingrange.png";
 import React from "react";
 import "../../index.css";
+import { Link, useLocation } from "react-router-dom";
 
 const Rates = () => {
   return (
@@ -15,7 +16,7 @@ const Rates = () => {
         <div className="col-span-1 md:col-span-5">
           <div className="border-2 border-[#7da33f] border-l-0 py-6 mr-8 md:mr-0">
             <div className="px-8 mx-auto text-center lg:w-2/3">
-              <h1 className="text-[#7da33f] font-bold text-2xl text-center">
+              <h1 className="text-[#7da33f] font-bold text-2xl font-DinCondensed text-center">
                 9 HOLE EXECUTIVE COURSE
               </h1>
               <p className="text-left  my-3">
@@ -55,8 +56,10 @@ const Rates = () => {
                 </li>
               </ul>
 
-              <button className="uppercase outline  outline-1 px-2 text-[#7da33f] w-full text-xl my-3 tracking-wider outline-[#7da33f] ">
-                Book Your Tee time
+              <button className="uppercase outline  outline-1 px-2 text-[#7da33f] w-full text-xl my-3 tracking-wider outline-[#7da33f] font-DinCondensed">
+              <Link to={"/tee-times"}>
+                BOOK YOUR TEE TIME
+             </Link>
               </button>
             </div>
           </div>
@@ -114,7 +117,10 @@ const Rates = () => {
             </div>
 
             <button className="uppercase outline  outline-1 px-2 text-[#791214] w-fit mx-auto text-2xl my-2 tracking-wider outline-[#791214] max-w-xs font-DinCondensed">
+              
+              <Link to={"/golf/memberships"}>
               PLAY MORE SAVE MORE WITH A MEMBERSHIP!
+             </Link>
             </button>
           </div>
         </div>
