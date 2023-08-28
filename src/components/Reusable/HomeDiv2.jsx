@@ -102,14 +102,11 @@ const HomeDiv2 = () => {
 
             <div className="bg-white flex flex-col justify-between md:pr-20 relative col-span-2">
               <p className="tracking-wide text-xl font-primary  font-semibold text-justify">
-                Hailed as one of the best executive golf courses in DFW, our
-                course was designed by Steven D. Plumber, ASGCA, and opened in
-                1999. The course was created to be a public course, filling a
-                niche in DFW so the greater community can have better access to
-                the benefits of golf. Formerly known as Texas Golf Center, the
-                course came under new management in 2023 with an explicit
-                interest in adding new amenities and reinforcing the best
-                aspects of the course.
+              Hailed as one of the best executive golf courses in DFW, our course was designed by Steven D.
+              Plumber, ASGCA, and opened in 1999. The course was created to be a public course, filling a niche in DFW
+              so the greater community can have better access to the benefits of golf. Formerly known as Texas Golf Center,
+              the course came under new management in 2023 with an explicit interest in adding new amenities and reinforcing the best aspects of the course.
+
               </p>
               <p className="tracking-wide text-4xl bottom-0 relative  lg:absolute font-DinCondensed text-left font-bold   text-red-800">
                 NO CLUB FEES! OPEN TO THE PUBLIC!

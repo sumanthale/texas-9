@@ -33,7 +33,7 @@ const HomeCards = () => {
     },
     {
       front: "AMENITIES & MORE",
-      back: "Fully equipped fitness center, yoga, event spaces, and membership packages to get the most of Texas 9.",
+      back: "Enjoy the clubhouse with a fully equipped fitness center, event space, and membership packages to get the most out of Texas 9.",
     },
   ];
 
