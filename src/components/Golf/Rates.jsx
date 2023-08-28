@@ -3,6 +3,7 @@ import MiniHeader from "../../layout/MainLayout/MiniHeader";
 import Footer from "../../reusable/Footer";
 import Golfer from "../../assets/golf/rates-golfer.png";
 import DrivingRange from "../../assets/golf/rates-drivingrange.png";
+import RatesHeader from "../../assets/golf/rates-header.png";
 import React from "react";
 import "../../index.css";
 import { Link, useLocation } from "react-router-dom";
@@ -10,7 +11,7 @@ import { Link, useLocation } from "react-router-dom";
 const Rates = () => {
   return (
     <>
-      <MiniHeader heading={"Rates"} subHeading={""} />
+      <MiniHeader heading={"Rates"} subHeading={""} image={RatesHeader}/>
 
       <div className="grid grid-cols-1  md:grid-cols-12 gap-6 py-4 ">
         <div className="col-span-1 md:col-span-5">
