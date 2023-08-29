@@ -59,7 +59,19 @@ const HomeDiv2 = () => {
     cssEase: "linear",
     arrows: false,
   };
-
+  const settings = {
+    dots: false,
+    fade: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 1000,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    initialSlide: 0,
+    cssEase: "linear",
+    arrows: false,
+  };
   return (
     <div>
       <div className=" overflow-hidden py-4  font-primary font-semibold first-letter: ">
@@ -97,45 +109,29 @@ const HomeDiv2 = () => {
                 NO CLUB FEES! OPEN TO THE PUBLIC!
               </p>
             </div>
-            <div className="h-full w-full col-span-1">
-              <Carousel
-                autoPlay
-                infiniteLoop
-                swipeable={false}
-                showArrows={false}
-                showStatus={false}
-                showThumbs={false}
-                showIndicators={false}
-                interval={4000}
-                stopOnHover={false}
-                className="carousel"
-                style={{ maxHeight: "100%", maxWidth: "60%", margin: "0 auto" }}
-              >
-                <div
-                  className="w-full carousel-image-item h-80 bg-cover bg-center"
-                  style={{
-                    backgroundImage: `url(${Smallgallery1})`,
-                  }}
-                ></div>
-                <div
-                  className="w-full carousel-image-item h-80 bg-cover bg-center"
-                  style={{
-                    backgroundImage: `url(${Smallgallery2})`,
-                  }}
-                ></div>
-                <div
-                  className="w-full carousel-image-item h-80 bg-cover bg-center"
-                  style={{
-                    backgroundImage: `url(${Smallgallery3})`,
-                  }}
-                ></div>
-                <div
-                  className="w-full carousel-image-item h-80 bg-cover bg-center"
-                  style={{
-                    backgroundImage: `url(${Smallgallery4})`,
-                  }}
-                ></div>
-              </Carousel>
+            <div className="h-full w-full col-span-1 ">
+              <Slider {...settings} className="carousel">
+                <img
+                  className="w-full carousel-image-item h-80  object-cover"
+                  src={Smallgallery1}
+                  alt="imagew"
+                />
+                <img
+                  className="w-full carousel-image-item h-80  object-cover"
+                  src={Smallgallery2}
+                  alt="imagew"
+                />
+                <img
+                  className="w-full carousel-image-item h-80  object-cover"
+                  src={Smallgallery3}
+                  alt="imagew"
+                />
+                <img
+                  className="w-full carousel-image-item h-80  object-cover"
+                  src={Smallgallery4}
+                  alt="imagew"
+                />
+              </Slider>
             </div>
 
             <div className="hidden lg:flex bg-white  flex-col justify-between md:pr-20 relative col-span-2">
@@ -173,7 +169,7 @@ const HomeDiv2 = () => {
                     className="review-slide text-center lg:text-justify font-primary font-semibold"
                   >
                     <p dangerouslySetInnerHTML={{ __html: review.text }}></p>
-                    <p className="text-right font-DinCondensed font-bold ">
+                    <p className="text-right text-2xl font-DinCondensed font-bold ">
                       - {review.author}
                     </p>
                   </div>
