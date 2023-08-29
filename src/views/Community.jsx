@@ -47,7 +47,7 @@ const Community = () => {
             Join us to experience the true essence of aot and the power of
             communitv on and oft the tairwavs
           </p>
-          <div className="relative  mx-auto  max-w-[90vw]">
+          <div className="relative  mx-auto  max-w-screen-xl">
             <img
               src={Campus}
               alt="Golf Course"
@@ -61,7 +61,7 @@ const Community = () => {
                   Texas 9 Campus
                 </p>
                 <p></p>
-                <p className="  text-center  font-bold max-w-sm hidden lg:block">
+                <p className="text-center  font-bold max-w-sm hidden lg:block">
                   Texas 9 has the honor of sharing it's clubhouse and campus
                   with a few local companies that make us who we are?
                 </p>
