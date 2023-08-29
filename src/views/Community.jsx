@@ -61,7 +61,7 @@ const Community = () => {
                   Texas 9 Campus
                 </p>
                 <p></p>
-                <p className="  text-center  font-bold max-w-sm hidden md:block">
+                <p className="  text-center  font-bold max-w-sm hidden lg:block">
                   Texas 9 has the honor of sharing it's clubhouse and campus
                   with a few local companies that make us who we are?
                 </p>
