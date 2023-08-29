@@ -10,19 +10,29 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../../index.css";
 import { Carousel } from "react-responsive-carousel";
+import Slider from "react-slick";
 // import LogoImg from "../assets/logos/Texas 9 Golf.png";
 // import AboutHeader from "../assets/golf/about-header.jpg";
 const HomeDiv2 = () => {
   const reviews = [
     {
       id: 1,
+      text: `Really fun Par 3 with nice greens. I have a lengthy membership for unlimited driving range and it’s been great. <b style="font-size:22px; font-family:'Din Condensed'">NEED MORE PLACES LIKE THIS</b>.`,
+      author: "ZACH ALAVI",
+    },
+    {
+      id: 2,
+      text: `Texas 9 is a premiere practice facility and executive course. They use premium range balls, and the <b style="font-size:22px; font-family:'Din Condensed'">HITTING SURFACE IS SECOND TO NONE</b>. This is a great place to golf after work and on weekends.`,
+      author: "DAN HUDDLESTON",
+    },
+    {
+      id: 3,
       text: `<b style="font-size:22px; font-family:'Din Condensed'">NINE HOLE LITTLE PARADISE</b>.\nExcellent course to work on your short game. Staff was friendlier than any big course I have gone to!`,
       author: "HECTOR GARZA",
     },
-    // Add more reviews here
     {
-      id: 2,
-      text: `Hospitality is everything and we immediately felt welcomed! The course was awesome and they even have brand <b style="font-size:22px; font-family:'Din Condensed'">NEW EPIC GOLF CARTS</b> that are a must.`,
+      id: 4,
+      text: `Hospitality  is everything and we immediately felt welcomed! The course was awesome and they even have brand <b style="font-size:22px; font-family:'Din Condensed'">NEW EPIC GOLF CARTS</b> that are a must.`,
       author: "ARMANDO AGUILAR",
     },
   ];
@@ -36,10 +46,23 @@ const HomeDiv2 = () => {
 
     return () => clearInterval(interval);
   }, [reviews.length]);
+  const settings1 = {
+    dots: false,
+    fade: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 1000,
+    autoplay: true,
+    autoplaySpeed: 10000,
+    initialSlide: 0,
+    cssEase: "linear",
+    arrows: false,
+  };
 
   return (
     <div>
-      <div className="  py-4  font-primary font-semibold first-letter: ">
+      <div className=" overflow-hidden py-4  font-primary font-semibold first-letter: ">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
           <div className="bg-[#7DA33F] px-8 py-4 flex flex-col items-center text-white col-span-1 lg:col-span-1">
             <h1 className="uppercase tracking-wide text-4xl lg:text-6xl font-DinCondensed font-bold text-center mt-6">
@@ -141,31 +164,24 @@ const HomeDiv2 = () => {
             backgroundImage: `url(${Review})`,
           }}
         >
-          <div className="block md:hidden hero-content w-full">
-            <Carousel
-              autoPlay
-              infiniteLoop
-              showStatus={false}
-              showThumbs={false}
-              showArrows={false}
-              showIndicators={false}
-              interval={10000}
-              onChange={setCurrentReview}
-            >
-              {reviews.map((review) => (
-                <div
-                  key={review.id}
-                  className="review-slide text-center lg:text-justify font-primary font-semibold"
-                >
-                  <p dangerouslySetInnerHTML={{ __html: review.text }}></p>
-                  <p className="text-right font-DinCondensed font-bold ">
-                    - {review.author}
-                  </p>
-                </div>
-              ))}
-            </Carousel>
+          <div className="hidden  md:flex w-[70vw] mr-auto">
+            <div className="  w-full">
+              <Slider {...settings1}>
+                {reviews.map((review) => (
+                  <div
+                    key={review.id}
+                    className="review-slide text-center lg:text-justify font-primary font-semibold"
+                  >
+                    <p dangerouslySetInnerHTML={{ __html: review.text }}></p>
+                    <p className="text-right font-DinCondensed font-bold ">
+                      - {review.author}
+                    </p>
+                  </div>
+                ))}
+              </Slider>
+            </div>
           </div>
-          <div className="hidden hero-content md:flex w-[70vw] mr-auto">
+          {/* <div className="hidden hero-content md:flex w-[70vw] mr-auto">
             {reviews.map((review) => (
               <div
                 key={review.id}
@@ -177,7 +193,7 @@ const HomeDiv2 = () => {
                 </p>
               </div>
             ))}
-          </div>
+          </div> */}
         </section>
       </div>
     </div>

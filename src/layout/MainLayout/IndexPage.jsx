@@ -63,12 +63,7 @@ export default function IndexPage() {
             >
               <span className="text-sm font-medium"> Fitness</span>
             </Link>
-            <Link
-              to="/tee-times"
-              className="flex items-center gap-2 rounded-lg px-4 py-2 text-gray-300 hover:bg-gray-100 hover:text-gray-800"
-            >
-              <span className="text-sm font-medium"> Tee Times </span>
-            </Link>
+
             <Link
               to="/community"
               className="flex items-center gap-2 rounded-lg px-4 py-2 text-gray-300 hover:bg-gray-100 hover:text-gray-800"
@@ -87,6 +82,12 @@ export default function IndexPage() {
               className="flex items-center gap-2 rounded-lg px-4 py-2 text-gray-300 hover:bg-gray-100 hover:text-gray-700"
             >
               <span className="text-sm font-medium"> About Us </span>
+            </Link>
+            <Link
+              to="/tee-times"
+              className="flex items-center gap-2 rounded-lg px-4 py-2 text-gray-300 hover:bg-gray-100 hover:text-gray-800"
+            >
+              <span className="text-sm font-medium"> Tee Times </span>
             </Link>
           </nav>
         </div>

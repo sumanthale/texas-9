@@ -51,7 +51,7 @@ const Community = () => {
             <img
               src={Campus}
               alt="Golf Course"
-              className="object-fill"
+              className="object-scale-down"
               style={{ width: "100%", height: "auto", maxHeight: "450px" }}
             />
 
