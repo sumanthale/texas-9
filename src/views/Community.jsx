@@ -47,7 +47,7 @@ const Community = () => {
             Join us to experience the true essence of aot and the power of
             communitv on and oft the tairwavs
           </p>
-          <div className="relative">
+          <div className="relative  mx-auto  max-w-[90vw]">
             <img
               src={Campus}
               alt="Golf Course"
@@ -67,21 +67,6 @@ const Community = () => {
                 </p>
               </div>
             </div>
-
-            {/* <div className="relative flex items-center justify-center">
-            <div className="absolute top-2 w-full flex justify-center">
-              <div className="grid grid-cols-3 place-items-center">
-                <p className="text-center text-4xl font-bold">
-                  Texas 9 Campus
-                </p>
-                <p className="text-center font-bold max-w-sm">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Asperiores saepe incidunt non. Iusto neque accusantium vel odit
-                  porro, explicabo nisi voluptate esse
-                </p>
-              </div>
-            </div>
-          </div> */}
           </div>
 
           <div className="bg-[#172649] font-primary font-semibold p-4 ">
