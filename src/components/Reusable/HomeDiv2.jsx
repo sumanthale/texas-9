@@ -17,22 +17,22 @@ const HomeDiv2 = () => {
   const reviews = [
     {
       id: 1,
-      text: `Really fun Par 3 with nice greens. I have a lengthy membership for unlimited driving range and it’s been great. <b style="font-size:22px; font-family:'Din Condensed'">NEED MORE PLACES LIKE THIS</b>.`,
+      text: `Really fun Par 3 with nice greens. I have a lengthy membership for unlimited driving range and it’s been great. <b style="font-size:23.5px; font-family:'Din Condensed'">NEED MORE PLACES LIKE THIS</b>.`,
       author: "ZACH ALAVI",
     },
     {
       id: 2,
-      text: `Texas 9 is a premiere practice facility and executive course. They use premium range balls, and the <b style="font-size:22px; font-family:'Din Condensed'">HITTING SURFACE IS SECOND TO NONE</b>. This is a great place to golf after work and on weekends.`,
+      text: `Texas 9 is a premiere practice facility and executive course. They use premium range balls, and the <b style="font-size:23.5px; font-family:'Din Condensed'">HITTING SURFACE IS SECOND TO NONE</b>. This is a great place to golf after work and on weekends.`,
       author: "DAN HUDDLESTON",
     },
     {
       id: 3,
-      text: `<b style="font-size:22px; font-family:'Din Condensed'">NINE HOLE LITTLE PARADISE</b>.\nExcellent course to work on your short game. Staff was friendlier than any big course I have gone to!`,
+      text: `<b style="font-size:23.5px; font-family:'Din Condensed'">NINE HOLE LITTLE PARADISE</b>.\nExcellent course to work on your short game. Staff was friendlier than any big course I have gone to!`,
       author: "HECTOR GARZA",
     },
     {
       id: 4,
-      text: `Hospitality  is everything and we immediately felt welcomed! The course was awesome and they even have brand <b style="font-size:22px; font-family:'Din Condensed'">NEW EPIC GOLF CARTS</b> that are a must.`,
+      text: `Hospitality  is everything and we immediately felt welcomed! The course was awesome and they even have brand <b style="font-size:23.5px; font-family:'Din Condensed'">NEW EPIC GOLF CARTS</b> that are a must.`,
       author: "ARMANDO AGUILAR",
     },
   ];
@@ -168,8 +168,11 @@ const HomeDiv2 = () => {
                     key={review.id}
                     className="review-slide text-center lg:text-justify font-primary font-semibold"
                   >
-                    <p dangerouslySetInnerHTML={{ __html: review.text }}></p>
-                    <p className="text-right text-2xl font-DinCondensed font-bold ">
+                    <p
+                      className="text-xl"
+                      dangerouslySetInnerHTML={{ __html: review.text }}
+                    ></p>
+                    <p className="text-right text-3xl font-DinCondensed font-bold ">
                       - {review.author}
                     </p>
                   </div>

@@ -4,7 +4,7 @@ import { Carousel } from "react-responsive-carousel";
 import Lessons1 from "../../assets/golf/lessons1.png";
 import Lessons2 from "../../assets/golf/lessons2.png";
 import Lessons3 from "../../assets/golf/lessons3.png";
-import Instructor from "../../assets/golf/instructor.png";
+import Instructor from "../../assets/golf/golf-instructor.jpg";
 import React from "react";
 import { HashLink } from "react-router-hash-link";
 

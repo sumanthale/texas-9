@@ -1,7 +1,6 @@
 import MiniHeader from "../layout/MainLayout/MiniHeader";
 import Footer from "../reusable/Footer";
 import { LiaGolfBallSolid } from "react-icons/lia";
-import LeaveAMessage from "../components/Home/LeaveAMessage";
 import MapCourse from "../assets/golf/mapcourse.png";
 import Golf1 from "../assets/golf/golf1.png";
 import Golf2 from "../assets/golf/golf2.png";
@@ -22,6 +21,7 @@ import FirstTee from "../assets/golf/first-tee.png";
 import FIRSTTEELOGO from "../assets/golf/FIRSTTEE-logo.png";
 import KJCFLOGO from "../assets/golf/KJCF-logo.png";
 import YOCLOGO from "../assets/golf/YOC-logo.png";
+import LeaveAMessageShort from "../components/Home/LeaveAMessageShort";
 
 const Community = () => {
   return (
@@ -47,64 +47,6 @@ const Community = () => {
             Join us to experience the true essence of aot and the power of
             communitv on and oft the tairwavs
           </p>
-          <div className="relative  mx-auto  max-w-screen-xl">
-            <img
-              src={Campus}
-              alt="Golf Course"
-              className="object-scale-down"
-              style={{ width: "100%", height: "auto", maxHeight: "450px" }}
-            />
-
-            <div className=" flex items-center justify-center">
-              <div className="absolute top-8 lg:top-2 w-full grid grid-cols-2 place-items-center">
-                <p className="font-bold justify-self-center absolute text-center text-5xl font-DinCondensed">
-                  Texas 9 Campus
-                </p>
-                <p></p>
-                <p className="text-center  font-bold max-w-sm hidden lg:block">
-                  Texas 9 has the honor of sharing it's clubhouse and campus
-                  with a few local companies that make us who we are?
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-[#172649] font-primary font-semibold p-4 ">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-x-10  mx-auto  lg:max-w-[80vw] text-center md:text-start">
-              <div className="p-4 lg:pl-10">
-                <h2 className="font-semibold mb-2 text-white uppercase text-5xl font-DinCondensed">
-                  team enoch
-                </h2>
-                <p className="text-white mb-4 text-lg">
-                  Team Enoch's roots are right here, in DFW serving the
-                  community with all their HVAC, Electrical, Plumbing and
-                  Roofing needs
-                </p>
-                <button className="text-white py-2 px-4 rounded border-2 font-GBook font-semibold ">
-                  <Link to="https://www.teamenoch.com" target={"_blank"}>
-                    {" "}
-                    LEARN MORE
-                  </Link>
-                </button>
-              </div>
-              <div className="p-4 lg:pl-10">
-                <h2 className="text-5xl font-DinCondensed font-semibold mb-2 text-white">
-                  TEXAS HEALTH SPORTS MEDICINE
-                </h2>
-                <p className="text-white mb-4 text-lg">
-                  Whether you're a young athlete or weekend warrior, Texas
-                  Health Sports Medicine delivers care for injuries nutrition.
-                  pnvsical therapv and more
-                </p>
-                <button className=" text-white py-2 px-4 rounded border-2 font-GBook font-semibold">
-                  <Link to="https://www.texashealth.org" target={"_blank"}>
-                    {" "}
-                    LEARN MORE
-                  </Link>
-                </button>
-              </div>
-            </div>
-          </div>
 
           <div className="md:col-span-12 text-center my-4 p-1">
             <h2 className="text-brown text-3xl lg:text-5xl font-DinCondensed font-semibold mb-2 uppercase">
@@ -230,10 +172,65 @@ const Community = () => {
               </a>
             </div>
           </div>
+          <div className="relative  mx-auto  ">
+            <h2 className="text-brown ustify-self-center  text-center text-3xl lg:text-5xl font-DinCondensed font-semibold mb-2 uppercase">
+              Texas 9 Campus
+            </h2>
+            <div className="absolute grid grid-cols-2 w-full place-items-center mt-4">
+              <p></p>
+              <p className="text-center  font-bold max-w-sm hidden lg:block">
+                Texas 9 has the honor of sharing it's clubhouse and campus with
+                a few local companies that make us who we are?
+              </p>
+            </div>
+            <img
+              src={Campus}
+              alt="Golf Course"
+              className="object-fill"
+              style={{ width: "100%", height: "auto", maxHeight: "450px" }}
+            />
+          </div>
+
+          <div className="bg-[#172649] font-primary font-semibold p-4 ">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-x-10  mx-auto  lg:max-w-[80vw] text-center md:text-start">
+              <div className="p-4 lg:pl-10">
+                <h2 className="font-semibold mb-2 text-white uppercase text-5xl font-DinCondensed">
+                  team enoch
+                </h2>
+                <p className="text-white mb-4 text-lg">
+                  Team Enoch's roots are right here, in DFW serving the
+                  community with all their HVAC, Electrical, Plumbing and
+                  Roofing needs
+                </p>
+                <button className="text-white py-2 px-4 rounded border-2 font-GBook font-semibold ">
+                  <Link to="https://www.teamenoch.com" target={"_blank"}>
+                    {" "}
+                    LEARN MORE
+                  </Link>
+                </button>
+              </div>
+              <div className="p-4 lg:pl-10">
+                <h2 className="text-5xl font-DinCondensed font-semibold mb-2 text-white">
+                  TEXAS HEALTH SPORTS MEDICINE
+                </h2>
+                <p className="text-white mb-4 text-lg">
+                  Whether you're a young athlete or weekend warrior, Texas
+                  Health Sports Medicine delivers care for injuries nutrition.
+                  pnvsical therapv and more
+                </p>
+                <button className=" text-white py-2 px-4 rounded border-2 font-GBook font-semibold">
+                  <Link to="https://www.texashealth.org" target={"_blank"}>
+                    {" "}
+                    LEARN MORE
+                  </Link>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* <LeaveAMessage /> */}
+      <LeaveAMessageShort header={"Have Questions?"} />
       <Footer />
     </>
   );

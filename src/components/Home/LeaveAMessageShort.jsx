@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
-const LeaveAMessage = ({ header }) => {
+const LeaveAMessageShort = ({ header }) => {
   const nameRef = useRef(null);
   const phoneRef = useRef(null);
   const emailRef = useRef(null);
@@ -131,4 +131,4 @@ const LeaveAMessage = ({ header }) => {
   );
 };
 
-export default LeaveAMessage;
+export default LeaveAMessageShort;

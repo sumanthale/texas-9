@@ -39,6 +39,10 @@ const HomeCards = () => {
 
   const handleFlip = (index, state) => {
     const newFlipState = [...isFlipped];
+    newFlipState[0] = false;
+    newFlipState[1] = false;
+    newFlipState[2] = false;
+    newFlipState[3] = false;
     newFlipState[index] = state;
     setIsFlipped(newFlipState);
   };

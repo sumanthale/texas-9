@@ -36,44 +36,49 @@ const Golf = () => {
           </div>
         </div>
 
-        <div className="col-span-12 grid grid-cols-1 lg:grid-cols-12 gap-4">
+        <div className="col-span-12 grid grid-cols-1 lg:grid-cols-12 lg:gap-4">
           <img
             src={MapCourse}
             alt="Golf Course"
             className="object-fill col-span-8"
             style={{ width: "100%", height: "auto" }}
           />
-          <div className="col-span-4 flex  flex-col items-center justify-around space-y-4">
-            <div>
-              <button className="uppercase outline outline-1 px-2 text-[#7da33f] text-xl tracking-wider outline-[#7da33f]">
-                <Link
-                  to="/tee-times"
-                  className="block w-full h-full font-GBook"
-                >
-                  Book Your Tee Time
-                </Link>
-              </button>
-            </div>
-            <div>
-              <button className="uppercase outline outline-1 px-2 text-maroon text-xl tracking-wider outline-[#791214]">
-                <Link
-                  to="/tee-times"
-                  className="block w-full h-full font-GBook"
-                >
-                  PLAY MORE SAVE MORE WITH A MEMBERSHIP!
-                </Link>
-              </button>
-            </div>
-            <div>
-              <button className="uppercase outline outline-1 px-2 text-violet text-xl tracking-wider outline-[#172649]">
-                <Link
-                  to="/tee-times"
-                  className="block w-full h-full font-GBook"
-                >
-                  BOOK A PRIVATE LESSON
-                </Link>
-              </button>
-            </div>
+          <div className="col-span-4 flex lg:hidden  flex-col items-center justify-around space-y-4 mt-4 lg:mt-0">
+            <button className="uppercase outline outline-1 px-2 text-[#7da33f] text-xl tracking-wider outline-[#7da33f]">
+              <Link to="/tee-times" className="block w-full h-full font-GBook">
+                Book Your Tee Time
+              </Link>
+            </button>
+
+            <button className="uppercase outline outline-1 px-2 text-maroon text-xl tracking-wider outline-[#791214]">
+              <Link to="/tee-times" className="block w-full h-full font-GBook">
+                PLAY MORE SAVE MORE WITH A MEMBERSHIP
+              </Link>
+            </button>
+
+            <button className="uppercase outline outline-1 px-2 text-violet text-xl tracking-wider outline-[#172649]">
+              <Link to="/tee-times" className="block w-full h-full font-GBook">
+                BOOK A PRIVATE LESSON
+              </Link>
+            </button>
+          </div>
+          <div className="hidden lg:flex col-span-4  flex-col items-center justify-around space-y-4 ">
+            <button className="uppercase  outline outline-1 px-2 text-[#7da33f] text-2xl tracking-wider outline-[#7da33f]">
+              <Link to="/tee-times" className="block w-full h-full font-GBook">
+                Book Your <br /> Tee Time
+              </Link>
+            </button>
+            <button className="uppercase  outline outline-1 px-2 text-maroon text-2xl tracking-wider outline-[#791214]">
+              <Link to="/tee-times" className="block w-full h-full font-GBook">
+                PLAY MORE <br />
+                SAVE MORE <br /> WITH A <br /> MEMBERSHIP
+              </Link>
+            </button>
+            <button className="uppercase  outline outline-1 px-2 text-violet text-2xl tracking-wider outline-[#172649]">
+              <Link to="/tee-times" className="block w-full h-full font-GBook">
+                BOOK A <br /> PRIVATE LESSON
+              </Link>
+            </button>
           </div>
         </div>
 
@@ -89,7 +94,7 @@ const Golf = () => {
               alt="balls"
               className="absolute -z-10 -left-20"
             />
-            <h1 className="absolute text-xl md:text-3xl font-bold left-10">
+            <h1 className="absolute text-xl md:text-3xl font-bold top-4 left-10">
               KNOW THE ETIQUTTE
             </h1>
             <ul className="list-disc md:col-start-2 md:col-span-6 pt-10 mx-auto px-6 place-self-center font-primary font-semibold">

@@ -107,7 +107,7 @@ const LeaveAMessage = ({ header }) => {
             ref={form}
             className="horizontal-line  ml-auto"
           >
-            <h1 className="uppercase tracking-wide text-center text-3xl text-white font-DinCondensed pb-4 font-bold">
+            <h1 className="uppercase tracking-wide  text-center lg:text-left text-3xl text-white font-DinCondensed pb-4 font-bold">
               {header}
             </h1>
             <div className="grid grid-cols-2 gap-2 font-primary font-semibold">
