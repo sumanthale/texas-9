@@ -79,7 +79,7 @@ const Lessons = () => {
               <img
                 src={Instructor}
                 alt="Instructor"
-                className="object-fill my-4"
+                className="object-contain my-4"
                 style={{ width: "100%", height: "auto", maxHeight: "350px" }}
               />
 

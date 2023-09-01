@@ -153,15 +153,15 @@ const HomeDiv2 = () => {
         </div>
       </div>
 
-      <div className="home-page py-4">
+      <div className="home-page  py-4">
         <section
           className="hero-section lg:pl-16"
           style={{
             backgroundImage: `url(${Review})`,
           }}
         >
-          <div className="hidden  md:flex w-[70vw] mr-auto">
-            <div className="  w-full">
+          <div className="flex w-[100vw] lg:w-[70vw] mr-auto">
+            <div className=" w-full">
               <Slider {...settings1}>
                 {reviews.map((review) => (
                   <div
@@ -169,10 +169,10 @@ const HomeDiv2 = () => {
                     className="review-slide text-center lg:text-justify font-primary font-semibold"
                   >
                     <p
-                      className="text-xl"
+                      className="text-lg lg:text-xl"
                       dangerouslySetInnerHTML={{ __html: review.text }}
                     ></p>
-                    <p className="text-right text-3xl font-DinCondensed font-bold ">
+                    <p className="text-right text-xl lg:text-3xl font-DinCondensed font-bold ">
                       - {review.author}
                     </p>
                   </div>

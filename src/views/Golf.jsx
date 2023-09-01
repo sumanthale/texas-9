@@ -40,7 +40,7 @@ const Golf = () => {
           <img
             src={MapCourse}
             alt="Golf Course"
-            className="object-fill col-span-8"
+            className="object-cover col-span-8"
             style={{ width: "100%", height: "auto" }}
           />
           <div className="col-span-4 flex lg:hidden  flex-col items-center justify-around space-y-4 mt-4 lg:mt-0">
@@ -114,7 +114,7 @@ const Golf = () => {
               <img
                 src={Golf1}
                 alt="Golf Course"
-                className="object-fill"
+                className="object-cover"
                 style={{
                   width: "80%",
                   height: "auto",
@@ -125,7 +125,7 @@ const Golf = () => {
               <img
                 src={Golf2}
                 alt="Golf Course"
-                className="object-fill"
+                className="object-cover"
                 style={{
                   width: "80%",
                   height: "auto",
@@ -137,7 +137,7 @@ const Golf = () => {
               <img
                 src={Golf3}
                 alt="Golf Course"
-                className="object-fill"
+                className="object-cover"
                 style={{ width: "80%", height: "auto", maxHeight: "420px" }}
               />
             </div>

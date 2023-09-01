@@ -26,7 +26,7 @@ const Membership = () => {
               TEXAS 9 MEMBER
             </h1>
             <div className="px-2 text">
-              <p className="text-center  my-4">
+              <p className="text-center  my-4 min-h-[100px]">
                 Texas 9 Members receive priority access to the course and
                 unlimited access the driving range, full access to the gym & 15%
                 off yoga.
@@ -56,7 +56,7 @@ const Membership = () => {
               RANGE MEMEBER
             </h1>
             <div className="px-2 text">
-              <p className="text-center  my-4 h-20">
+              <p className="text-center  my-4 min-h-[100px]">
                 Texas 9 Range Members receive unlimited access to the driving
                 range anytime day or night to perfect their swing.
               </p>
@@ -85,17 +85,17 @@ const Membership = () => {
       </div>
 
       <div className="flex justify-center items-center">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-14 lg:mx-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-14 lg:max-w-[90vw]">
           <img
             src={MembershipFitness}
             alt="Event 1"
-            className="object-fill h-full"
+            className="object-cover h-full"
             style={{ width: "100%", maxHeight: "450px" }}
           />
           <img
             src={MembershipRange}
             alt="Event 2"
-            className="object-fill h-full"
+            className="object-cover h-full"
             style={{ width: "100%", maxHeight: "450px" }}
           />
         </div>
@@ -115,7 +115,7 @@ const Membership = () => {
               TEXAS 9 MEMBER
             </h1>
             <div className="px-2 text">
-              <p className="text-center  my-4">
+              <p className="text-center  my-4 min-h-[100px]">
                 Texas 9 Members receive priority access to the course and
                 unlimited access the driving range, full access to the gym & 15%
                 off yoga.
@@ -146,7 +146,7 @@ const Membership = () => {
               RANGE MEMEBER
             </h1>
             <div className="px-2 text">
-              <p className="text-center  my-4 h-20">
+              <p className="text-center  my-4 min-h-[90px]">
                 Texas 9 Range Members receive unlimited access to the driving
                 range anytime day or night to perfect their swing.
               </p>

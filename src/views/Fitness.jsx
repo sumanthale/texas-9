@@ -11,9 +11,9 @@ const Fitness = () => {
   return (
     <>
       <MiniHeader heading={"Fitness"} subHeading={""} />
-      <div className="grid grid-cols-1  md:grid-cols-12 gap-6 gap-x-10  pt-6  lg:pr-20 pb-6 font-primary font-semibold">
+      <div className="grid grid-cols-1  md:grid-cols-12 gap-4 gap-x-10  pt-6  lg:pr-20 pb-6 font-primary font-semibold">
         <div className="md:col-span-4 md:order-last mb-2 pr-4  pl-4 ">
-          <div className="block md:hidden pl-4 lg:pl-20">
+          <div className="block md:hidden  lg:pl-20">
             <p className="text-justify ">
               Discover the ultimate full-service fitness center that's all about
               you! Get ready to achieve your fitness dreams with top-notch gym
@@ -25,7 +25,7 @@ const Fitness = () => {
               on every step of the way. Your wellness adventure starts here -
               come on over and let's make healthy happen, together!
             </p>
-            <div className="py-4 pr-4 lg:pr-0 ">
+            <div className="py-4  lg:pr-0 ">
               <Carousel
                 autoPlay
                 infiniteLoop
@@ -83,7 +83,7 @@ const Fitness = () => {
               <img
                 src={Training}
                 alt="Golf Course"
-                className="object-fill my-4"
+                className="object-cover my-4"
                 style={{ width: "100%", height: "auto", maxHeight: "350px" }}
               />
 
