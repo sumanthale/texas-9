@@ -1,18 +1,8 @@
 import MiniHeader from "../layout/MainLayout/MiniHeader";
 import Footer from "../reusable/Footer";
-import { LiaGolfBallSolid } from "react-icons/lia";
-import MapCourse from "../assets/golf/mapcourse.png";
-import Golf1 from "../assets/golf/golf1.png";
-import Golf2 from "../assets/golf/golf2.png";
-import Golf3 from "../assets/golf/golf3.png";
-import Golf4 from "../assets/golf/golf4.png";
-import Golf5 from "../assets/golf/golf5.png";
-import Golf6 from "../assets/golf/golf6.png";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "../index.css";
-import { Carousel } from "react-responsive-carousel";
-import GolfBallPattern from "../assets/golf/golfballpattern.png";
 import CommunityHeader from "../assets/golf/community-header.png";
 import Campus from "../assets/golf/campus.png";
 import KJCF from "../assets/golf/kjcf.png";
@@ -26,11 +16,7 @@ import LeaveAMessageShort from "../components/Home/LeaveAMessageShort";
 const Community = () => {
   return (
     <>
-      <MiniHeader
-        heading={"Community"}
-        subHeading={""}
-        image={CommunityHeader}
-      />
+      <MiniHeader heading={"Community"} image={CommunityHeader} />
       <div className="grid grid-cols-1  md:grid-cols-12 gap-6 gap-x-12  pt-6 w-full mx-auto font-primary font-semibold">
         <div className="md:col-span-12">
           <p className=" md:block text-justify mb-6 mx-auto  max-w-[90vw] text-lg font-semibold ">
@@ -187,7 +173,12 @@ const Community = () => {
               src={Campus}
               alt="Golf Course"
               className="object-fill"
-              style={{ width: "100%", height: "auto", maxHeight: "450px" }}
+              style={{
+                width: "100%",
+                height: "auto",
+                margin: "auto",
+                maxWidth: "1600px",
+              }}
             />
           </div>
 
